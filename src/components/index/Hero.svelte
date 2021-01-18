@@ -12,7 +12,7 @@
         </span>
     </div>
     <div>
-        <img src="/img/FOSSHOST_Concept_Header.svg" alt="Fosshost Drawing" />
+        <img src="/img/illustration0.png" alt="Fosshost Drawing" />
     </div>
 </main>
 
