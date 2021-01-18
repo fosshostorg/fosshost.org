@@ -1,0 +1,9 @@
+body, html {
+	padding: 0px;
+	margin: 0px;
+	font-family: 'Source Sans Pro', Roboto, -apple-system, BlinkMacSystemFont, Segoe UI, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+	font-size: 14px;
+	background-color: white;
+	color: black;
+	--fosshost-color: #f95f4a;
+}

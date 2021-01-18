@@ -1,0 +1,121 @@
+<script>
+
+</script>
+
+<main>
+    <div>
+		<h1>Looking for a place to host your first project?</h1>
+		<p>We'll help you every step of the way.</p>
+		<a class="apply" href="/apply">Apply Now</a>
+    </div>
+    <span class="footer">
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/projects">Projects</a></li>
+            <li><a href="/news">News</a></li>
+            <li><a href="/docs">Documentation</a></li>
+            <li><a href="/donate">Donate</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/contact">Contact</a></li>
+            <li><a href="/sponsors">Sponsors</a></li>
+            <li><a href="/media">Media</a></li>
+            <li><a href="/status">Network Status</a></li>
+        </ul>
+        <span>
+            <ul class="copy-info">
+                <li>This site is powered by Netlify. All rights reserved &copy; 2021</li>
+                <li><a href="/terms">Terms of Use</a></li>
+                <li><a href="/privacy">Privacy Policy</a></li>
+            </ul>
+        </span>
+    </span>
+</main>
+
+<style>
+    main {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    span.footer {
+        width: 100%;
+        background-color: #4D4D4D;
+        min-height: 140px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    ul {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        background-color: #4D4D4D;
+        margin: 0px;
+        font-weight: 500;
+        font-size: 14px;
+    }
+
+    ul.copy-info {
+        font-weight: 300;
+        color: white;
+        opacity: 0.6;
+    }
+
+    ul.copy-info a {
+        text-decoration: underline;
+    }
+
+    li {
+        margin: 10px;
+    }
+
+    li a {
+        color: white;
+        text-decoration: none;
+    }
+
+    div {
+		display: flex;
+		width: 100%;
+		height: 480px;
+		background-color: #B5B5B5;
+		color: white;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+	h1 {
+		font-size: 42px;
+		line-height: 63px;
+		margin: 0px;
+	}
+
+	p {
+		font-size: 24px;
+		line-height: 36px;
+		font-weight: 400;
+		margin: 5px 0px;
+	}
+
+	a.apply {
+		margin-top: 80px;
+		font-weight: 600;
+		font-size: 24px;
+		line-height: 36px;
+		padding: 8px 40px;
+		color: white;
+		background-color: var(--fosshost-color);
+		text-decoration: none;
+		border-radius: 6px;
+		border: 1px solid var(--fosshost-color);
+		transition: ease color 0.3s, ease background-color 0.3s;
+	}
+
+	a.apply:hover {
+		color: var(--fosshost-color);
+		background-color: transparent;
+	}
+</style>
