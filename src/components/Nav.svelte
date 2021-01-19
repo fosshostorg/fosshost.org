@@ -13,6 +13,7 @@
 		<li><a aria-current="{segment === 'donate' ? 'page' : undefined}" href="donate">Donate</a></li>
 		<li><a class="apply" href="apply">Apply</a></li>
 	</ul>
+	<span class="material-icons">menu</span>
 </nav>
 
 <style>
@@ -31,11 +32,24 @@
 	ul {
 		list-style: none;
 		display: flex;
-		width: 50%;
 		align-items: center;
 		justify-content: flex-end;
 		margin: 0px;
 		height: 100%;
+	}
+
+	@media (max-width: 825px) {
+		ul {
+			display: none;
+		}
+		span {
+			display: block !important;
+		}
+	}
+
+	span {
+		display: none;
+		cursor: pointer;
 	}
 
 	li:last-child {
