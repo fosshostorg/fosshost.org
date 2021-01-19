@@ -34,6 +34,8 @@
 		width: 50%;
 		align-items: center;
 		justify-content: flex-end;
+		margin: 0px;
+		height: 100%;
 	}
 
 	li:last-child {
@@ -45,11 +47,15 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		height: 100%;
 	}
 
 	a {
 		text-decoration: none;
 		color: black;
+		height: 100%;
+		display: flex;
+		align-items: center;
 	}
 
 	a.apply {
@@ -58,6 +64,7 @@
 		background-color: var(--fosshost-color);
 		border-radius: 6px;
 		transition: ease all 0.3s;
+		height: auto;
 	}
 
 	a.apply:hover {
@@ -68,6 +75,9 @@
 
 	[aria-current] {
 		color: var(--fosshost-color);
+		border-bottom: 2px solid var(--fosshost-color);
+		height: calc(100% - 4px);
+		margin-top: 2px;
 	}
 
 	img {
