@@ -21,10 +21,17 @@
 
 <style>
     main {
-        margin: 0 auto 40px;
-        max-width: 1280px;
+        margin-bottom: 40px;
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    @media (max-width: 640px) {
+        a {
+            height: 70px !important;
+            width: calc(100% - 40px) !important;
+        }
     }
 
     a {

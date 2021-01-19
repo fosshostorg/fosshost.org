@@ -44,7 +44,6 @@
         min-height: 140px;
         display: flex;
         flex-direction: column;
-        justify-content: center;
     }
 
     ul {
@@ -55,12 +54,15 @@
         margin: 0px;
         font-weight: 500;
         font-size: 14px;
+        margin-top: 40px;
     }
 
     ul.copy-info {
         font-weight: 300;
         color: white;
         opacity: 0.6;
+        margin: 0px;
+        margin-bottom: 20px;
     }
 
     ul.copy-info a {
@@ -90,7 +92,8 @@
 	h1 {
 		font-size: 42px;
 		line-height: 63px;
-		margin: 0px;
+		margin: 0px 30px;
+        text-align: center;
 	}
 
 	p {
@@ -98,7 +101,25 @@
 		line-height: 36px;
 		font-weight: 400;
 		margin: 5px 0px;
+        text-align: center;
 	}
+
+    @media (max-width: 640px) {
+        h1 {
+            font-size: 32px;
+            line-height: normal;
+        }
+        p {
+            font-size: 14px;
+        }
+        a.apply {
+            font-size: 16px !important;
+            margin-top: 20px !important;
+        }
+        div {
+            height: 400px;
+        }
+    }
 
 	a.apply {
 		margin-top: 80px;
