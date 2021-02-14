@@ -23,6 +23,7 @@
         background-color: white;
         color: white;
         display: flex;
+        margin: 125px 0px;
     }
 
     @media (max-width: 1024px) {
@@ -32,6 +33,7 @@
         main {
             flex-direction: column-reverse;
             padding: 20px 40px 40px;
+            margin: 0;
         }
         div {
             align-items: center;
@@ -45,11 +47,10 @@
     }
 
     div {
-        height: 640px;
+        /* height: 640px; */
         display: flex;
         flex-grow: 1;
         flex-basis: 50%;
-        /* height: 100%; */
         flex-direction: column;
         justify-content: center;
         flex-wrap: wrap;
@@ -94,10 +95,6 @@
         color: white;
         background-color: var(--fosshost-orange);
         margin-left: 0px;
-    }
-
-    a:hover {
-
     }
 
     img {

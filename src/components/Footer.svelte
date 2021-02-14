@@ -82,7 +82,7 @@
 		display: flex;
 		width: 100%;
 		height: 480px;
-		background-color: #B5B5B5;
+		background-color: var(--fosshost-orange);
 		color: white;
 		flex-direction: column;
 		align-items: center;
@@ -127,16 +127,17 @@
 		font-size: 24px;
 		line-height: 36px;
 		padding: 8px 40px;
-		color: white;
-		background-color: var(--fosshost-orange);
+		color: var(--fosshost-orange);
+		background-color: white;
 		text-decoration: none;
 		border-radius: 6px;
-		border: 1px solid var(--fosshost-orange);
+		border: 1px solid white;
 		transition: ease color 0.3s, ease background-color 0.3s;
 	}
 
 	a.apply:hover {
-		color: var(--fosshost-orange);
+        color: white;
 		background-color: transparent;
+        border: 1px solid white;
 	}
 </style>

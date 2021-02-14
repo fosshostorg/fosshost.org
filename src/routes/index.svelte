@@ -53,7 +53,7 @@ import Quote from "../components/index/Quote.svelte";
 	}
 
 	div {
-		max-width: 1280px;
+		max-width: var(--content-max-width);
 		margin: 0 auto;
 	}
 
