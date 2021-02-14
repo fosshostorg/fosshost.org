@@ -8,7 +8,7 @@
 
 <div>
     <img alt="Placeholder Provider Logo"/>
-    <span class="header">
+    <span class="header" on:click={() => open = !open}>
         <span>
             <span class="title">
                 <slot name="title"></slot>
@@ -42,6 +42,9 @@
         }
         .dropdown {
             display: block !important;
+        }
+        .header {
+            cursor: pointer;
         }
     }
 
