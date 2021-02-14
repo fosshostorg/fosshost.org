@@ -21,7 +21,7 @@
         display: flex;
         flex-direction: column;
         max-width: calc(var(--content-max-width) - 500px);
-        margin: 0 auto 40px;
+        margin: 50px auto;
     }
 
     @media (max-width: 1024px) {
@@ -40,7 +40,6 @@
     }
 
     div {
-        height: 510px;
         display: flex;
         flex-grow: 1;
         flex-basis: 50%;

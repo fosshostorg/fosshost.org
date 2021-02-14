@@ -1,26 +1,70 @@
 <script>
 
+    let open = false;
+
+
+
 </script>
 
 <div>
     <img alt="Placeholder Provider Logo"/>
-    <span class="title">
-        <slot name="title"></slot>
+    <span class="header">
+        <span>
+            <span class="title">
+                <slot name="title"></slot>
+            </span>
+            <span class="location">
+                <slot name="location"></slot>
+            </span>
+        </span>
+        <span class="dropdown material-icons" class:open on:click={() => open = !open}>
+            chevron_left
+        </span>
     </span>
-    <span class="location">
-        <slot name="location"></slot>
-    </span>
-    <h2>Server Details</h2>
-    <span class="details">
+    <h2 class:open>Server Details</h2>
+    <span class:open class="details">
         <slot name="details"></slot>
     </span>
-    <h2>Network Connectivity</h2>
-    <span class="network">
+    <h2 class:open>Network Connectivity</h2>
+    <span class:open class="network">
         <slot name="network"></slot>
     </span>
 </div>
 
 <style>
+
+    @media (max-width: 780px) {
+        img, .details, .network, h2 {
+            display: none !important;
+        }
+        div {
+            width: 100%;
+        }
+        .dropdown {
+            display: block !important;
+        }
+    }
+
+    .open {
+        display: initial !important;
+    }
+
+    span.header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .dropdown {
+        cursor: pointer;
+        font-size: 2rem;
+        display: none;
+    }
+
+    .dropdown.open {
+        transform: rotate(-90deg);
+    }
+
     div {
         display: flex;
         flex-direction: column;
