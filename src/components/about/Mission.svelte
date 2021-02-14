@@ -34,5 +34,6 @@
 
     span {
         font-size: 24px;
+        line-height: 40px;
     }
 </style>
