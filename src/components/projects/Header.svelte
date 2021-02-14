@@ -68,7 +68,7 @@
     a {
         border: 1px solid white;
         color: white;
-        background-color: var(--fosshost-color);
+        background-color: var(--fosshost-orange);
         padding: 5px 14px;
         font-size: 18px;
         font-weight: 600;
@@ -82,13 +82,9 @@
     }
 
     a.apply {
-        color: var(--fosshost-color);
+        color: var(--fosshost-orange);
         background-color: white;
         margin-left: 0px;
-    }
-
-    a:hover {
-
     }
 
     img {

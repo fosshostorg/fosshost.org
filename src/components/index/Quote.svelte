@@ -23,7 +23,7 @@
         align-items: center;
         margin: 100px auto;
         padding: 50px 0px;
-        border: 1px solid var(--fosshost-color);
+        border: 1px solid var(--fosshost-orange);
     }
 
     p {
@@ -34,7 +34,7 @@
     }
 
     span {
-        color: var(--fosshost-color);
+        color: var(--fosshost-orange);
         font-size: 20px;
         line-height: 30px;
         font-weight: 700;

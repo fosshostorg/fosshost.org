@@ -20,7 +20,7 @@
     main {
         width: auto;
         padding: 0px 40px;
-        background-color: var(--fosshost-color);
+        background-color: white;
         color: white;
         display: flex;
     }
@@ -53,6 +53,7 @@
         flex-direction: column;
         justify-content: center;
         flex-wrap: wrap;
+        color: var(--fosshost-orange);
     }
 
     h1 {
@@ -66,6 +67,7 @@
         font-weight: 300;
         line-height: 36px;
         margin-top: 0px;
+        color: black;
     }
 
     span {
@@ -73,9 +75,9 @@
     }
 
     a {
-        border: 1px solid white;
-        color: white;
-        background-color: var(--fosshost-color);
+        border: 1px solid var(--fosshost-orange);
+        color: var(--fosshost-orange);
+        background-color: white;
         padding: 5px 14px;
         font-size: 18px;
         font-weight: 600;
@@ -89,8 +91,8 @@
     }
 
     a.apply {
-        color: var(--fosshost-color);
-        background-color: white;
+        color: white;
+        background-color: var(--fosshost-orange);
         margin-left: 0px;
     }
 

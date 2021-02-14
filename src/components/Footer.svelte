@@ -128,15 +128,15 @@
 		line-height: 36px;
 		padding: 8px 40px;
 		color: white;
-		background-color: var(--fosshost-color);
+		background-color: var(--fosshost-orange);
 		text-decoration: none;
 		border-radius: 6px;
-		border: 1px solid var(--fosshost-color);
+		border: 1px solid var(--fosshost-orange);
 		transition: ease color 0.3s, ease background-color 0.3s;
 	}
 
 	a.apply:hover {
-		color: var(--fosshost-color);
+		color: var(--fosshost-orange);
 		background-color: transparent;
 	}
 </style>

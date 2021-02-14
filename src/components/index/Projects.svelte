@@ -29,7 +29,7 @@
     }
 
     a.more {
-        color: var(--fosshost-color);
+        color: var(--fosshost-orange);
         font-size: 16px;
         line-height: 24px;
         display: flex;

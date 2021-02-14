@@ -75,21 +75,21 @@
 	a.apply {
 		color: white;
 		padding: 8px 15px;
-		background-color: var(--fosshost-color);
+		background-color: var(--fosshost-orange);
 		border-radius: 6px;
 		transition: ease all 0.3s;
 		height: auto;
 	}
 
 	a.apply:hover {
-		color: var(--fosshost-color);
+		color: var(--fosshost-orange);
 		background-color: white;
-		border: 1px solid var(--fosshost-color);
+		border: 1px solid var(--fosshost-orange);
 	}
 
 	[aria-current] {
-		color: var(--fosshost-color);
-		border-bottom: 2px solid var(--fosshost-color);
+		color: var(--fosshost-orange);
+		border-bottom: 2px solid var(--fosshost-orange);
 		height: calc(100% - 4px);
 		margin-top: 2px;
 	}
