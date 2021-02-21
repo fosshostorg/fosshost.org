@@ -28,9 +28,9 @@
         div {
             height: auto;
         }
-        main {
+        /* main {
             padding: 20px 40px 40px;
-        }
+        } */
         div {
             align-items: center;
         }

@@ -4,6 +4,8 @@
     
 </script>
 
+<!-- TODO: Decide whether or not to move some of this to a place in the projects page. -->
+
 <main>
     {#each Projects as project}
         <a target="_blank" href={project.link}><img src={project.img} alt={project.name} /></a>

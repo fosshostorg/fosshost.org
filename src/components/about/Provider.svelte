@@ -17,7 +17,7 @@
                 <slot name="location"></slot>
             </span>
         </span>
-        <span class="dropdown material-icons" class:open>
+        <span class="dropdown material-icons noselect" class:open>
             chevron_left
         </span>
     </span>

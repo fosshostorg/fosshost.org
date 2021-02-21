@@ -23,7 +23,7 @@
         background-color: white;
         color: white;
         display: flex;
-        margin: 125px 0px;
+        margin: 100px 0px;
     }
 
     @media (max-width: 1024px) {
@@ -100,6 +100,5 @@
     img {
         align-self: center;
         width: 580px;
-        mix-blend-mode: multiply;
     }
 </style>
