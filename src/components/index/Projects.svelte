@@ -47,6 +47,7 @@
     div {
         display: flex;
         width: 100%;
+        max-width: var(--content-max-width);
         align-items: center;
         justify-content: space-around;
         margin: 20px 0px;

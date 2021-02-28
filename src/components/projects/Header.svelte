@@ -15,6 +15,8 @@
 <style>
     main {
         width: auto;
+        max-width: var(--content-max-width);
+        margin: 0 auto;
         padding: 0px 40px;
         background-color: white;
         color: black;

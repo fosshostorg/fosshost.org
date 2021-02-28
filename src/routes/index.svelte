@@ -1,10 +1,12 @@
+<svelte:head>
+	<title>About</title>
+</svelte:head>
+
 <script>
-import Card from "../components/index/Card.svelte";
-import Hero from "../components/index/Hero.svelte";
-import Projects from "../components/index/Projects.svelte";
-import Quote from "../components/index/Quote.svelte";
-
-
+	import Card from "../components/index/Card.svelte";
+	import Hero from "../components/index/Hero.svelte";
+	import Projects from "../components/index/Projects.svelte";
+	import Quote from "../components/index/Quote.svelte";
 </script>
 
 <main>

@@ -23,7 +23,8 @@
         background-color: white;
         color: white;
         display: flex;
-        margin: 100px 0px;
+        margin: 100px auto;
+        max-width: var(--content-max-width);
     }
 
     @media (max-width: 1024px) {
