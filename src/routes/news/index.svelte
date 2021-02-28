@@ -17,11 +17,42 @@
         <h1>News & Updates</h1>
         <p>Stay up to date with the latest updates, announcements and more from Fosshost.</p>
     </div>
-    {#each posts as post}
-        <PostCard {post}/>
-    {/each}
+    <span>
+        {#each posts as post}
+            <PostCard {post}/>
+        {/each}
+    </span>
 </main>
 
 <style>
+    div {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 2rem;
+    }
 
+    h1 {
+        color: var(--fosshost-black);
+        font-size: 40px;
+        line-height: 47px;
+        margin: 2rem 0 0;
+        text-align: center;
+    }
+
+    p {
+        color: #b1b1b1;
+        font-size: 18px;
+        line-height: 27px;
+        text-align: center;
+    }
+
+    span {
+        display: flex;
+        flex-direction: column;
+        width: 95%;
+        max-width: var(--content-max-width);
+        margin: 0 auto;
+    }
 </style>
