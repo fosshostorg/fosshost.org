@@ -21,7 +21,7 @@
 	<ul class:open>
 		<li><a on:click={() => open = false} aria-current="{segment === undefined ? 'page' : undefined}" href=".">Home</a></li>
 		<li><a on:click={() => open = false} aria-current="{segment === 'projects' ? 'page' : undefined}" href="projects">Projects</a></li>
-		<li><a on:click={() => open = false} aria-current="{segment === 'news' ? 'page' : undefined}" href="news">News</a></li>
+		<li><a rel="prefetch" on:click={() => open = false} aria-current="{segment === 'news' ? 'page' : undefined}" href="news">News</a></li>
 		<li><a on:click={() => open = false} aria-current="{segment === 'about' ? 'page' : undefined}" href="about">About</a></li>
 		<li><a on:click={() => open = false} aria-current="{segment === 'donate' ? 'page' : undefined}" href="donate">Donate</a></li>
 		<li><a on:click={() => open = false} class="apply" href="apply">Apply</a></li>
