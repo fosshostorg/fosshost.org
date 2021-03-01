@@ -21,7 +21,7 @@
         display: flex;
         flex-direction: column;
         max-width: calc(var(--content-max-width) - 500px);
-        margin: 50px auto;
+        margin: 2rem auto;
     }
 
     @media (max-width: 1024px) {
@@ -53,6 +53,8 @@
         font-size: 42px;
         line-height: 47px;
         height: auto;
+        margin-top: 0;
+        color: var(--fosshost-black);
     }
 
     p {

@@ -27,6 +27,24 @@
         color: var(--fosshost-orange);
         font-weight: bold;
         margin-bottom: 1.5rem;
+        position: relative;
+        display: block;
+        text-transform: uppercase;
+        padding: 4px 0;
+        transition: 0.5s;
+    }
+
+    a.read-more::after {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 3px;
+        top: 100%;
+        left: 0;
+        background: var(--fosshost-orange);
+        transition: transform 0.5s;
+        transform: scaleX(0);
+        transform-origin: right;
     }
 
     div {
@@ -47,6 +65,17 @@
         line-height: 32px;
         margin: 1rem 0 1.5rem;
         display: inline-block;
+    }
+
+    h2:hover {
+        /* transition: ease border-bottom 0.2s, ease margin-bottom 0.2s; */
+        border-bottom: 3px solid black;
+        margin-bottom: calc(1.5rem - 3px);
+    }
+
+    a.read-more:hover::after {
+        transform: scaleX(1);
+        transform-origin: left;
     }
 
     p {

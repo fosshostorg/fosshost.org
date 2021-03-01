@@ -12,7 +12,7 @@
         </span>
     </div>
     <div>
-        <img src="/img/illustration0.png" alt="Fosshost Drawing" />
+        <img src="/img/HERO IMAGE.png" alt="Fosshost Drawing" />
     </div>
 </main>
 
@@ -62,6 +62,7 @@
         font-size: 42px;
         line-height: 47px;
         height: auto;
+        color: var(--fosshost-black);
     }
 
     p {

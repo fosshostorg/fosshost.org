@@ -1,6 +1,7 @@
 import path from "path";
 import fs from "fs";
 import matter from 'gray-matter';
+import marked from 'marked';
 
 const getPost = slug =>
     fs.readFileSync(path.resolve("src/posts", `${slug}`), "utf-8");
@@ -12,7 +13,7 @@ export async function get(req, res, next) {
         const parsed = matter(content);
         return {
             details: {...parsed.data, slug: filename.replace('.md', '')},
-            body: parsed.content
+            body: parsed.content,
         }
     }).sort((a, b) => {
         let a_date = new Date(a.date);
