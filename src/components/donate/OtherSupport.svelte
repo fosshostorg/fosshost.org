@@ -80,7 +80,7 @@
         color: var(--fosshost-orange);
         position: relative;
         display: inline;
-        padding: -2 px 0;
+        padding: -2px 0;
         transition: 0.5s;
     }
 
