@@ -1,14 +1,16 @@
 <script>
-
+    export let title;
+    export let subtitle;
+    export let src;
 </script>
 
 <main>
     <div>
-        <h1>We provided a tailored hosting service to fit the needs of each project we help.</h1>
-        <p>We provide a maintained list of projects that benefit from our service. Some of these projects may have hundreds of sub-projects that we do not list here. </p>
+        <h1>{title}</h1>
+        <p>{subtitle}</p>
     </div>
     <div>
-        <img src="/img/illustration0.png" alt="Fosshost Drawing" />
+        <img src={src} alt="Fosshost Drawing" />
     </div>
 </main>
 
@@ -53,7 +55,7 @@
         font-size: 42px;
         line-height: 47px;
         height: auto;
-        color: var(--fosshost-orange);
+        color: var(--fosshost-black);
     }
 
     p {
@@ -61,32 +63,7 @@
         font-weight: 300;
         line-height: 36px;
         margin-top: 0px;
-    }
-
-    span {
-        margin-top: 35px;
-    }
-
-    a {
-        border: 1px solid white;
-        color: white;
-        background-color: var(--fosshost-orange);
-        padding: 5px 14px;
-        font-size: 18px;
-        font-weight: 600;
-        line-height: 27px;
-        border-radius: 6px;
-        font-family: inherit;
-        margin: 0px;
-        margin-right: 10px;
-        margin-top: 15px;
-        text-decoration: none;
-    }
-
-    a.apply {
-        color: var(--fosshost-orange);
-        background-color: white;
-        margin-left: 0px;
+        color: var(--fosshost-grey);
     }
 
     img {
