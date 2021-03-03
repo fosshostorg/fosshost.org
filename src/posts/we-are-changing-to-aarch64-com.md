@@ -8,6 +8,8 @@ thumbnail: mario-gogh-VBLHICVh-lI-unsplash.jpg
 
 We have decided to bring the Fosshost Project site in-line with other Arm-focussed open-source efforts, which is why with immediate effect, we've changed our name and domain before our first Arm-based compute platform goes live.
 
+> Here is a test quote, it can be a little long or short it doesn't matter as long as it is here.
+
 We're working with Arm Limited and they gave us the domain aarch64.com and helped us design the new logo, which we love.
 
 Thomas Markey, Founder of Fosshost said: "This partnership with Arm will enable our work to go further, ensuring we can remain sustainable and to continue providing our services to the open-source community. The aach64.com domain is a perfect domain name for us to enjoy as we build the momentum, and insight into the data centre using Arm-based hardware, kindly donated by Ampere Computing."
