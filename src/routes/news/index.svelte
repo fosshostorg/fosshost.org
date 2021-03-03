@@ -50,9 +50,10 @@
 
     span {
         display: flex;
-        flex-direction: column;
         width: 95%;
         max-width: var(--content-max-width);
         margin: 0 auto;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 </style>
