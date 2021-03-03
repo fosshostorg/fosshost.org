@@ -3,6 +3,10 @@ import fs from "fs";
 import matter from 'gray-matter';
 import marked from 'marked';
 
+marked.setOptions({
+    baseUrl: 'https://determined-fermi-ed1a04.netlify.app/',
+})
+
 const getPost = slug =>
     fs.readFileSync(path.resolve("src/posts", `${slug}.md`), "utf-8");
 
