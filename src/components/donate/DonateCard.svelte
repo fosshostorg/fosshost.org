@@ -12,13 +12,13 @@
         To make a donation select the icon of your favourite payment processor below.
     </span>
     <div>
-        <a href="#">
+        <a target="_blank" href="https://www.blockchain.com/btc/address/15PHtW5kLuYtFMYbSS7Lho39AQyqrMGX2v">
             <img src="/img/icon_BitCoin.svg" alt="Donate with Bitcoin."/> 
         </a>
-        <a href="#">
+        <a target="_blank" href="https://liberapay.com/fosshost.org/donate">
             <img src="/img/icon_LibrePay.svg" alt="Donate with LibrePay."/> 
         </a>
-        <a href="#">
+        <a target="_blank" href="https://paypal.com/donate">
             <img src="/img/icon_PayPal.svg" alt="Donate with PayPal."/> 
         </a>
     </div>
