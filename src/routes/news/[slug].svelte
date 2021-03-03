@@ -28,13 +28,20 @@
     main {
         width: 95%;
         max-width: 780px;
-        margin: 8rem auto;
+        margin: 3rem auto;
+    }
+
+    @media (max-width: 1280px) {
+        main {
+            margin: .5rem auto;
+        }
     }
 
     h1 {
         font-size: 40px;
         line-height: 47px;
         color: var(--fosshost-black);
+        margin-top: 0;
         margin-bottom: 1rem;
     }
 
