@@ -1,6 +1,6 @@
 {
-  "name": "TODO",
-  "description": "TODO",
+  "name": "fosshost-site",
+  "description": "website for fosshost.org",
   "version": "0.0.1",
   "scripts": {
     "dev": "sapper dev",
