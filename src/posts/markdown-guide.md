@@ -17,7 +17,7 @@ summary: Reference for writers and myself.
 
 Image:
 
-![Image](http://localhost:3001/img/FosshostLogo.png)
+![Image](/img/FosshostLogo.png)
 
 > Blockquote, which will render this text slightly differently so it stands out from the crowd. To denote the author of the quote:
 > # - do this, cool right?
