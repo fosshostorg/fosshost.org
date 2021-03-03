@@ -8,7 +8,10 @@
         <span class="date">{post.details.date}</span>
         <h2>{post.details.title}</h2>
         <p>{@html post.details.summary ? post.details.summary : marked(post.body.split(" ").splice(0, 15).join(" "))}</p>
-        <a class="read-more" href={"/news/" + post.details.slug}>READ MORE</a>
+        <span class="link">
+            <a class="read-more" href={"/news/" + post.details.slug}>READ MORE</a>
+        </span>
+        
         <divider></divider>
     </div>
 </a>
@@ -16,7 +19,8 @@
 <style>
     a.card {
         display: flex;
-        flex: 1 1 380px;
+        flex-basis: 380px;
+        flex-grow: 1;
         text-decoration: none;
         color: var(--fosshost-black);
         margin: 1rem;
@@ -27,19 +31,19 @@
         color: var(--fosshost-orange);
         font-weight: bold;
         margin-bottom: 1.5rem;
-        position: relative;
         display: block;
         text-transform: uppercase;
         padding: 4px 0;
         transition: 0.5s;
+        position: relative;
     }
 
     a.read-more::after {
-        position: absolute;
         content: "";
+        position: absolute;
         width: 100%;
         height: 3px;
-        top: 100%;
+        bottom: 0;
         left: 0;
         background: var(--fosshost-orange);
         transition: transform 0.5s;
@@ -47,12 +51,18 @@
         transform-origin: right;
     }
 
+    span.link {
+        position: relative;
+        z-index: 2;
+    }
+
     div {
         display: flex;
         flex-direction: column;
+        width: 100%;
     }
 
-    span {
+    span.date {
         text-transform: uppercase;
         color: #b1b1b1;
         letter-spacing: .09rem;
@@ -87,7 +97,7 @@
     }
 
     divider {
-        width: auto;
+        width: 100%;
         height: 1px;
         background-color: #e5e5e5;
     }
