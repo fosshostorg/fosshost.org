@@ -10,7 +10,7 @@ type Post = {
     details: {
         title: string,
         date: string,
-        thumbnail: string,
+        thumbnail?: string,
         author: string,
         summary?: string,
         slug: string,

@@ -16,6 +16,9 @@
 <main>
     <h1>{post.details.title}</h1>
     <h4>By {post.details.author + " |  " + post.details.date}</h4>
+    {#if post.details.thumbnail}
+        <img src={"/img/" + post.details.thumbnail} alt={"Thumbnail for " + post.details.title}>
+    {/if}
     <article>
         {@html post.html}
         {JSON.stringify(post.details)}
@@ -29,6 +32,10 @@
         width: 95%;
         max-width: 780px;
         margin: 3rem auto;
+    }
+
+    img {
+        width: 100%;
     }
 
     @media (max-width: 1280px) {
