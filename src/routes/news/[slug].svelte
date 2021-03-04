@@ -36,6 +36,7 @@
 
     img {
         width: 100%;
+        margin: 2rem 0;
     }
 
     @media (max-width: 1280px) {
