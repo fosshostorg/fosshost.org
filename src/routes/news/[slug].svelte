@@ -5,15 +5,24 @@
 		const res = await this.fetch(`news/${slug}.json`);
 		let post = await res.json();
 
-		return { post };
+		return { post, slug };
 	}
 </script>
 
 <script>
+    import Breadcrumbs from "../../components/Breadcrumbs.svelte";
+
     export let post;
+    export let slug;
+
+    $: path = [
+        {label: 'News', href: "/news"},
+        {label: post.details.title, href: `/news/${slug}`}
+    ]
 </script>
 
 <main>
+    <Breadcrumbs {path} />
     <h1>{post.details.title}</h1>
     <h4>By {post.details.author + " |  " + post.details.date}</h4>
     {#if post.details.thumbnail}
