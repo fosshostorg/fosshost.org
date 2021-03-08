@@ -1,6 +1,6 @@
 <script lang="ts">
 	import Footer from '../components/Footer.svelte';
-import Nav from '../components/Nav.svelte';
+	import Nav from '../components/Nav.svelte';
 
 	export let segment: string;
 </script>
