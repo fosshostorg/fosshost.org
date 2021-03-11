@@ -1,5 +1,5 @@
 <script>
-
+    import Image from "svelte-image";
 </script>
 
 <main>
@@ -12,7 +12,10 @@
         </span>
     </div>
     <div>
-        <img src="/img/HERO IMAGE.png" alt="Fosshost Drawing" />
+        
+        <Image lazy={false} placeholderClass="img" wrapperClass="img-wrapper" class="img2" src="/img/HERO IMAGE.png" alt="Fosshost Drawing" />
+        
+        <!-- <img src="" alt="Fosshost Drawing" /> -->
     </div>
 </main>
 
@@ -42,8 +45,18 @@
         span {
             margin-top: 20px !important;
         }
-        img {
+        div :global(.img-wrapper) {
+            /* height: 100%; */
             max-width: 95%;
+            /* width: auto !important; */
+        }
+        div :global(.img) {
+            width: auto;
+            /* height: 100%; */
+        }
+        div :globa(.img2) {
+            width: auto;
+            max-width: 95vw;
         }
     }
 
@@ -99,8 +112,13 @@
         margin-left: 0px;
     }
 
-    img {
-        align-self: center;
+    div :global(.img-wrapper) {
+        height: 330px;
         width: 580px;
     }
+
+    /* wrapper {
+        display: flex;
+        height: 100px;
+    } */
 </style>
