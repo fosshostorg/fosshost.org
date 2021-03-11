@@ -12,10 +12,8 @@
         </span>
     </div>
     <div>
-        
-        <Image lazy={false} placeholderClass="img" wrapperClass="img-wrapper" class="img2" src="/img/HERO IMAGE.png" alt="Fosshost Drawing" />
-        
-        <!-- <img src="" alt="Fosshost Drawing" /> -->
+        <!-- <Image lazy={false} placeholderClass="img" wrapperClass="img-wrapper" class="img2" src="/img/HERO IMAGE.png" alt="Fosshost Drawing" /> -->   
+        <img src="/img/HERO IMAGE.png" alt="Fosshost Drawing" />
     </div>
 </main>
 
@@ -45,18 +43,21 @@
         span {
             margin-top: 20px !important;
         }
-        div :global(.img-wrapper) {
-            /* height: 100%; */
+        /* div :global(.img-wrapper) {
+            height: 100%;
             max-width: 95%;
-            /* width: auto !important; */
+            width: auto !important;
         }
         div :global(.img) {
             width: auto;
-            /* height: 100%; */
+            height: 100%;
         }
         div :globa(.img2) {
             width: auto;
             max-width: 95vw;
+        } */
+        img {
+            max-width: 95%;
         }
     }
 
@@ -114,6 +115,11 @@
 
     div :global(.img-wrapper) {
         height: 330px;
+        width: 580px;
+    }
+
+    img {
+        align-self: center;
         width: 580px;
     }
 
