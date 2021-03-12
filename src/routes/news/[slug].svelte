@@ -30,7 +30,9 @@
     {/if}
     <article>
         {@html post.html}
+        {#if post.details.draft}
         {JSON.stringify(post.details)}
+        {/if}
     </article>
 </main>
 

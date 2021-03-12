@@ -1,11 +1,14 @@
 <script lang="ts">
     export let post: Post;
     import marked from 'marked';
+
+    const dateFormatOptions: Intl.DateTimeFormatOptions = { year: 'numeric', month: 'short', day: 'numeric' };
+    console.log(post.details.date)
 </script>
 
 <a href={"/news/" + post.details.slug} class="card">
     <div>
-        <span class="date">{post.details.date}</span>
+        <span class="date">{new Date((post.details.date).replace(/-/g, '\/').replace(/T.+/, '')).toLocaleDateString("en-US", dateFormatOptions)}</span>
         <h2>{post.details.title}</h2>
         <p>{@html post.details.summary ? post.details.summary : marked(post.body.split(" ").splice(0, 15).join(" "))}</p>
         <span class="link">
@@ -24,6 +27,7 @@
         text-decoration: none;
         color: var(--fosshost-black);
         margin: 1rem;
+        /* min-height: 300px; TODO: Decide whether or not cards should have a fixed height. */
     }
 
     a.read-more {
@@ -60,6 +64,7 @@
         display: flex;
         flex-direction: column;
         width: 100%;
+        /* min-height: 300px; */
     }
 
     span.date {

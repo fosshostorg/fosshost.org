@@ -1,7 +1,7 @@
 ---
 title: Fosshost markdown guide!
 author: nqdrt1
-date: March 2, 2021 12:00 PM
+date: 2021-03-02
 summary: Reference for writers and myself.
 thumbnail: example_thumbnail.jpg
 ---
