@@ -4,7 +4,7 @@ import matter from 'gray-matter';
 import marked from 'marked';
 
 marked.setOptions({
-    baseUrl: 'https://determined-fermi-ed1a04.netlify.app/',
+    baseUrl: process.env.NODE_ENV === 'development' ? 'http://localhost:3001/' : 'https://determined-fermi-ed1a04.netlify.app/',
 })
 
 const getPost = slug =>

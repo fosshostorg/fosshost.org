@@ -3,12 +3,13 @@
     import marked from 'marked';
 
     const dateFormatOptions: Intl.DateTimeFormatOptions = { year: 'numeric', month: 'short', day: 'numeric' };
+    const date = new Date((post.details.date).replace(/-/g, '\/').replace(/T.+/, '')).toLocaleDateString("en-US", dateFormatOptions);
     console.log(post.details.date)
 </script>
 
 <a href={"/news/" + post.details.slug} class="card">
     <div>
-        <span class="date">{new Date((post.details.date).replace(/-/g, '\/').replace(/T.+/, '')).toLocaleDateString("en-US", dateFormatOptions)}</span>
+        <span class="date">{date}</span>
         <h2>{post.details.title}</h2>
         <p>{@html post.details.summary ? post.details.summary : marked(post.body.split(" ").splice(0, 15).join(" "))}</p>
         <span class="link">
