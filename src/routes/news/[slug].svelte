@@ -9,24 +9,27 @@
 	}
 </script>
 
-<script>
+<script lang="ts">
     import Breadcrumbs from "../../components/Breadcrumbs.svelte";
 
-    export let post;
-    export let slug;
+    export let post: Post;
+    export let slug: string;
 
     $: path = [
         {label: 'News', href: "/news"},
         {label: post.details.title, href: `/news/${slug}`}
     ]
+
+    const dateFormatOptions: Intl.DateTimeFormatOptions = { year: 'numeric', month: 'short', day: 'numeric' };
+    const date = new Date((post.details.date).replace(/-/g, '\/').replace(/T.+/, '')).toLocaleDateString("en-US", dateFormatOptions);
 </script>
 
 <main>
     <Breadcrumbs {path} />
     <h1>{post.details.title}</h1>
-    <h4>By {post.details.author + " |  " + post.details.date}</h4>
+    <h4>By {post.details.author + " |  " + date}</h4>
     {#if post.details.thumbnail}
-        <img src={"/img/" + post.details.thumbnail} alt={"Thumbnail for " + post.details.title}>
+        <img src={"/thumbnails/" + post.details.thumbnail} alt={"Thumbnail for " + post.details.title}>
     {/if}
     <article>
         {@html post.html}

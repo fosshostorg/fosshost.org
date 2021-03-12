@@ -3,7 +3,7 @@ title: Fosshost markdown guide!
 author: nqdrt1
 date: 2021-03-02
 summary: Reference for writers and myself.
-thumbnail: example_thumbnail.jpg
+thumbnail: markdown-guide.jpg
 ---
 
 *Italic*
