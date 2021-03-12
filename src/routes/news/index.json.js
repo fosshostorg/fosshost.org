@@ -11,7 +11,6 @@ export async function get(req, res, next) {
     const sorted = posts.map(filename => {
         const content = getPost(filename);
         const parsed = matter(content);
-        console.log(parsed.data.draft);
         return {
           details: {...parsed.data, slug: filename.replace('.md', '')},
           body: parsed.content,
@@ -31,8 +30,6 @@ export async function get(req, res, next) {
           return 0;
         }
     });
-
-    console.log(sorted.map(p => p.details.date));
 
     if (sorted !== null) {
 		res.setHeader('Content-Type', 'application/json');
