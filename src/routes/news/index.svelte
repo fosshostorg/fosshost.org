@@ -54,6 +54,6 @@
         max-width: var(--content-max-width);
         margin: 0 auto;
         flex-wrap: wrap;
-        justify-content: center;
+        /* justify-content: center; */
     }
 </style>

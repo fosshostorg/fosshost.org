@@ -11,13 +11,18 @@ export async function get(req, res, next) {
     const sorted = posts.map(filename => {
         const content = getPost(filename);
         const parsed = matter(content);
+        console.log(parsed.data.draft);
         return {
-            details: {...parsed.data, slug: filename.replace('.md', '')},
-            body: parsed.content,
-        }
+          details: {...parsed.data, slug: filename.replace('.md', '')},
+          body: parsed.content,
+        } 
+    }).filter(p => {
+      if (!Object.keys(p.details).includes('draft')) {
+        return p
+      }
     }).sort((a, b) => {
-        let a_date = new Date(a.date);
-        let b_date = new Date(b.date);
+        let a_date = new Date(a.details.date);
+        let b_date = new Date(b.details.date);
         if (a_date.getTime() > b_date.getTime()) {
           return -1;
         } else if (a_date.getTime() < b_date.getTime()) {
@@ -26,6 +31,8 @@ export async function get(req, res, next) {
           return 0;
         }
     });
+
+    console.log(sorted.map(p => p.details.date));
 
     if (sorted !== null) {
 		res.setHeader('Content-Type', 'application/json');

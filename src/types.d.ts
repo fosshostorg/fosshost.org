@@ -14,6 +14,7 @@ type Post = {
         author: string,
         summary?: string,
         slug: string,
+        draft?: boolean,
     },
     body: string,
     html?: string
