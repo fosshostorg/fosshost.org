@@ -22,7 +22,7 @@
 
 <style>
     a.card {
-        display: flex;
+        display: inline-flex;
         flex-basis: 380px;
         flex-grow: 1;
         text-decoration: none;
@@ -41,6 +41,7 @@
         padding: 4px 0;
         transition: 0.5s;
         position: relative;
+        width: 100%;
     }
 
     a.read-more::after {
@@ -58,10 +59,13 @@
 
     span.link {
         position: relative;
-        z-index: 2;
+        display: flex;
+        flex-grow: 1;
+        align-items: flex-end;
     }
 
     div {
+        position: relative;
         display: flex;
         flex-direction: column;
         width: 100%;
@@ -103,6 +107,8 @@
     }
 
     divider {
+        position: absolute;
+        bottom: 0;
         width: 100%;
         height: 1px;
         background-color: #e5e5e5;
