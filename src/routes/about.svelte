@@ -1,7 +1,3 @@
-<svelte:head>
-	<title>About</title>
-</svelte:head>
-
 <script>
 	import Header from '../components/about/Header.svelte'
 	import Mission from '../components/about/Mission.svelte';
@@ -9,6 +5,10 @@
 	import Provider from '../components/about/Provider.svelte';
 
 </script>
+
+<svelte:head>
+	<title>About</title>
+</svelte:head>
 
 <main>
     <Header />

@@ -24,6 +24,10 @@
     const date = new Date((post.details.date).replace(/-/g, '\/').replace(/T.+/, '')).toLocaleDateString("en-US", dateFormatOptions);
 </script>
 
+<svelte:head>
+    <title>{post.details.title}</title>
+</svelte:head>
+
 <main>
     <Breadcrumbs {path} />
     <h1>{post.details.title}</h1>
@@ -37,6 +41,9 @@
         {JSON.stringify(post.details)}
         {/if}
     </article>
+    <div>
+        <!-- TODO: Add the more links area... harder than it looks -->
+    </div>
 </main>
 
 <!-- TODO: stylize code inline/blocks: not sure exactly how this should look. -->
@@ -55,7 +62,7 @@
 
     @media (max-width: 1280px) {
         main {
-            margin: .5rem auto;
+            margin: .5rem auto 3rem;
         }
     }
 

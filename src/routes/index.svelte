@@ -1,5 +1,5 @@
 <svelte:head>
-	<title>About</title>
+	<title>Fosshost</title>
 </svelte:head>
 
 <script>

@@ -12,14 +12,18 @@
     export let posts: Post[];
 </script>
 
+<svelte:head>
+    <title>News</title>
+</svelte:head>
+
 <main>
     <div>
         <h1>News & Updates</h1>
         <p>Stay up to date with the latest updates, announcements and more from Fosshost.</p>
     </div>
     <span>
-        {#each posts as post}
-            <PostCard {post}/>
+        {#each posts as post, index}
+            <PostCard {post} {index}/>
         {/each}
     </span>
 </main>
