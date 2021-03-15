@@ -31,7 +31,7 @@
 
 </script>
 
-<svelte:component this={components[currentPage]} />
+<svelte:component this={components[currentPage]} on:forward={() => {currentPage += 1}} {data}/>
 
 <style>
 
