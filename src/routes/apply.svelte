@@ -3,9 +3,9 @@
 
 </script>
 
-<main>
-    <ApplicationForm />
-</main>
+
+<ApplicationForm />
+
 
 <style>
 
