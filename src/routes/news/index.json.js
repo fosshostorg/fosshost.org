@@ -8,7 +8,7 @@ const getPost = slug =>
 
 export async function get(req, res, next) {
     const posts = fs.readdirSync(path.resolve("src/posts"));
-    const sorted = posts.map(filename => {
+    const sorted = posts.map((filename) => {
         const content = getPost(filename);
         const parsed = matter(content);
         return {

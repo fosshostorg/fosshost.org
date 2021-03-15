@@ -1,8 +1,12 @@
 <script>
     import DonateCard from '../components/donate/DonateCard.svelte';
-import OtherSupport from '../components/donate/OtherSupport.svelte';
+    import OtherSupport from '../components/donate/OtherSupport.svelte';
     import Header from '../components/Header.svelte';
 </script>
+
+<svelte:head>
+    <title>Donate</title>
+</svelte:head>
 
 <main>
     <Header
@@ -13,8 +17,3 @@ import OtherSupport from '../components/donate/OtherSupport.svelte';
     <DonateCard />
     <OtherSupport />
 </main>
-
-
-<style>
-
-</style>

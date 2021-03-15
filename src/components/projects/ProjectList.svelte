@@ -1,23 +1,16 @@
 <script>
     import { Projects } from "../../data/projects";
-
+    import { fade } from "svelte/transition"
     
 </script>
 
 <!-- TODO: Decide whether or not to move some of this to a place in the projects page. -->
 
 <main>
-    {#each Projects as project}
-        <a target="_blank" href={project.link}><img src={project.img} alt={project.name} /></a>
-    {/each}
-    {#each Projects as project}
-        <a target="_blank" href={project.link}><img src={project.img} alt={project.name} /></a>
-    {/each}
-    {#each Projects as project}
-        <a target="_blank" href={project.link}><img src={project.img} alt={project.name} /></a>
-    {/each}
-    {#each Projects as project}
-        <a target="_blank" href={project.link}><img src={project.img} alt={project.name} /></a>
+    {#each [Projects, Projects, Projects, Projects, Projects] as list}
+        {#each list as project, i}
+            <a target="_blank" href={project.link} in:fade={{delay: 50*i, duration: 200}}><img src={project.img} alt={project.name} /></a>
+        {/each}
     {/each}
 </main>
 

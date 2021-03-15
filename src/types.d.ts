@@ -19,3 +19,23 @@ type Post = {
     body: string,
     html?: string
 }
+
+type FormResponse = {
+    security: {
+        hasAcceptedCriteria: boolean,
+        criteriaQuestionResponse: string,
+    },
+    personal: {
+        name: string,
+        email: string,
+    },
+    project: {
+        name: string,
+        description: string,
+        role: string,
+        site?: string,
+    },
+    technical: {
+        service: "X86 VPS" | "Mirrors-as-a-service" | "AArch64 VPS" | "Email and Webhosting" | "DNS" | "Audio and Video Conferencing",
+    }
+}

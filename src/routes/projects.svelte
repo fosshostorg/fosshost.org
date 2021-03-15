@@ -1,11 +1,11 @@
-<svelte:head>
-	<title>About</title>
-</svelte:head>
-
 <script>
     import Header from "../components/Header.svelte";
     import ProjectList from "../components/projects/ProjectList.svelte";
 </script>
+
+<svelte:head>
+	<title>Projects</title>
+</svelte:head>
 
 <main>
     <Header 

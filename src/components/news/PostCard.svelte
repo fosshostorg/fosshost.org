@@ -1,13 +1,15 @@
 <script lang="ts">
-    export let post: Post;
     import marked from 'marked';
+    import { fade } from 'svelte/transition';
+
+    export let post: Post;
+    export let index: number;
 
     const dateFormatOptions: Intl.DateTimeFormatOptions = { year: 'numeric', month: 'short', day: 'numeric' };
     const date = new Date((post.details.date).replace(/-/g, '\/').replace(/T.+/, '')).toLocaleDateString("en-US", dateFormatOptions);
-    console.log(post.details.date)
 </script>
 
-<a href={"/news/" + post.details.slug} class="card">
+<a href={"/news/" + post.details.slug} class="card" in:fade={{delay: 50 * index, duration: 200}}>
     <div>
         <span class="date">{date}</span>
         <h2>{post.details.title}</h2>
