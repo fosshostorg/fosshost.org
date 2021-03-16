@@ -4,6 +4,7 @@
     import FormPageProject from './FormPageProject.svelte';
     import FormPageTechnical from './FormPageTechnical.svelte';
     import Security from './Security.svelte';
+import Stepper from './Stepper.svelte';
     
     let data: FormResponse = {
         security: {
@@ -27,11 +28,12 @@
     console.log(data);
 
     let components: any[] = [Eligibility, FormPagePersonal, FormPageProject, FormPageTechnical, Security];
-    let currentPage: number = 0;
+    let currentPage: number = 1;
 
 </script>
 
-<svelte:component this={components[currentPage]} on:forward={() => {currentPage += 1}} {data}/>
+<Stepper current={currentPage-1} />
+<svelte:component this={components[currentPage]} on:forward={() => {currentPage += 1}} {data} />
 
 <style>
 
