@@ -26,13 +26,14 @@
         line-height: 24px;
     }
 
-    input {
+    input, textarea {
         font-size: 18px;
         line-height: 24px;
         padding: 0.5rem;
         border: 2px solid var(--fosshost-light-grey);
         border-radius: 4px;
         margin-top: 0.25rem;
+        margin-bottom: 1rem;
     }
 
 </style>

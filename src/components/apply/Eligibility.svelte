@@ -2,11 +2,11 @@
     import { createEventDispatcher } from 'svelte';
     import { fade } from 'svelte/transition';
     export let data: FormResponse;
+    export let currentPage: number;
 
-    const dispatch = createEventDispatcher();
     const handleClick = (): void => {
         data.security.hasAcceptedCriteria = true;
-        dispatch('forward');
+        currentPage += 1;
     }
 </script>
 
