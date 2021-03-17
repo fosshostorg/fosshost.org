@@ -3,12 +3,18 @@
     export let label: string = "Label";
     export let placeholder: string = "Enter your text...";
     export let name: string = "input";
+    export let textarea: boolean = false;
 
 </script>
 
+<!-- svelte-ignore a11y-label-has-associated-control -->
 <label>
     {label}
+    {#if textarea}
+    <textarea bind:value {name} {placeholder} {...$$restProps} />
+    {:else}
     <input bind:value {name} {placeholder} {...$$restProps} />
+    {/if}
 </label>
 
 <style>

@@ -6,7 +6,7 @@
 <main>
     <h1>Personal Information</h1>
     <Input label="Full name" type="text" placeholder="What's your name" bind:value={data.personal.name} />
-    <Input label="Email" type="email" placeholder="What's your name" bind:value={data.personal.email} />
+    <Input label="Email" type="email" placeholder="youremail@company.com" bind:value={data.personal.email} />
 </main>
 
 
