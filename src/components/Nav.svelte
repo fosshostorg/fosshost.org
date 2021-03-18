@@ -168,6 +168,7 @@
 		height: 100%;
 		display: flex;
 		align-items: center;
+		font-family: 'Cabin', sans-serif;
 	}
 
 	a.apply {
