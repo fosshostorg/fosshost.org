@@ -22,13 +22,13 @@
             site: "",
         },
         technical: {
-            service: null,
+            services: [],
         }
     }
     console.log(data);
 
     let components: any[] = [Eligibility, FormPagePersonal, FormPageProject, FormPageTechnical, Security];
-    let currentPage: number = 0;
+    let currentPage: number = 3;
 
 </script>
 

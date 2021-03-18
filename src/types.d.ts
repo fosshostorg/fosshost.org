@@ -20,6 +20,8 @@ type Post = {
     html?: string
 }
 
+type Service = "X86 VPS" | "Mirrors-as-a-service" | "AArch64 VPS" | "Email and Webhosting" | "DNS" | "Audio and Video Conferencing";
+
 type FormResponse = {
     security: {
         hasAcceptedCriteria: boolean,
@@ -36,6 +38,6 @@ type FormResponse = {
         site?: string,
     },
     technical: {
-        service: "X86 VPS" | "Mirrors-as-a-service" | "AArch64 VPS" | "Email and Webhosting" | "DNS" | "Audio and Video Conferencing",
+        services: Service[],
     }
 }
