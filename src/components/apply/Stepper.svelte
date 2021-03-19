@@ -1,21 +1,24 @@
 <script lang="ts">
     export let current: number = 0;
-
-    let steps = [
-        "Personal Information",
-        "Project Information",
-        "Technical Specifications",
-        "Security Question"
-    ]
+    export let pages: any[] = [];
+    const handleClick = (index: number) => {
+        console.log(index);
+        for (let i = current; i < pages.length; i++) {
+            if (!pages[i].completed) {
+                return;
+            }
+        }
+        current = index+1;
+    }
 
 </script>
 
 <main>
-    {#each steps as step, i}
-    <div>
-        <p class:active={current >= i}>{step}</p>
+    {#each pages as step, i}
+    <div on:click={(e) => handleClick(i)}>
+        <p class:active={current >= i+1}>{step.title}</p>
         <span class="bg"></span>
-        <span class="bar" style={"width:" + (current >= i ? "100%" : "0%")}></span>
+        <span class="bar" style={"width:" + (current >= i+1 ? "100%" : "0%")}></span>
     </div>
     {/each}
 </main>
@@ -33,6 +36,7 @@
         flex-direction: column;
         flex-grow: 1;
         margin-right: 6px;
+        cursor: pointer;
     }
 
     span.bg {

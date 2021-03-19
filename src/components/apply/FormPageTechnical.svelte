@@ -1,4 +1,5 @@
 <script lang="ts">
+    import { fade } from 'svelte/transition';
     import CheckboxGroup from './CheckboxGroup.svelte';
     import Input from './Input.svelte';
     export let data: FormResponse;
@@ -15,10 +16,10 @@
 
 </script>
 
-<main>
+<main in:fade={{delay: 0, duration: 400}}>
     <h1>Technical Information</h1>
     <p>We’d like to know more about the project you are working on. Please specify the necessary details below.</p>
-    <CheckboxGroup {options} bind:selected={data.technical.services} />
+    <CheckboxGroup {options} bind:selected={data.technical.services} label="Select the service(s) you are interested in" />
     <div class="buttons">
         <button class="back" on:click={() => {currentPage -= 1}}>Back</button>
         <button class="submit" on:click={() => {currentPage += 1}}>Next</button>
