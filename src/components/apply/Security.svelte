@@ -16,7 +16,7 @@
     <Input label="Eligibility Criteria Question" placeholder="Enter the necessary response" bind:value={data.security.criteriaQuestionResponse} />
     <div class="buttons">
         <button class="back" on:click={() => {currentPage -= 1}}>Back</button>
-        <button class="submit" on:click={() => {currentPage += 1}}>Submit</button>
+        <button class="submit">Submit</button>
     </div>
 </main>
 
