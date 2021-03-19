@@ -36,4 +36,8 @@
         margin-bottom: 1rem;
     }
 
+    textarea {
+        max-width: calc(100% - 4px - 1rem);
+    }
+
 </style>
