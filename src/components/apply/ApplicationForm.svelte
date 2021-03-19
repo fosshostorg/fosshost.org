@@ -28,20 +28,37 @@
     console.log(data);
 
     let components: any[] = [Eligibility, FormPagePersonal, FormPageProject, FormPageTechnical, Security];
-    let currentPage: number = 3;
-
+    let steps = [
+        "Personal Information",
+        "Project Information",
+        "Technical Specifications",
+        "Security Question"
+    ]
+    let pages: {title: string, completed: boolean}[] = []; 
+    components.forEach((c, i) => {
+        if (i == 0) {
+            return;
+        }
+        pages.push({title: steps[i-1], completed: false});
+    })
+    let currentPage: number = 0;
 </script>
 
-<Stepper current={currentPage-1} />
+<Stepper bind:current={currentPage} bind:pages={pages} />
 <main>
     <svelte:component this={components[currentPage]} bind:currentPage {data} />
+    {#if currentPage !== 0}
+    <a class="fosshost-link" href="/" on:click={() => {data = null;}}>Cancel my application</a>
+    {/if}
 </main>
 
 <style>
     main {
-        width: auto;
+        width: 100%;
         max-width: 600px;
         margin: 0 auto;
+        display: flex;
+        flex-direction: column;
     }
 
     main :global(h1) {
@@ -90,6 +107,10 @@
 
     main :global(button.back ~ button) {
         margin-left: 1rem;
+    }
+
+    a {
+        margin: 1.5rem auto 0;
     }
 </style>
 

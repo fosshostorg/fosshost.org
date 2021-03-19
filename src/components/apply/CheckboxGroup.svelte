@@ -1,8 +1,10 @@
 <script lang="ts">
     export let options: any[];
     export let selected: any[];
+    export let label: string;
 </script>
 
+<span>{label}</span>
 <div>
 {#each options as option}
     <label class:checked={selected.includes(option)}>
@@ -18,6 +20,15 @@
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
+        justify-content: flex-start;
+        max-height: 10rem;
+        margin-top: 1rem;
+    }
+
+    span {
+        color: var(--fosshost-black);
+        font-size: 18px;
+        line-height: 24px;
     }
 
     input {
@@ -33,7 +44,7 @@
         font-size: 18px;
         line-height: 24px;
         color: var(--fosshost-grey);
-        margin: 0 1rem 1rem;
+        margin: 0 1rem 1rem 0;
         cursor: pointer;
     }
 
