@@ -3,13 +3,15 @@
   "description": "website for fosshost.org",
   "version": "0.0.1",
   "scripts": {
-    "dev": "sapper dev",
+    "dev": "dotenv sapper dev",
     "build": "sapper build --legacy",
     "export": "sapper export --legacy",
     "start": "node __sapper__/build",
     "validate": "svelte-check --ignore src/node_modules/@sapper"
   },
   "dependencies": {
+    "@atlaskit/adf-utils": "^11.8.1",
+    "body-parser": "^1.19.0",
     "compression": "^1.7.1",
     "gray-matter": "^4.0.2",
     "marked": "^2.0.1",
