@@ -3,6 +3,15 @@
     import Input from './Input.svelte';
     export let data: FormResponse;
     export let currentPage: number;
+
+    const handleSubmit = () => {
+        fetch('http://localhost:3000/apply', {
+            method: 'POST',
+            headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify(data)
+        })
+    }
+
 </script>
 
 <main in:fade={{delay: 0, duration: 400}}>
@@ -16,7 +25,7 @@
     <Input label="Eligibility Criteria Question" placeholder="Enter the necessary response" bind:value={data.security.criteriaQuestionResponse} />
     <div class="buttons">
         <button class="back" on:click={() => {currentPage -= 1}}>Back</button>
-        <button class="submit">Submit</button>
+        <button class="submit" on:click={handleSubmit}>Submit</button>
     </div>
 </main>
 

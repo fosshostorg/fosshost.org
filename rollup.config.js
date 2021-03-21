@@ -89,7 +89,8 @@ export default {
 		plugins: [
 			replace({
 				'process.browser': false,
-				'process.env.NODE_ENV': JSON.stringify(mode)
+				'process.env.NODE_ENV': JSON.stringify(mode),
+				'process.env.BASE64_API_KEY': process.env.BASE64_API_KEY
 			}),
 			svelte({
 				preprocess: sveltePreprocess(),

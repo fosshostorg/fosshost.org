@@ -3,7 +3,7 @@
     export let pages: any[] = [];
     const handleClick = (index: number) => {
         console.log(index);
-        for (let i = current; i < pages.length; i++) {
+        for (let i = current+1; i < index; i++) {
             if (!pages[i].completed) {
                 return;
             }
