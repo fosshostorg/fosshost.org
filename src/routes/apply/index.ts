@@ -1,5 +1,5 @@
 const axios = require('axios');
-import { doc, p, ul, li, b, u, br} from '@atlaskit/adf-utils/builders'
+import { doc, p, ul, li, b, u} from '@atlaskit/adf-utils/builders'
 
 function format(body: FormResponse): any {
 
