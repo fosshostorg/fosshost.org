@@ -6,7 +6,8 @@
     import Security from './Security.svelte';
     import Stepper from './Stepper.svelte';
     import * as yup from 'yup';
-    
+    import { onMount } from 'svelte';
+
     let data: FormResponse = {
         security: {
             hasAcceptedCriteria: false,
@@ -26,7 +27,7 @@
             services: [],
         }
     }
-    console.log(data);
+    let currentPage: number = 0;
 
     let components: any[] = [Eligibility, FormPagePersonal, FormPageProject, FormPageTechnical, Security];
     let steps = [
@@ -35,6 +36,7 @@
         "Technical Specifications",
         "Security Question"
     ]
+
     let pages: {title: string, completed: boolean}[] = []; 
     components.forEach((c, i) => {
         if (i == 0) {
@@ -42,34 +44,36 @@
         }
         pages.push({title: steps[i-1], completed: false});
     })
-    let currentPage: number = 0;
-
-
+    
     const validate = (validator: any, field: string, value: any, errors: any): any => {
-        console.log(field, value);
         try {
             validator.validateSyncAt(field, value)
             errors[field] = null;
             return errors;
         } catch (err) {
             errors[field] = err.message;
-            console.log(err.message);
             return errors;
         }
     }
 
-    const pageValidate = (validator: any): void => {
-        validator
-            .validate(data.personal, { abortEarly: false })
-            .then(() => {
-                currentPage += 1;
-            })
-            .catch(errs => {
-                console.log(errs.inner)
-                // will be caught already
-            })
+    const pageValidate = (validator: any, value: any, errors: any): any => {
+        try {
+            validator.validateSync(value, { abortEarly: false })
+            window.sessionStorage.setItem('form_data', JSON.stringify(data))
+            currentPage += 1;
+        } catch (err) {
+            for (const error of err.inner) {
+                errors[error.path] = error.message;
+            }
+            return errors;
+        }
     }
 
+    onMount(() => {
+        if (window.sessionStorage.getItem('form_data')) {
+            data = JSON.parse(window.sessionStorage.getItem('form_data'))
+        }
+    })
 
 </script>
 

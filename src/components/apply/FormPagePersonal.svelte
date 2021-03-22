@@ -4,7 +4,8 @@
     import * as yup from 'yup';
 
     export let data: FormResponse;
-    export let currentPage: number;
+    export let validate: any;
+    export let pageValidate: any;
 
     const validator = yup.object().shape({
         name: yup.string().required(),
@@ -16,11 +17,6 @@
         email: null,
     }
 
-    validator.validateSyncAt
-
-    export let validate: any;
-    export let pageValidate: any;
-
 </script>
 
 <main in:fade={{delay: 0, duration: 400}}>
@@ -29,7 +25,7 @@
     <Input on:blur={() => {errors = validate(validator, 'name', data.personal, errors)}} error={errors.name} label="Full name" type="text" placeholder="What's your name" bind:value={data.personal.name} />
     <Input on:blur={() => {errors = validate(validator, 'email', data.personal, errors)}} error={errors.email} label="Email" type="text" placeholder="you@company.com" bind:value={data.personal.email} />
     <div class="buttons">
-        <button class="submit" on:click={() => {pageValidate(validator)}}>Next</button>
+        <button class="submit" on:click={() => {errors = pageValidate(validator, data.personal, errors)}}>Next</button>
     </div>
 </main>
 
