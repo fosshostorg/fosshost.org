@@ -16,7 +16,8 @@
     "gray-matter": "^4.0.2",
     "marked": "^2.0.1",
     "polka": "next",
-    "sirv": "^1.0.0"
+    "sirv": "^1.0.0",
+    "yup": "^0.32.9"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0",

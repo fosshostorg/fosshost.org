@@ -5,6 +5,7 @@
     import FormPageTechnical from './FormPageTechnical.svelte';
     import Security from './Security.svelte';
     import Stepper from './Stepper.svelte';
+    import * as yup from 'yup';
     
     let data: FormResponse = {
         security: {
@@ -42,11 +43,39 @@
         pages.push({title: steps[i-1], completed: false});
     })
     let currentPage: number = 0;
+
+
+    const validate = (validator: any, field: string, value: any, errors: any): any => {
+        console.log(field, value);
+        try {
+            validator.validateSyncAt(field, value)
+            errors[field] = null;
+            return errors;
+        } catch (err) {
+            errors[field] = err.message;
+            console.log(err.message);
+            return errors;
+        }
+    }
+
+    const pageValidate = (validator: any): void => {
+        validator
+            .validate(data.personal, { abortEarly: false })
+            .then(() => {
+                currentPage += 1;
+            })
+            .catch(errs => {
+                console.log(errs.inner)
+                // will be caught already
+            })
+    }
+
+
 </script>
 
 <Stepper bind:current={currentPage} bind:pages={pages} />
 <main>
-    <svelte:component this={components[currentPage]} bind:currentPage {data} />
+    <svelte:component this={components[currentPage]} bind:currentPage {data} {pageValidate} {validate} />
     {#if currentPage !== 0}
     <a class="fosshost-link" href="/" on:click={() => {data = null;}}>Cancel my application</a>
     {/if}

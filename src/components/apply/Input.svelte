@@ -4,6 +4,7 @@
     export let placeholder: string = "Enter your text...";
     export let name: string = "input";
     export let textarea: boolean = false;
+    export let error: string = null;
 
 </script>
 
@@ -11,10 +12,13 @@
 <label>
     {label}
     {#if textarea}
-    <textarea bind:value {name} {placeholder} {...$$restProps} />
+    <textarea class:error on:blur bind:value on:change {name} {placeholder} {...$$restProps} />
     {:else}
-    <input bind:value {name} {placeholder} {...$$restProps} />
+    <input class:error on:blur bind:value on:change {name} {placeholder} {...$$restProps} />
     {/if}
+    <span>
+        {error ? error : ''}
+    </span>
 </label>
 
 <style>
@@ -24,6 +28,7 @@
         color: var(--fosshost-black);
         font-size: 18px;
         line-height: 24px;
+        margin-bottom: .25rem;
     }
 
     input, textarea {
@@ -33,11 +38,21 @@
         border: 2px solid var(--fosshost-light-grey);
         border-radius: 4px;
         margin-top: 0.25rem;
-        margin-bottom: 1rem;
     }
 
     textarea {
         max-width: calc(100% - 4px - 1rem);
+    }
+
+    span {
+        margin: 0;
+        height: 24px;
+        font-size: 14px;
+        color: red;
+    }
+
+    .error {
+        border: 2px solid red;
     }
 
 </style>
