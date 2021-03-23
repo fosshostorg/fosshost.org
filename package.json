@@ -13,6 +13,8 @@
     "@atlaskit/adf-utils": "^11.8.1",
     "body-parser": "^1.19.0",
     "compression": "^1.7.1",
+    "express": "^4.17.1",
+    "express-rate-limit": "^5.2.6",
     "gray-matter": "^4.0.2",
     "marked": "^2.0.1",
     "polka": "next",

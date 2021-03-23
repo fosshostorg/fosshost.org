@@ -81,7 +81,7 @@
 <main>
     <svelte:component this={components[currentPage]} bind:currentPage {data} {pageValidate} {validate} />
     {#if currentPage !== 0}
-    <a class="fosshost-link" href="/" on:click={() => {data = null;}}>Cancel my application</a>
+    <a class="fosshost-link" href="/" on:click={() => {window.sessionStorage.removeItem('form_data');}}>Cancel my application</a>
     {/if}
 </main>
 

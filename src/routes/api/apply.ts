@@ -64,7 +64,7 @@ function format(body: FormResponse): any {
 
 export async function post(req: any, res: any, next: () => void) {
     console.log(req.body)
-    console.log(JSON.stringify(req.body))
+    // console.log(JSON.stringify(req.body))
     
     // axios
     //     .post('https://seth-test.atlassian.net/rest/api/3/issue', {

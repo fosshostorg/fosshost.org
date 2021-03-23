@@ -17,7 +17,7 @@
         <a href="/eligibility/" class="fosshost-link"><b>Eligibility Criteria</b></a>.
     </p>
     <button class="accept" on:click={handleClick}>I accept</button>
-    <button class="cancel">I don't accept</button>
+    <button class="cancel" on:click={() => {window.location.href = "/"}}>I don't accept</button>
 </main>
 
 <style>
