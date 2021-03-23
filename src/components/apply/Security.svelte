@@ -14,13 +14,35 @@
         try {
             validator.validateSyncAt('criteriaQuestionResponse', data.security)
         
-            fetch('http://localhost:3000/apply', {
+            fetch('http://localhost:3000/api/apply', {
                 method: 'POST',
                 headers: {'Content-Type': 'application/json'},
                 body: JSON.stringify(data)
             })
+            .then((res) => {
+                if (res.ok) {
+                    // we would forward to success page
+                } else {
+                    if (res.status === 429) {
+                        res.json()
+                        .then(time => {
+                            const resetAt = new Date(time);
+                            let tryAgain = resetAt.getTime() - new Date().getTime();
+                            if (tryAgain < 0) {
+                                tryAgain = 0;
+                            }
+                            tryAgain = Math.round(tryAgain / 60000)
+                            error = `Too many tries. Try again in ${tryAgain} minutes.`
+                        })
+                    }
+                }
+            })
+            .catch(err => {
+                console.log(err);
+            })
 
         } catch (err) {
+            console.log(err);
             error = err.message;
         }
     }
