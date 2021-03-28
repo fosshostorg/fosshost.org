@@ -28,7 +28,7 @@
             services: [],
         }
     }
-    let currentPage: number = 5;
+    let currentPage: number = 0;
 
     let components: any[] = [Eligibility, FormPagePersonal, FormPageProject, FormPageTechnical, Security, Complete];
     let steps = [
@@ -40,7 +40,7 @@
 
     let pages: {title: string, completed: boolean}[] = []; 
     components.forEach((c, i) => {
-        if (i == 0) {
+        if (i == 0 || i == components.length-1) {
             return;
         }
         pages.push({title: steps[i-1], completed: false});

@@ -5,7 +5,7 @@
 
 <main>
     <div>
-        <h1>Other ways to help and support us</h1>
+        <h1>{title}</h1>
         <p>
             <slot></slot>
         </p>

@@ -15,8 +15,8 @@
         src="/img/illustration0.png"
     />
     <DonateCard />
-    <OtherSupport src="/img/illustration3.svg">
-        You could buy us a <a href="#" class="fosshost-link">coffee!</a>
+    <OtherSupport src="/img/illustration3.svg" title="Other ways to help and support us">
+        You could buy us a <a href="https://ko-fi.com/fosshost" target="_blank" class="fosshost-link">coffee!</a>
             <br><br>
             We are also always looking for volunteers and we accept hardware or services, please email admin (at) fosshost.org
     </OtherSupport>
