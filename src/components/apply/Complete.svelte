@@ -7,7 +7,7 @@
 </script>
 
 <main in:fade={{delay: 0, duration: 400}}>
-  <!-- <img src="/img/checkmark.svg" alt="checkmark" /> -->
+  <img src="/img/checkmark.svg" alt="checkmark" />
   <h1>Your application has been successfully submitted!</h1>
   <p>
       You will be receiving an email regarding the details of your application shortly. Thank you!
