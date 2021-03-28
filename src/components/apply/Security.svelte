@@ -21,6 +21,7 @@
             })
             .then((res) => {
                 if (res.ok) {
+                    window.sessionStorage.removeItem('form_data');
                     currentPage++;
                 } else {
                     if (res.status === 429) {
