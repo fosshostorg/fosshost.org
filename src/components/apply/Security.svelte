@@ -21,7 +21,7 @@
             })
             .then((res) => {
                 if (res.ok) {
-                    // we would forward to success page
+                    currentPage++;
                 } else {
                     if (res.status === 429) {
                         res.json()

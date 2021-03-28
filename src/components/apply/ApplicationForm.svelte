@@ -4,6 +4,7 @@
     import FormPageProject from './FormPageProject.svelte';
     import FormPageTechnical from './FormPageTechnical.svelte';
     import Security from './Security.svelte';
+    import Complete from './Complete.svelte';
     import Stepper from './Stepper.svelte';
     import * as yup from 'yup';
     import { onMount } from 'svelte';
@@ -27,9 +28,9 @@
             services: [],
         }
     }
-    let currentPage: number = 0;
+    let currentPage: number = 5;
 
-    let components: any[] = [Eligibility, FormPagePersonal, FormPageProject, FormPageTechnical, Security];
+    let components: any[] = [Eligibility, FormPagePersonal, FormPageProject, FormPageTechnical, Security, Complete];
     let steps = [
         "Personal Information",
         "Project Information",
@@ -77,10 +78,12 @@
 
 </script>
 
-<Stepper bind:current={currentPage} bind:pages={pages} />
+{#if currentPage < components.length-1} 
+    <Stepper bind:current={currentPage} bind:pages={pages} />
+{/if}
 <main>
     <svelte:component this={components[currentPage]} bind:currentPage {data} {pageValidate} {validate} />
-    {#if currentPage !== 0}
+    {#if currentPage !== 0 && currentPage < components.length-1}
     <a class="fosshost-link" href="/" on:click={() => {window.sessionStorage.removeItem('form_data');}}>Cancel my application</a>
     {/if}
 </main>
