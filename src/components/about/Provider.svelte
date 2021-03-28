@@ -1,9 +1,5 @@
 <script>
-
     let open = false;
-
-
-
 </script>
 
 <div>
