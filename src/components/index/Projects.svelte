@@ -9,7 +9,7 @@
         <a class="img" href={project.link}><img src={project.img} alt={project.name}/></a>
     {/each}
     </div>
-    <a class="more" href="/projects" >See more projects<span class="material-icons">arrow_forward</span></a>
+    <a class="more fosshost-link" href="/projects" >See more projects<span class="material-icons">arrow_forward</span></a>
 </main>
 
 <style>

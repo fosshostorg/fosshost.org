@@ -13,7 +13,7 @@
     </div>
     <div>
         <!-- <Image lazy={false} placeholderClass="img" wrapperClass="img-wrapper" class="img2" src="/img/HERO IMAGE.png" alt="Fosshost Drawing" /> -->   
-        <img src="/img/HERO IMAGE.png" alt="Fosshost Drawing" />
+        <img src="/img/HERO_IMAGE.png" alt="Fosshost Drawing" />
     </div>
 </main>
 

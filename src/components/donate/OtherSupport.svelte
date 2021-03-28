@@ -1,6 +1,5 @@
 <script>
     export let title;
-    export let subtitle;
     export let src;
 </script>
 
@@ -8,9 +7,8 @@
     <div>
         <h1>Other ways to help and support us</h1>
         <p>
-            You could buy us a <a href="#">coffee!</a>
-            <br><br>
-            We are also always looking for volunteers and we accept hardware or services, please email admin (at) fosshost.org</p>
+            <slot></slot>
+        </p>
     </div>
     <div>
         <img src={src} alt="Support illustration" />
@@ -72,33 +70,7 @@
 
     img {
         align-self: center;
-        width: 580px;
+        /* width: 580px; */
     }
 
-    a {
-        text-decoration: none;
-        color: var(--fosshost-orange);
-        position: relative;
-        display: inline;
-        padding: -2px 0;
-        transition: 0.5s;
-    }
-
-    a::after {
-        position: absolute;
-        content: "";
-        width: 100%;
-        height: 3px;
-        top: 100%;
-        left: 0;
-        background: var(--fosshost-orange);
-        transition: transform 0.5s;
-        transform: scaleX(0);
-        transform-origin: right;
-    }
-
-    a:hover::after {
-        transform: scaleX(1);
-        transform-origin: left;
-    }
 </style>
