@@ -6,6 +6,13 @@ type Project = {
     link: string;
 }
 
+type Provider = {
+    name: string;
+    location: string;
+    details: string[];
+    network: string;
+}
+
 type Post = {
     details: {
         title: string,
