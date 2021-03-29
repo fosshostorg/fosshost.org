@@ -25,7 +25,15 @@
 </script>
 
 <svelte:head>
-    <title>{post.details.title}</title>
+    <title>Fosshost - {post.details.title}</title>
+    <meta property="description" content={post.details.summary} />
+    <meta property="og:title" content={post.details.title} />
+    <meta property="og:description" content={post.details.summary} />
+    <meta property="og:type" content="article" />
+    <meta property="og:article:published_time" content={post.details.date} />
+    <meta property="og:article:author" content={post.details.author} />
+    <meta property="og:url" content="https://fosshost.org/news/{slug}" />
+    <meta property="og:image" content={post.details.thumbnail ? "https://fosshost.org/thumbnails/" + post.details.thumbnail : "https://fosshost.org/img/HERO_IMAGE.png"} />
 </svelte:head>
 
 <main>

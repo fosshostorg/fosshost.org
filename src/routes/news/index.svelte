@@ -13,7 +13,7 @@
 </script>
 
 <svelte:head>
-    <title>News</title>
+    <title>Fosshost - News</title>
 </svelte:head>
 
 <main>

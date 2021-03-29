@@ -1,5 +1,11 @@
 <svelte:head>
-	<title>Fosshost</title>
+	<title>Fosshost - Free and open source hosting.</title>
+	<meta name="description" content="At Fosshost we provide free hosting and related services to hundreds of open source projects. Apply today!">
+	<meta property="og:title" content="Fosshost" />
+	<meta property="og:description" content="At Fosshost we provide free hosting and related services to hundreds of open source projects. Apply today!" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://fosshost.org" />
+	<meta property="og:image" content="https://fosshost.org/img/HERO_IMAGE.png" />
 </svelte:head>
 
 <script>

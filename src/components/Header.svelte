@@ -10,7 +10,7 @@
         <p>{subtitle}</p>
     </div>
     <div>
-        <img src={src} alt="Fosshost Drawing" />
+        <img src={src} alt="Fosshost Community Illustration" />
     </div>
 </main>
 
