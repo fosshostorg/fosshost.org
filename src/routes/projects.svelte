@@ -4,7 +4,7 @@
 </script>
 
 <svelte:head>
-	<title>Projects</title>
+	<title>Fosshost - Projects</title>
 </svelte:head>
 
 <main>

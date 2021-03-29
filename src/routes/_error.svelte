@@ -6,7 +6,7 @@
 </script>
 
 <svelte:head>
-	<title>{status}- Fosshsot</title>
+	<title>Fosshost - {status}</title>
 </svelte:head>
 
 {#if status == 404}

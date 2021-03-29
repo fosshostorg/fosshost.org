@@ -5,7 +5,7 @@
 </script>
 
 <svelte:head>
-    <title>Donate</title>
+    <title>Fosshost - Donate</title>
 </svelte:head>
 
 <main>
