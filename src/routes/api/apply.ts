@@ -1,4 +1,5 @@
 const axios = require('axios');
+const nodemailer = require('nodemailer');
 import { doc, p, ul, li, b, u} from '@atlaskit/adf-utils/builders'
 
 function format(body: FormResponse): any {
@@ -62,6 +63,37 @@ function format(body: FormResponse): any {
     return formatted;
 }
 
+function emailFormat(body: FormResponse): any {
+    return (
+        `<h1 style="text-align: center"><img src="https://determined-fermi-ed1a04.netlify.app/img/HERO_IMAGE.png" alt="Fosshost Logo"/></h1>
+        <h1 style="text-align: center; margin: 1rem 0;">Thanks for joining us!<h1>
+        <h3 style="max-width: 640px; text-align: center; margin: 0 auto;">
+        This email is to confirm the successful submission of your application. To learn more about our services, visit <a href="https://fosshost.org/about">our site</a>, and to review your submitted information, see below.
+        </h3>
+        <hr>
+        <b>Personal Information</b><br>
+        <p>- Name: ${body.personal.name}<p>
+        <p>- Email: ${body.personal.email}<p><br>
+        <b>Project Information</b><br>
+        <p>- Name: ${body.project.name}<p>
+        <p>- Desc: ${body.project.description}<p>
+        <p>- Your Role: ${body.project.role}<p>
+        <p>- Site: ${body.project.site}<p><br>
+        <b>Requested Services</b><br>
+        <p>- ${body.technical.services.join(", ")}<p><br>
+        <h3>Cheers, <br> The Fosshost Team</h3>
+        `
+    )
+}
+
+// const transporter = nodemailer.createTransport({
+//     service: 'gmail',
+//     auth: {
+//         user: process.env.GMAIL_EMAIL,
+//         pass: process.env.GMAIL_PASSWORD
+//     }
+// });
+
 export async function post(req: any, res: any, next: () => void) {
     console.log(req.body)
     // console.log(JSON.stringify(req.body))
@@ -90,6 +122,20 @@ export async function post(req: any, res: any, next: () => void) {
     //         console.error(error)
     //     })
 
+    // const mailOptions = {
+    //     from: process.env.GMAIL_EMAIL,
+    //     to: 'knightss27@protonmail.com',
+    //     subject: 'Fosshost Application Confirmation',
+    //     html: emailFormat(req.body),
+    // }
+
+    // transporter.sendMail(mailOptions, function(error, info){
+    //     if (error) {
+    //         console.log(error);
+    //     } else {
+    //         console.log('Email sent: ' + info.response);
+    //     }
+    // })
 
     res.end();
 }
