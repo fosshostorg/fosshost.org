@@ -5,8 +5,10 @@
 <main>
     <h2>Some of the projects we support</h2>
     <div>
-    {#each Projects.splice(0, 5) as project}
-        <a class="img" href={project.link}><img src={project.img} alt={project.name}/></a>
+    {#each Projects as project, i}
+        {#if i < 5}
+            <a class="img" href={project.link}><img src={project.img} alt={project.name}/></a>
+        {/if}
     {/each}
     </div>
     <a class="more fosshost-link" href="/projects" >See more projects<span class="material-icons">arrow_forward</span></a>
