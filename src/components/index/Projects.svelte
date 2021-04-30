@@ -5,7 +5,7 @@
 <main>
     <h2>Some of the projects we support</h2>
     <div>
-    {#each Projects as project}
+    {#each Projects.splice(0, 5) as project}
         <a class="img" href={project.link}><img src={project.img} alt={project.name}/></a>
     {/each}
     </div>
@@ -26,6 +26,7 @@
 
     h2 {
         color: #a8a8a8;
+        font-weight: 500;
     }
 
     a.more {
