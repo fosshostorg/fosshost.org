@@ -19,6 +19,7 @@
   </script>
   
   <script lang="ts">
+      // @ts-nocheck
     import { fade } from 'svelte/transition';
     import Input from '../Input.svelte';
     export let data: FormResponse;
@@ -44,6 +45,12 @@
         "London, UK"
     ]
 
+    let ipv4Options = [
+        "IPv6 only",
+        "IPv4 only",
+        "Both v4 and v6"
+    ]
+
 
   
   </script>
@@ -52,7 +59,15 @@
     <span>
         X86 VPS Options:
     </span>
+    <span>
+        You may select one or more regions.   By default, we will provide one VM per region.  However, if you require multiple VMs deploying in the same region, please specify this at the end of the application in the comments section. This space lists regions where we have available capacity - apologies if your preferred region is not available today, we regularly review this and add new locations all the time.
+    </span>
     <CheckboxGroup label="Which is your preferred region?" options={regionOptions} bind:selected={data.technical["X86 VPS"].regions} error={errors.regions} />
+    <span>
+        Due to a shortage of IPv4 space, we are currently reserving IPv4 for projects where IPv6 alone is not sufficient.  This does not apply to regions where IPv4 is only available.  Please advise us of your preference. 
+    </span>
+    <!-- NOTE: This selection gets mad with TypeScript -->
+    <CheckboxGroup limit label="Please list your IPv4 preference:" options={ipv4Options} bind:selected={data.technical["X86 VPS"].IPv4Preference} error={errors.IPv4Preference} />
   </main>
   
   <style>
