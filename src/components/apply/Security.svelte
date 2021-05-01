@@ -14,7 +14,7 @@
         try {
             validator.validateSyncAt('criteriaQuestionResponse', data.security)
         
-            fetch('http://localhost:3000/api/apply', {
+            fetch('/api/apply', {
                 method: 'POST',
                 headers: {'Content-Type': 'application/json'},
                 body: JSON.stringify(data)
