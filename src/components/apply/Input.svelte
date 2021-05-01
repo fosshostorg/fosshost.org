@@ -11,12 +11,13 @@
 <!-- svelte-ignore a11y-label-has-associated-control -->
 <label>
     {label}
+    <slot name="help" />
     {#if textarea}
     <textarea class:error on:blur bind:value on:change {name} {placeholder} {...$$restProps} />
     {:else}
     <input class:error on:blur bind:value on:change {name} {placeholder} {...$$restProps} />
     {/if}
-    <span>
+    <span class="err">
         {error ? error : ''}
     </span>
 </label>
@@ -44,7 +45,7 @@
         max-width: calc(100% - 4px - 1rem);
     }
 
-    span {
+    span.err {
         margin: 0;
         height: 24px;
         font-size: 14px;
