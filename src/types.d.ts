@@ -46,5 +46,9 @@ type FormResponse = {
     },
     technical: {
         services: Service[],
+        "DNS"?: {
+            domain: string,
+            requiresHosting: boolean
+        }
     }
 }
