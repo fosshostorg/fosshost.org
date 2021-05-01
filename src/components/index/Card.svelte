@@ -1,7 +1,6 @@
 <script lang="ts">
     export let img: string;
     export let reverse: boolean = false;
-    import Image from "svelte-image";
 </script>
 
 <main style="--flexNormal:{reverse ? "row-reverse" : "row"}">

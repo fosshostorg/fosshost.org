@@ -1,7 +1,3 @@
-<script>
-    import Image from "svelte-image";
-</script>
-
 <main>
     <div>
         <h1>To go further, together. Our work never stops.</h1>
