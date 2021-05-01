@@ -1,6 +1,6 @@
 const axios = require('axios');
 const nodemailer = require('nodemailer');
-import { doc, p, ul, li, b, u} from '@atlaskit/adf-utils/builders'
+import {doc, p, ul, li, b, u} from '@atlaskit/adf-utils/builders'
 
 function format(body: FormResponse): any {
 
@@ -16,13 +16,13 @@ function format(body: FormResponse): any {
             u("Applicant Information"),
         ),
         ul(
-            li([       
+            li([
                 p(`name: ${body.personal.name}`),
             ]),
-            li([       
+            li([
                 p(`email: ${body.personal.email}`),
             ]),
-            li([       
+            li([
                 p(`role: ${body.project.role}`),
             ]),
         ),
@@ -30,13 +30,13 @@ function format(body: FormResponse): any {
             u("Project Information"),
         ),
         ul(
-            li([       
+            li([
                 p(`name: ${body.project.name}`),
             ]),
-            li([       
+            li([
                 p(`description: ${body.project.description}`),
             ]),
-            li([       
+            li([
                 p(`site: ${body.project.site}`),
             ]),
         ),
@@ -44,7 +44,7 @@ function format(body: FormResponse): any {
             u("Requested Services"),
         ),
         ul(
-            li([       
+            li([
                 p(`${body.technical.services.join(", ")}`),
             ]),
         ),
@@ -52,10 +52,10 @@ function format(body: FormResponse): any {
             u("Security Information"),
         ),
         ul(
-            li([       
+            li([
                 p(`accepted criteria? ${body.security.hasAcceptedCriteria}`),
             ]),
-            li([       
+            li([
                 p(`question response: ${body.security.criteriaQuestionResponse}`),
             ]),
         ),
@@ -97,7 +97,18 @@ function emailFormat(body: FormResponse): any {
 export async function post(req: any, res: any, next: () => void) {
     console.log(req.body)
     // console.log(JSON.stringify(req.body))
-    
+
+    await axios.post("https://api.github.com/repos/fosshostorg/applications/issues", {
+        auth: {
+            username: process.env.GITHUB_USER,
+            password: process.env.GITHUB_PASS
+        },
+        data: {
+            title: "Application: " + req.body.project.name,
+            body: format(req.body)
+        }
+    })
+
     // axios
     //     .post('https://seth-test.atlassian.net/rest/api/3/issue', {
     //         "fields": {
