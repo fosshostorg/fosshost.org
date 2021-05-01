@@ -66,6 +66,14 @@
             for (const error of err.inner) {
                 errors[error.path] = error.message;
             }
+
+            let paths = err.inner.map(err => err.path);
+            for (const field of Object.keys(errors)) {
+                if (!paths.includes(field)) {
+                    errors[field] = "";
+                }
+            }
+
             return errors;
         }
     }

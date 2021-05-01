@@ -11,7 +11,7 @@
         name: yup.string().required(),
         description: yup.string().required(),
         role: yup.string().required(),
-        site: yup.string().required().url() //TODO: Decide if this should be optional
+        site: yup.string().url()
     })
 
     let errors = {

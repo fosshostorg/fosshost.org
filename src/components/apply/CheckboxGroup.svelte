@@ -2,17 +2,30 @@
     export let options: any[];
     export let selected: any[];
     export let label: string;
+    export let limit: boolean = false;
+    export let error: string = "";
+
+
+    const handleLimit = (e, val) => {
+        if (selected.length > 1) {
+            selected = [val]
+        }
+    }
+
 </script>
 
-<span>{label}</span>
+<span class="label">{label}</span>
 <div>
 {#each options as option}
     <label class:checked={selected.includes(option)}>
-        <input type="checkbox" bind:group={selected} value={option}/>
+        <input type="checkbox" bind:group={selected} value={option} on:change on:change={(e) => {limit ? handleLimit(e, option) : null}}/>
         {option}
     </label>
 {/each}
 </div>
+{#if error}
+<span class="error">{error}</span>
+{/if}
 
 <style>
     div {
@@ -25,10 +38,17 @@
         margin-top: 1rem;
     }
 
-    span {
+    span.label {
         color: var(--fosshost-black);
         font-size: 18px;
         line-height: 24px;
+    }
+
+    span.error {
+        margin: 0;
+        height: 24px;
+        font-size: 14px;
+        color: red;
     }
 
     input {
