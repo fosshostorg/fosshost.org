@@ -49,6 +49,14 @@ type FormResponse = {
         "DNS"?: {
             domain: string,
             requiresHosting: boolean
+        },
+        "X86 VPS"?: {
+            regions: string[],
+            IPv4Preference: string,
+            vCPUs: string,
+            memory: string,
+            storage: string,
+            os: string,
         }
     }
 }

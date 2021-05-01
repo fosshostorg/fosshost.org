@@ -2,6 +2,8 @@
     import { fade } from 'svelte/transition';
     import CheckboxGroup from './CheckboxGroup.svelte';
     import DNSOptions, { validator as DNSValidator, errorFormat as DNSErrors } from './technical/DNSOptions.svelte';
+    import X86Options, { validator as X86Validator, errorFormat as X86Errors } from './technical/X86Options.svelte';
+
     import Input from './Input.svelte';
     export let data: FormResponse;
     export let pageValidate: any;
@@ -20,7 +22,14 @@
     let error = null;
 
     let defaults = {
-        "X86 VPS": {},
+        "X86 VPS": {
+            regions: [],
+            IPv4Preference: "",
+            vCPUs: "",
+            memory: "",
+            storage: "",
+            os: "",
+        },
         "Mirrors-as-a-service": {},
         "AArch64 VPS": {},
         "Email and Webhosting": {},
@@ -32,7 +41,7 @@
     }
 
     let components = {
-        "X86 VPS":                      {c: DNSOptions, validator: DNSValidator, errors: []},
+        "X86 VPS":                      {c: X86Options, validator: X86Validator, errors: X86Errors},
         "Mirrors-as-a-service":         {c: DNSOptions, validator: DNSValidator, errors: []},
         "AArch64 VPS":                  {c: DNSOptions, validator: DNSValidator, errors: []},
         "Email and Webhosting":         {c: DNSOptions, validator: DNSValidator, errors: []},
@@ -56,10 +65,16 @@
         console.log(data.technical);
     }
 
-    const handleError = () => {
+    const servicesError = () => {
         if (data.technical.services.length < 1) {
-            error = "Please choose at least one service."
+            error = "Please choose at least one service.";
+        } else {
+            error = "";
         }
+    }
+
+    const handleError = () => {
+        servicesError();
 
         console.log(components)
 
@@ -73,7 +88,7 @@
 <main in:fade={{delay: 0, duration: 400}}>
     <h1>Technical Information</h1>
     <p>We’d like to know more about the project you are working on. Please specify the necessary details below.</p>
-    <CheckboxGroup {options} bind:selected={data.technical.services} {error} label="Select the service(s) you are interested in" />
+    <CheckboxGroup on:change={servicesError} {options} bind:selected={data.technical.services} {error} label="Select the service(s) you are interested in" />
     {#each data.technical.services as service}
         <svelte:component this={components[service].c} bind:currentPage {data} {pageValidate} {validate} errors={components[service].errors} />
     {/each}
