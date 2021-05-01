@@ -6,19 +6,24 @@
     export let error: string = "";
 
 
-    const handleLimit = (e, val) => {
-        if (selected.length > 1) {
-            selected = [val]
-        }
-    }
+    // const handleLimit = (e, val) => {
+    //     if (selected.length > 1) {
+    //         selected = [val]
+    //     }
+    // }
 
 </script>
 
 <span class="label">{label}</span>
 <div>
 {#each options as option}
+    <!-- svelte-ignore a11y-label-has-associated-control -->
     <label class:checked={selected.includes(option)}>
-        <input type="checkbox" bind:group={selected} value={option} on:change on:change={(e) => {limit ? handleLimit(e, option) : null}}/>
+        {#if limit}
+            <input type="radio" bind:group={selected} value={option} on:change />
+        {:else}
+            <input type="checkbox" bind:group={selected} value={option} on:change />
+        {/if}
         {option}
     </label>
 {/each}
@@ -52,6 +57,7 @@
 
     span.error {
         margin: 0;
+        margin-top: .5rem;
         height: 24px;
         font-size: 14px;
         color: red;
