@@ -10,7 +10,6 @@ import sveltePreprocess from 'svelte-preprocess';
 import typescript from '@rollup/plugin-typescript';
 import config from 'sapper/config/rollup.js';
 import pkg from './package.json';
-import image from 'svelte-image';
 import copy from 'rollup-plugin-copy';
 
 const mode = process.env.NODE_ENV;
@@ -33,11 +32,7 @@ export default {
 				'process.env.NODE_ENV': JSON.stringify(mode)
 			}),
 			svelte({
-				preprocess: sveltePreprocess({
-					...image({
-						placeholder: "blur"
-					})
-				}),
+				preprocess: sveltePreprocess({}),
 				compilerOptions: {
 					dev,
 					hydratable: true
