@@ -26,16 +26,22 @@
 {#if error}
 <span class="error">{error}</span>
 {/if}
+<span class="padding"></span>
 
 <style>
     div {
-        width: auto;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: flex-start;
-        max-height: 10rem;
+        -webkit-columns: 2;
+        -moz-columns: 2;
+        columns: 2;
         margin-top: 1rem;
+        position: relative;
+    }
+
+    span.padding {
+        display: flex;
+        width: 100%;
+        height: 1.5rem;
+        /* margin-bottom: 1.5rem; */
     }
 
     span.label {
@@ -66,12 +72,15 @@
         color: var(--fosshost-grey);
         margin: 0 1rem 1rem 0;
         cursor: pointer;
+        list-style-position: inside;
+        -webkit-column-break-inside: avoid;
+        page-break-inside: avoid;
+        break-inside: avoid;
     }
 
     label:before {
         content: '';
         position: absolute;
-        top: 0;
         left: 0;
         width: 20px;
         height: 20px;

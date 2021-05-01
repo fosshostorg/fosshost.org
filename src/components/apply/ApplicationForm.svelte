@@ -103,6 +103,7 @@
         margin: 0 auto;
         display: flex;
         flex-direction: column;
+        margin-bottom: 3rem;
     }
 
     main :global(h1) {
