@@ -6,6 +6,7 @@
     import AArch64Options, { validator as AArch64Validator, errorFormat as AArch64Errors } from './technical/AArch64Options.svelte';
     import MirrorOptions, { validator as MirrorValidator, errorFormat as MirrorErrors } from './technical/MirrorOptions.svelte';
     import AudioVideoOptions, { validator as AudioVideoValidator, errorFormat as AudioVideoErrors } from './technical/AudioVideoOptions.svelte';
+    import EmailAndWebOptions, { validator as EmailAndWebValidator, errorFormat as EmailAndWebErrors } from './technical/EmailAndWebOptions.svelte';
 
     import Input from './Input.svelte';
     export let data: FormResponse;
@@ -32,6 +33,7 @@
             memory: "",
             storage: "",
             os: "",
+            SSHKey: "",
         },
         "Mirrors-as-a-service": {
             storage: "",
@@ -40,13 +42,18 @@
         "AArch64 VPS": {
             createdAccount: null,
         },
-        "Email and Webhosting": {},
+        "Email and Webhosting": {
+            domain: "",
+            requiresHosting: null,
+            specialRequirements: "",
+        },
         "DNS": {
             domain: "",
             requiresHosting: null,
         },
         "Audio and Video Conferencing": {
             service: "",
+            specialRequirements: "",
         },
     }
 
@@ -54,7 +61,7 @@
         "X86 VPS":                      {c: X86Options, validator: X86Validator, errors: X86Errors},
         "Mirrors-as-a-service":         {c: MirrorOptions, validator: MirrorValidator, errors: MirrorErrors},
         "AArch64 VPS":                  {c: AArch64Options, validator: AArch64Validator, errors: AArch64Errors},
-        "Email and Webhosting":         {c: DNSOptions, validator: DNSValidator, errors: []},
+        "Email and Webhosting":         {c: EmailAndWebOptions, validator: EmailAndWebValidator, errors: EmailAndWebErrors},
         "DNS":                          {c: DNSOptions, validator: DNSValidator, errors: DNSErrors},
         "Audio and Video Conferencing": {c: AudioVideoOptions, validator: AudioVideoValidator, errors: AudioVideoErrors},
     }
@@ -62,6 +69,7 @@
     $: if (data.technical.services) {
         for (let option of data.technical.services) {
             if (data.technical[option] == null) {
+                // @ts-ignore
                 data.technical[option] = defaults[option];
             }
         }
