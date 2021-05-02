@@ -57,14 +57,23 @@
         }
     }
 
-    const pageValidate = (validator: any, value: any, errors: any): any => {
+    const pageValidate = (validator: any, value: any, errors: any, shouldChangePage: boolean = true): any => {
         try {
             validator.validateSync(value, { abortEarly: false })
             window.sessionStorage.setItem('form_data', JSON.stringify(data))
-            currentPage += 1;
+
+            if (shouldChangePage) {
+                currentPage++;
+            }
+
+            for (const field of Object.keys(errors)) {
+                    errors[field] = "";
+            }
+            return errors;
         } catch (err) {
             for (const error of err.inner) {
                 errors[error.path] = error.message;
+                console.log(error.path)
             }
 
             let paths = err.inner.map(err => err.path);

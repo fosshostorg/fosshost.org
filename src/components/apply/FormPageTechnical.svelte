@@ -3,6 +3,9 @@
     import CheckboxGroup from './CheckboxGroup.svelte';
     import DNSOptions, { validator as DNSValidator, errorFormat as DNSErrors } from './technical/DNSOptions.svelte';
     import X86Options, { validator as X86Validator, errorFormat as X86Errors } from './technical/X86Options.svelte';
+    import AArch64Options, { validator as AArch64Validator, errorFormat as AArch64Errors } from './technical/AArch64Options.svelte';
+    import MirrorOptions, { validator as MirrorValidator, errorFormat as MirrorErrors } from './technical/MirrorOptions.svelte';
+    import AudioVideoOptions, { validator as AudioVideoValidator, errorFormat as AudioVideoErrors } from './technical/AudioVideoOptions.svelte';
 
     import Input from './Input.svelte';
     export let data: FormResponse;
@@ -30,23 +33,30 @@
             storage: "",
             os: "",
         },
-        "Mirrors-as-a-service": {},
-        "AArch64 VPS": {},
+        "Mirrors-as-a-service": {
+            storage: "",
+            specialRequirements: "",
+        },
+        "AArch64 VPS": {
+            createdAccount: null,
+        },
         "Email and Webhosting": {},
         "DNS": {
             domain: "",
             requiresHosting: null,
         },
-        "Audio and Video Conferencing": {},
+        "Audio and Video Conferencing": {
+            service: "",
+        },
     }
 
     let components = {
         "X86 VPS":                      {c: X86Options, validator: X86Validator, errors: X86Errors},
-        "Mirrors-as-a-service":         {c: DNSOptions, validator: DNSValidator, errors: []},
-        "AArch64 VPS":                  {c: DNSOptions, validator: DNSValidator, errors: []},
+        "Mirrors-as-a-service":         {c: MirrorOptions, validator: MirrorValidator, errors: MirrorErrors},
+        "AArch64 VPS":                  {c: AArch64Options, validator: AArch64Validator, errors: AArch64Errors},
         "Email and Webhosting":         {c: DNSOptions, validator: DNSValidator, errors: []},
         "DNS":                          {c: DNSOptions, validator: DNSValidator, errors: DNSErrors},
-        "Audio and Video Conferencing": {c: DNSOptions, validator: DNSValidator, errors: []},
+        "Audio and Video Conferencing": {c: AudioVideoOptions, validator: AudioVideoValidator, errors: AudioVideoErrors},
     }
     
     $: if (data.technical.services) {
@@ -78,8 +88,18 @@
 
         console.log(components)
 
+        let shouldChangePage: boolean = true;
         for (const c of data.technical.services) {
-            components[c].errors = pageValidate(components[c].validator, data.technical[c], components[c].errors);
+            components[c].errors = pageValidate(components[c].validator, data.technical[c], components[c].errors, false);
+            for (const field of Object.keys(components[c].errors)) {
+                if (components[c].errors[field] !== "" && components[c].errors[field] !== null) {
+                    shouldChangePage = false;
+                    break;
+                }
+            }
+        }
+        if (shouldChangePage) {
+            currentPage++;
         }
     }
 
