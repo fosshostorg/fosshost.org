@@ -105,7 +105,7 @@ export async function post(req: any, res: any, next: () => void) {
         },
         data: {
             title: "Application: " + req.body.project.name,
-            body: format(req.body)
+            body: emailFormat(req.body) + "\n\n Pure JSON: \n" + JSON.stringify(req.body) 
         }
     })
 
