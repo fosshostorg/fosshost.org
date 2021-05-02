@@ -13,9 +13,10 @@
 <script lang="ts">
   import { fade } from 'svelte/transition';
   import Input from '../Input.svelte';
+  import * as yup from 'yup';
+
   export let data: FormResponse;
   export let validate: any;
-  import * as yup from 'yup';
 
   export let errors = {
     storage: null,
