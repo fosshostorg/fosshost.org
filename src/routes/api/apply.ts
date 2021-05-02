@@ -98,16 +98,18 @@ export async function post(req: any, res: any, next: () => void) {
     console.log(req.body)
     // console.log(JSON.stringify(req.body))
 
-    await axios.post("https://api.github.com/repos/fosshostorg/applications/issues", {
-        auth: {
-            username: process.env.GITHUB_USER,
-            password: process.env.GITHUB_PASS
-        },
-        data: {
+    await axios.post("https://api.github.com/repos/fosshostorg/applications/issues", 
+        {
             title: "Application: " + req.body.project.name,
             body: emailFormat(req.body) + "\n\n Pure JSON: \n" + JSON.stringify(req.body) 
-        }
-    })
+        },
+        {
+            auth: {
+                username: process.env.GITHUB_USER,
+                password: process.env.GITHUB_PASS
+            }  
+        },
+    )
 
     // axios
     //     .post('https://seth-test.atlassian.net/rest/api/3/issue', {
