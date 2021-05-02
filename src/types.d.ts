@@ -58,6 +58,16 @@ type FormResponse = {
             storage: string,
             os: string,
             SSHKey: string,
+        },
+        "Mirrors-as-a-service"?: {
+            storage: string,
+            specialRequirements: string,
+        },
+        "AArch64 VPS"?: {
+            createdAccount: boolean,
+        },
+        "Audio and Video Conferencing"?: {
+            service: string,
         }
     }
 }
