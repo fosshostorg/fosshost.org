@@ -68,6 +68,12 @@ type FormResponse = {
         },
         "Audio and Video Conferencing"?: {
             service: string,
+            specialRequirements: string,
+        },
+        "Email and Webhosting"?: {
+            domain: string,
+            requiresHosting: boolean,
+            specialRequirements: string,
         }
     }
 }
