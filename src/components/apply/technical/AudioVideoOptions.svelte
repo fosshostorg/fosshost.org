@@ -14,10 +14,11 @@
   // @ts-nocheck
   import { fade } from 'svelte/transition';
   import Input from '../Input.svelte';
-  export let data: FormResponse;
-  export let validate: any;
   import * as yup from 'yup';
   import CheckboxGroup from '../CheckboxGroup.svelte';
+
+  export let data: FormResponse;
+  export let validate: any;
 
   export let errors = {
     service: null,

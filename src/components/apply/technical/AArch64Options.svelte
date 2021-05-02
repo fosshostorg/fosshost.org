@@ -12,7 +12,7 @@
   import { fade } from 'svelte/transition';
   import * as yup from 'yup';
   import YesNoGroup from '../YesNoGroup.svelte';
-  import {tick} from 'svelte';
+
   export let data: FormResponse;
   export let validate: any;
 

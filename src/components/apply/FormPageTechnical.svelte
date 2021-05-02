@@ -8,7 +8,6 @@
     import AudioVideoOptions, { validator as AudioVideoValidator, errorFormat as AudioVideoErrors } from './technical/AudioVideoOptions.svelte';
     import EmailAndWebOptions, { validator as EmailAndWebValidator, errorFormat as EmailAndWebErrors } from './technical/EmailAndWebOptions.svelte';
 
-    import Input from './Input.svelte';
     export let data: FormResponse;
     export let pageValidate: any;
     export let validate: any;
