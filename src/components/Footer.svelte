@@ -10,22 +10,17 @@
     </div>
     <span class="footer">
         <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/projects">Projects</a></li>
-            <li><a href="/news">News</a></li>
-            <li><a href="/docs">Documentation</a></li>
-            <li><a href="/donate">Donate</a></li>
-            <li><a href="/about">About</a></li>
+            <li><a href="/docs">Docs</a></li>
             <li><a href="/contact">Contact</a></li>
+            <li><a href="/donate">Donate</a></li>
             <li><a href="/sponsors">Sponsors</a></li>
             <li><a href="/media">Media</a></li>
             <li><a href="/status">Network Status</a></li>
+            <li><a href="/legal">Legal</a></li>
         </ul>
         <span>
             <ul class="copy-info">
-                <li>This site is powered by Netlify. All rights reserved &copy; 2021</li>
-                <li><a href="/terms">Terms of Use</a></li>
-                <li><a href="/privacy">Privacy Policy</a></li>
+                <li>Fosshost C.I.C. All rights reserved &copy; 2021</li>
             </ul>
         </span>
     </span>

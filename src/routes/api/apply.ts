@@ -1,68 +1,8 @@
 const axios = require('axios');
 const nodemailer = require('nodemailer');
-import {doc, p, ul, li, b, u} from '@atlaskit/adf-utils/builders'
+const fs = require('fs');
 
-function format(body: FormResponse): any {
-
-    const formatted = doc(
-        p(
-            b(
-                u(
-                    "Project Application"
-                )
-            ),
-        ),
-        p(
-            u("Applicant Information"),
-        ),
-        ul(
-            li([
-                p(`name: ${body.personal.name}`),
-            ]),
-            li([
-                p(`email: ${body.personal.email}`),
-            ]),
-            li([
-                p(`role: ${body.project.role}`),
-            ]),
-        ),
-        p(
-            u("Project Information"),
-        ),
-        ul(
-            li([
-                p(`name: ${body.project.name}`),
-            ]),
-            li([
-                p(`description: ${body.project.description}`),
-            ]),
-            li([
-                p(`site: ${body.project.site}`),
-            ]),
-        ),
-        p(
-            u("Requested Services"),
-        ),
-        ul(
-            li([
-                p(`${body.technical.services.join(", ")}`),
-            ]),
-        ),
-        p(
-            u("Security Information"),
-        ),
-        ul(
-            li([
-                p(`accepted criteria? ${body.security.hasAcceptedCriteria}`),
-            ]),
-            li([
-                p(`question response: ${body.security.criteriaQuestionResponse}`),
-            ]),
-        ),
-    )
-    return formatted;
-}
-
+// TODO: write this to include more info
 function emailFormat(body: FormResponse): any {
     return (
         `<h1 style="text-align: center"><img src="https://determined-fermi-ed1a04.netlify.app/img/HERO_IMAGE.png" alt="Fosshost Logo"/></h1>
@@ -86,6 +26,83 @@ function emailFormat(body: FormResponse): any {
     )
 }
 
+const headers = {
+    security: {
+        header: "Security Information",
+        hasAcceptedCriteria: "Accepted eligibility criteria?",
+        criteriaQuestionResponse: "Security questions response",
+    },
+    personal: {
+        header: "Personal Information",
+        name: "Name",
+        email: "Email",
+    },
+    project: {
+        header: "Project Information",
+        name: "Name",
+        description: "Description",
+        role: "Applicant's role",
+        site: "Site",
+    },
+    technical: {
+        header: "Technical Information",
+        services: "Selected services",
+        "DNS": {
+            domain: "Requested domain",
+            requiresHosting: "Requires DNS hosting?"
+        },
+        "X86 VPS": {
+            regions: "Regional preferences",
+            IPv4Preference: "IPv4 preference",
+            vCPUs: "vCPUs",
+            memory: "Memory",
+            storage: "Storage",
+            os: "Operating System",
+            SSHKey: "Public SSH Key",
+        },
+        "Mirrors-as-a-service": {
+            storage: "Storage",
+            specialRequirements: "Special requirements?",
+        },
+        "AArch64 VPS": {
+            createdAccount: "Created an AArch64 account?",
+        },
+        "Audio and Video Conferencing": {
+            service: "Requested service",
+            specialRequirements: "Special requirements?",
+        },
+        "Email and Webhosting": {
+            domain: "Hosting domain",
+            requiresHosting: "Requires DNS hosting?",
+            specialRequirements: "Special requirements?",
+        }
+    }
+}
+
+const format = (body: FormResponse) => {
+    const getFormPart = (part: string): string => {
+        console.log(part)
+        return (
+            `\n### ${headers[part].header}\n${Object.keys(body[part]).map(n => {
+                if (n == "services" || part != "technical") {
+                    return (
+                       " - " + headers[part][n] + ": " + body[part][n]
+                    )
+                } else {
+                    return (
+                        "\n##### " + n + " specifics:\n" + Object.keys(body[part][n]).map(p => "- " + headers[part][n][p] + ": " + body[part][n][p]).join("\n")
+                    )
+                }
+            }).join("\n")}`
+        )
+    }
+
+    return (
+        `## Fosshost Application\n${Object.keys(body).map(n => getFormPart(n)).join("\n")}`
+    )
+}
+
+
 // const transporter = nodemailer.createTransport({
 //     service: 'gmail',
 //     auth: {
@@ -98,10 +115,18 @@ export async function post(req: any, res: any, next: () => void) {
     console.log(req.body)
     // console.log(JSON.stringify(req.body))
 
+    // console.log(format(req.body))
+
+ 
+    // fs.writeFile('test.md', format(req.body), function (err) {
+    // if (err) return console.log(err);
+    // console.log('Success, written to file.');
+    // });
+
     await axios.post("https://api.github.com/repos/fosshostorg/applications/issues", 
         {
             title: "Application: " + req.body.project.name,
-            body: emailFormat(req.body) + "\n\n Pure JSON: \n" + JSON.stringify(req.body) 
+            body: format(req.body) 
         },
         {
             auth: {
@@ -110,37 +135,6 @@ export async function post(req: any, res: any, next: () => void) {
             }  
         },
     )
-
-    // axios
-    //     .post('https://seth-test.atlassian.net/rest/api/3/issue', {
-    //         "fields": {
-    //            "project":
-    //            {
-    //               "key": "TB"
-    //            },
-    //            "summary": "Project Application: " + req.body.project.name,
-    //            "description": format(req.body),
-    //            "issuetype": {
-    //               "name": "Task"
-    //            }
-    //        }
-    //     },
-    //     {headers: {'Content-Type': 'application/json', 'Authorization': 'Basic process.env.BASE64_API_KEY'}}
-    //     )
-    //     .then(res => {
-    //         console.log(`statusCode: ${res.statusCode}`)
-    //         console.log(res)
-    //     })
-    //     .catch(error => {
-    //         console.error(error)
-    //     })
-
-    // const mailOptions = {
-    //     from: process.env.GMAIL_EMAIL,
-    //     to: 'knightss27@protonmail.com',
-    //     subject: 'Fosshost Application Confirmation',
-    //     html: emailFormat(req.body),
-    // }
 
     // transporter.sendMail(mailOptions, function(error, info){
     //     if (error) {

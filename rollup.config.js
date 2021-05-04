@@ -11,6 +11,7 @@ import typescript from '@rollup/plugin-typescript';
 import config from 'sapper/config/rollup.js';
 import pkg from './package.json';
 import copy from 'rollup-plugin-copy';
+import { string } from "rollup-plugin-string";
 
 const mode = process.env.NODE_ENV;
 const dev = mode === 'development';
@@ -31,6 +32,7 @@ export default {
 				'process.browser': true,
 				'process.env.NODE_ENV': JSON.stringify(mode)
 			}),
+			string({include: "**/*.md"}),
 			svelte({
 				preprocess: sveltePreprocess({}),
 				compilerOptions: {
@@ -87,6 +89,7 @@ export default {
 				'process.env.NODE_ENV': JSON.stringify(mode),
 				'process.env.BASE64_API_KEY': process.env.BASE64_API_KEY
 			}),
+			string({include: "**/*.md"}),
 			svelte({
 				preprocess: sveltePreprocess(),
 				compilerOptions: {
