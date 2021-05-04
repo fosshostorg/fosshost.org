@@ -78,8 +78,6 @@
                 delete data.technical[key]
             }
         }
-        
-        console.log(data.technical);
     }
 
     const servicesError = () => {
@@ -93,8 +91,6 @@
     const handleError = () => {
         servicesError();
 
-        console.log(components)
-
         let shouldChangePage: boolean = true;
         for (const c of data.technical.services) {
             components[c].errors = pageValidate(components[c].validator, data.technical[c], components[c].errors, false);
@@ -105,7 +101,7 @@
                 }
             }
         }
-        if (shouldChangePage) {
+        if (shouldChangePage && error == "") {
             currentPage++;
         }
     }
