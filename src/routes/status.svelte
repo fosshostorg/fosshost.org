@@ -30,6 +30,7 @@ import Spinner from "../components/Spinner.svelte";
 <div class="status">
   <article>
     <h1>Network Status</h1>
+    <hr style="margin-bottom: 0px;">
   </article>
   {#if data.length == 0}
     <div class="spinner">
