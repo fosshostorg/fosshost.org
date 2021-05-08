@@ -10,7 +10,7 @@
     </div>
     <span class="footer">
         <ul>
-            <li><a href="/docs">Docs</a></li>
+            <li><a href="https://docs.fosshost.org/">Docs</a></li>
             <li><a href="/contact">Contact</a></li>
             <li><a href="/donate">Donate</a></li>
             <li><a href="/sponsors">Sponsors</a></li>
