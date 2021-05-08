@@ -1,36 +1,43 @@
 <script>
   import ago from "s-ago";
   import { onMount } from "svelte";
-import Spinner from "../components/Spinner.svelte";
+  import Spinner from "../components/Spinner.svelte";
   let data = [];
   let someDown = false;
-
 
   const getData = async () => {
     const fetchedData = await fetch(
       "https://updown.io/api/checks?api-key=ro-eKxJQmkEQSuVjyihGrDK"
     ).then((res) => res.json());
 
-    data = fetchedData.filter((x) => x.enabled && x.published).map((x) => {
-      if (!someDown && x.down) {someDown = true}
-      return ({
-        ...x,
-        uptime: Math.floor(x.uptime *100) / 100,
-        checked: ago(new Date(x.last_check_at)),
-        link: `https://updown.io/${x.token}`
-      })
-    })
+    data = fetchedData
+      .filter((x) => x.enabled && x.published)
+      .map((x) => {
+        if (!someDown && x.down) {
+          someDown = true;
+        }
+        return {
+          ...x,
+          uptime: Math.floor(x.uptime * 100) / 100,
+          checked: ago(new Date(x.last_check_at)),
+          link: `https://updown.io/${x.token}`,
+        };
+      });
   };
 
   onMount(() => {
     getData();
-  })
+  });
 </script>
+
+<svelte:head>
+  <title>Fosshost - Network Status</title>
+</svelte:head>
 
 <div class="status">
   <article>
     <h1>Network Status</h1>
-    <hr style="margin-bottom: 0px;">
+    <hr style="margin-bottom: 0px;" />
   </article>
   {#if data.length == 0}
     <div class="spinner">
@@ -39,25 +46,25 @@ import Spinner from "../components/Spinner.svelte";
   {/if}
   <div class="items">
     {#each data as item}
-    <div class="item">
-      <div class="up" class:down={item.down} class:someDown>
-        {item.down ? "DOWN" : "UP"}
-      </div>
-      <div class="info">
-        <div class="title">
-          {item.alias || item.url}
+      <div class="item">
+        <div class="up" class:down={item.down} class:someDown>
+          {item.down ? "DOWN" : "UP"}
         </div>
-        <div class="sub">
-          <span class="seen">Last check: {item.checked},</span>
-          <a class="more" target="_blank" href={item.link}>See more</a>
+        <div class="info">
+          <div class="title">
+            {item.alias || item.url}
+          </div>
+          <div class="sub">
+            <span class="seen">Last check: {item.checked},</span>
+            <a class="more" target="_blank" href={item.link}>See more</a>
+          </div>
         </div>
-      </div>
 
-      <div class="uptime">
-        <div class="title">Uptime</div>
-        <div class="percentage">{item.uptime}%</div>
+        <div class="uptime">
+          <div class="title">Uptime</div>
+          <div class="percentage">{item.uptime}%</div>
+        </div>
       </div>
-    </div>
     {/each}
   </div>
 </div>
@@ -123,7 +130,7 @@ import Spinner from "../components/Spinner.svelte";
 
   .sub {
     font-weight: 300;
-		font-size: 14px;
+    font-size: 14px;
   }
 
   .seen {
@@ -132,7 +139,7 @@ import Spinner from "../components/Spinner.svelte";
 
   .more {
     text-decoration: none;
-		color: red;
+    color: red;
   }
 
   .more:hover {
@@ -141,7 +148,7 @@ import Spinner from "../components/Spinner.svelte";
 
   .uptime {
     margin-left: 1em;
-		text-align: right;
+    text-align: right;
   }
 
   .uptime .title {
@@ -159,5 +166,6 @@ import Spinner from "../components/Spinner.svelte";
     width: 100%;
     display: flex;
     justify-content: center;
+    margin-top: 1rem;
   }
 </style>

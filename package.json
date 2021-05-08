@@ -10,7 +10,6 @@
     "validate": "svelte-check --ignore src/node_modules/@sapper"
   },
   "dependencies": {
-    "@atlaskit/adf-utils": "^11.8.1",
     "body-parser": "^1.19.0",
     "compression": "^1.7.1",
     "express": "^4.17.1",
@@ -21,6 +20,7 @@
     "polka": "next",
     "s-ago": "^2.2.0",
     "sirv": "^1.0.0",
+    "validator": "^13.6.0",
     "yup": "^0.32.9"
   },
   "devDependencies": {

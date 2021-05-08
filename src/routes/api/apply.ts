@@ -1,6 +1,6 @@
 const axios = require('axios');
-const nodemailer = require('nodemailer');
-const fs = require('fs');
+import escape from 'validator/es/lib/escape';
+
 
 // TODO: write this to include more info
 function emailFormat(body: FormResponse): any {
@@ -81,19 +81,20 @@ const headers = {
 
 const format = (body: FormResponse) => {
     const getFormPart = (part: string): string => {
-        console.log(part)
         return (
-            `\n### ${headers[part].header}\n${Object.keys(body[part]).map(n => {
-                if (n == "services" || part != "technical") {
-                    return (
-                       " - " + headers[part][n] + ": " + body[part][n]
-                    )
-                } else {
-                    return (
-                        "\n##### " + n + " specifics:\n" + Object.keys(body[part][n]).map(p => "- " + headers[part][n][p] + ": " + body[part][n][p]).join("\n")
-                    )
-                }
-            }).join("\n")}`
+            escape(
+                `\n### ${headers[part].header}\n${Object.keys(body[part]).map(n => {
+                    if (n == "services" || part != "technical") {
+                        return (
+                        " - " + headers[part][n] + ": " + body[part][n]
+                        )
+                    } else {
+                        return (
+                            "\n##### " + n + " specifics:\n" + Object.keys(body[part][n]).map(p => "- " + headers[part][n][p] + ": " + body[part][n][p]).join("\n")
+                        )
+                    }
+                }).join("\n")}`
+            )
         )
     }
 
@@ -113,15 +114,6 @@ const format = (body: FormResponse) => {
 
 export async function post(req: any, res: any, next: () => void) {
     console.log(req.body)
-    // console.log(JSON.stringify(req.body))
-
-    // console.log(format(req.body))
-
- 
-    // fs.writeFile('test.md', format(req.body), function (err) {
-    // if (err) return console.log(err);
-    // console.log('Success, written to file.');
-    // });
 
     await axios.post("https://api.github.com/repos/fosshostorg/applications/issues", 
         {
