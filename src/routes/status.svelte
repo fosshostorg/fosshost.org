@@ -2,6 +2,8 @@
   import ago from "s-ago";
   import { onMount } from "svelte";
   let data = [];
+  let someDown = false;
+
 
   const getData = async () => {
     const fetchedData = await fetch(
@@ -9,6 +11,7 @@
     ).then((res) => res.json());
 
     data = fetchedData.filter((x) => x.enabled && x.published).map((x) => {
+      if (!someDown && x.down) {someDown = true}
       return ({
         ...x,
         uptime: Math.floor(x.uptime *100) / 100,
@@ -30,7 +33,7 @@
   <div class="items">
     {#each data as item}
     <div class="item">
-      <div class="up" class:down={item.down}>
+      <div class="up" class:down={item.down} class:someDown>
         {item.down ? "DOWN" : "UP"}
       </div>
       <div class="info">
@@ -92,8 +95,12 @@
     font-size: 16px;
   }
 
-  .item .down {
+  .item .up.down {
     color: red;
+  }
+
+  .item .up.someDown {
+    width: 60px;
   }
 
   .info {
