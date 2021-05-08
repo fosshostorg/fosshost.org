@@ -1,6 +1,7 @@
 <script>
   import ago from "s-ago";
   import { onMount } from "svelte";
+import Spinner from "../components/Spinner.svelte";
   let data = [];
   let someDown = false;
 
@@ -30,6 +31,11 @@
   <article>
     <h1>Network Status</h1>
   </article>
+  {#if data.length == 0}
+    <div class="spinner">
+      <Spinner />
+    </div>
+  {/if}
   <div class="items">
     {#each data as item}
     <div class="item">
@@ -148,63 +154,9 @@
     font-size: 26px;
   }
 
-  /* .status {
-	.items {
-		.item {
-			
-
-			&:last-child {
-				
-			}
-
-			.up {
-				
-
-				&.down {
-					color: $red;
-				}
-
-				@at-root .status .items.someDown .item .up {
-					width: 75px;
-				}
-			}
-
-			.info {
-				
-
-				.title {
-					
-				}
-
-				.sub {
-					
-
-					.seen {
-						
-					}
-
-					.more {
-						
-
-						&:hover {
-							
-						}
-					}
-				}
-			}
-
-			.uptime {
-
-
-				@include res(500) {
-					display: none;
-				}
-
-
-
-
-			}
-		}
-	}
-} */
+  .spinner {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
 </style>
