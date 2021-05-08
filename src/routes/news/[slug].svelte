@@ -58,7 +58,7 @@
 
 <style>
     main {
-        width: 95%;
+        width: auto;
         max-width: 780px;
         margin: 3rem auto;
     }
@@ -71,6 +71,7 @@
     @media (max-width: 1280px) {
         main {
             margin: .5rem auto 3rem;
+            padding: 0rem 1rem;
         }
     }
 
