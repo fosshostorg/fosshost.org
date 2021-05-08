@@ -1,6 +1,6 @@
 <script>
   import marked from "marked";
-  import text from "../static_pages/legal.md";
+  import text from "../static_pages/contact.md";
 </script>
 
 <svelte:head>

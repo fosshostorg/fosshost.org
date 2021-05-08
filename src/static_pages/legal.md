@@ -1,3 +1,6 @@
+# Legal
+---
+
 Last Updated: October 2020
 
 ## Terms of Service
