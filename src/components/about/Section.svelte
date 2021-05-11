@@ -13,7 +13,8 @@
 <style>
     div {
         width: calc(100% - 100px);
-        margin: 100px auto;
+        margin: 100px auto 0px;
+        max-width: var(--content-max-width);
     }
     h2, p {
         text-align: center;
