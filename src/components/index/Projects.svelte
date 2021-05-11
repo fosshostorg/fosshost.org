@@ -7,7 +7,7 @@
     <div>
     {#each Projects as project, i}
         {#if i < 5}
-            <a class="img" href={project.link}><img src={project.img} alt={project.name}/></a>
+            <a class="img" href={project.link}><img src={"/img/project-logos/" + project.img} alt={project.name}/></a>
         {/if}
     {/each}
     </div>
@@ -45,6 +45,9 @@
 
     a.img {
         margin: 20px;
+        filter: grayscale(100%);
+        -webkit-filter: grayscale(100%);
+        opacity: 0.6;
     }
 
     div {

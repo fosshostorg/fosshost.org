@@ -5,49 +5,49 @@
 export const Projects: Project[] = [
     {
         id: "gnome",
-        img: "/img/project-logos/gnome.svg",
+        img: "gnome.svg",
         name: "GNOME",
         link: "https://www.gnome.org",
         description: "",
     },
     {
         id: "armbian",
-        img: "/img/project-logos/armbian.svg",
+        img: "armbian.svg",
         name: "armbian",
         link: "https://www.armbian.com",
         description: "",
     },
     {
         id: "debian",
-        img: "/img/project-logos/debian.svg",
+        img: "debian.svg",
         name: "Debian",
         link: "https://www.debian.org",
         description: "",
     },
     {
         id: "graphene",
-        img: "/img/project-logos/graphene.svg",
+        img: "graphene.svg",
         name: "Graphene",
         link: "https://github.com/oscarlab/graphene",
         description: "",
     },
     {
         id: 'xfce',
-        img: '/img/project-logos/xfce.svg',
+        img: 'xfce.svg',
         name: 'XFCE',
         link: 'https://xfce.org/',
         description: ''
     },
     {
         id: "xubuntu",
-        img: "/img/project-logos/xubuntu.png",
+        img: "xubuntu.png",
         name: "Xubuntu",
         link: "https://xubuntu.org",
         description: "",
     },
     {
         id: "qubes",
-        img: "/img/project-logos/qubes.png",
+        img: "qubes.png",
         name: "Qubes",
         link: "https://www.qubes-os.org/",
         description: "",
@@ -61,7 +61,7 @@ export const Projects: Project[] = [
     },
     {
       id: 'manjaro linux',
-      img: '',
+      img: 'manjaro.png',
       name: 'Manjaro Linux',
       link: 'https://manjaro.org/',
       description: ''
