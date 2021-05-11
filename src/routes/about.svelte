@@ -1,9 +1,9 @@
 <script>
 	import Header from '../components/about/Header.svelte'
 	import Mission from '../components/about/Mission.svelte';
-	import Network from '../components/about/Network.svelte';
-	import Provider from '../components/about/Provider.svelte';
-	import {Providers} from '../data/providers';
+	import Section from '../components/about/Section.svelte';
+	import Sponsor from '../components/about/Sponsor.svelte';
+	import {Sponsors} from '../data/sponsors';
 
 </script>
 
@@ -25,25 +25,27 @@
 			Other services we provide include web, email, hosted video and voice conferencing and domain / DNS hosting services. You can apply for all of our services via the application form, or read more about the services we offer here.
 		</div>
 	</Mission>
-	<Network>
+	<Section>
 		<div slot="title">Our Network</div>
-		<div slot="description">The project operates a large and global infrastructure across multiple continents in world-class facilities. Projects can select which region they want their services deploying on during the application process. Below is a current list of the regions we operate from, and the specifications of the virtualisation platforms we run within them. Occasionally, we run multiple nodes from the same facility.</div>
-		{#each Providers as provider}
-			<Provider>
-				<div slot="title">{provider.name}</div>
-				<div slot="location">{provider.location}</div>
-				<div slot="details">
-					{@html provider.details.join("<br>")}
-				</div>
-				<div slot="network">{provider.network}</div>
-			</Provider>
+		<div slot="description" id="sponsors">The project operates a large and global infrastructure across multiple continents in world-class facilities. Projects can select which region they want their services deploying on during the application process. Below is a current list of the regions we operate from, and the specifications of the virtualisation platforms we run within them. Occasionally, we run multiple nodes from the same facility.</div>
+	</Section>
+	<Section>
+		<div slot="title">Sponsors</div>
+		<div slot="description">
+			All of our infrastructure and networking is kindly donated and provided to the project for free. We could simply not operate without these contributions to the project and fosshost.org is extremely grateful for the kind generosity of all our supporters.	
+			<br>
+			We believe in providing maximum transparency with our services and we are very proud to list those who have helped Fosshost. In no particular order.
+		</div>
+		{#each Sponsors as sponsor}
+			<Sponsor {sponsor} />
 		{/each}
-	</Network>
+	</Section>
 </main>
 
 
 <style>
     main {
-        width: 100%;
+      width: 100%;
+			margin-bottom: 100px;
     }
 </style>

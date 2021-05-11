@@ -6,6 +6,11 @@ type Project = {
     link: string;
 }
 
+type Sponsor = {
+    name: string,
+    link: string,
+}
+
 type Provider = {
     name: string;
     location: string;
