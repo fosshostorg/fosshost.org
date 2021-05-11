@@ -10,7 +10,7 @@
     {#each Projects as project, i}
             <a target="_blank" href={project.link} in:fade={{delay: 50*i, duration: 200}}>
                 {#if project.img}
-                <img src={project.img} alt={project.name} />
+                <img src={"/img/project-logos/" + project.img} alt={project.name} />
                 {:else}
                 {project.name}
                 {/if}
@@ -60,6 +60,7 @@
         max-height: 70px;
         filter: grayscale(100%);
         -webkit-filter: grayscale(100%);
+        opacity: 0.6;
     }
 
 </style>
