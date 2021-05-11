@@ -13,7 +13,7 @@
             <li><a href="https://docs.fosshost.org/">Docs</a></li>
             <li><a rel="prefetch" href="/contact">Contact</a></li>
             <li><a rel="prefetch" href="/donate">Donate</a></li>
-            <li><a rel="prefetch" href="/sponsors">Sponsors</a></li>
+            <li><a rel="prefetch" href="/about#sponsors">Sponsors</a></li>
             <li><a rel="prefetch" href="/media">Media</a></li>
             <li><a rel="prefetch" href="/status">Network Status</a></li>
             <li><a rel="prefetch" href="/legal">Legal</a></li>
