@@ -25,10 +25,11 @@
 			Other services we provide include web, email, hosted video and voice conferencing and domain / DNS hosting services. You can apply for all of our services via the application form, or read more about the services we offer here.
 		</div>
 	</Mission>
-	<Section>
+	<!-- <Section>
 		<div slot="title">Our Network</div>
 		<div slot="description" id="sponsors">The project operates a large and global infrastructure across multiple continents in world-class facilities. Projects can select which region they want their services deploying on during the application process. Below is a current list of the regions we operate from, and the specifications of the virtualisation platforms we run within them. Occasionally, we run multiple nodes from the same facility.</div>
-	</Section>
+	</Section> -->
+	<div id="sponsors"></div>
 	<Section>
 		<div slot="title">Sponsors</div>
 		<div slot="description">
