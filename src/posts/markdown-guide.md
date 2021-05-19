@@ -4,6 +4,7 @@ author: nqdrt1
 date: 2021-03-02
 summary: Reference for writers and myself.
 thumbnail: markdown-guide.jpg
+draft: true
 ---
 
 *Italic*
@@ -43,4 +44,6 @@ Horizontal Rule
 # code block
 using three backticks
 ```
+
+NOTE: This is a **draft** file, meaning that it can only be visited by those that know the link. On drafted files, the JSON data will appear at the bottom.
 
