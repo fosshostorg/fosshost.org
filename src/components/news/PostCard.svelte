@@ -85,14 +85,14 @@
     h2 {
         font-size: 24px;
         line-height: 32px;
-        margin: 1rem 0 1.5rem;
+        margin: 1rem 0 1.25rem;
         display: inline-block;
+        border-bottom: 3px solid white;
+        transition: ease border-color 0.3s;
     }
 
     h2:hover {
-        /* transition: ease border-bottom 0.2s, ease margin-bottom 0.2s; */
-        border-bottom: 3px solid black;
-        margin-bottom: calc(1.5rem - 3px);
+        border-color: black;
     }
 
     a.read-more:hover::after {
