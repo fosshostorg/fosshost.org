@@ -4,7 +4,7 @@ import matter from 'gray-matter';
 import marked from 'marked';
 
 marked.setOptions({
-    baseUrl: process.env.NODE_ENV === 'development' ? 'http://localhost:3001/' : 'https://beta.fosshost.org/',
+    baseUrl: process.env.NODE_ENV === 'development' ? 'http://localhost:3000/' : 'https://beta.fosshost.org/',
 })
 
 const getPost = slug =>
