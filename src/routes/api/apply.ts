@@ -111,25 +111,25 @@ const transporter = nodemailer.createTransport({
 export async function post(req: any, res: any, next: () => void) {
     info(`Application received: ${req.body.project.name}`)
 
-    // await axios.post("https://api.github.com/repos/fosshostorg/applications/issues", 
-    //     {
-    //         title: "Application: " + req.body.project.name,
-    //         body: format(req.body, false) 
-    //     },
-    //     {
-    //         auth: {
-    //             username: process.env.GITHUB_USER,
-    //             password: process.env.GITHUB_PASS
-    //         }  
-    //     },
-    // )
+    await axios.post("https://api.github.com/repos/fosshostorg/applications/issues", 
+        {
+            title: "Application: " + req.body.project.name,
+            body: format(req.body, false) 
+        },
+        {
+            auth: {
+                username: process.env.GITHUB_USER,
+                password: process.env.GITHUB_PASS
+            }  
+        },
+    )
 
-    const mailOptions = {
-        from: process.env.GMAIL_EMAIL,
-        to: '',
-        subject: 'Fosshost Application Confirmation',
-        html: emailFormat(req.body),
-    }
+    // const mailOptions = {
+    //     from: process.env.GMAIL_EMAIL,
+    //     to: '',
+    //     subject: 'Fosshost Application Confirmation',
+    //     html: emailFormat(req.body),
+    // }
 
     // transporter.sendMail(mailOptions, function(error, info){
     //     if (error) {
