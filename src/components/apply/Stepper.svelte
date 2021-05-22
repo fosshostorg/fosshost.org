@@ -1,21 +1,23 @@
 <script lang="ts">
     export let current: number = 0;
     export let pages: any[] = [];
-    const handleClick = (index: number) => {
-        console.log(index);
-        for (let i = current+1; i < index; i++) {
-            if (!pages[i].completed) {
-                return;
-            }
-        }
-        current = index+1;
-    }
+
+    // TODO: Fix this so it doesn't skip things!
+    // const handleClick = (index: number) => {
+    //     console.log(index);
+    //     for (let i = current+1; i < index; i++) {
+    //         if (!pages[i].completed) {
+    //             return;
+    //         }
+    //     }
+    //     current = index+1;
+    // }
 
 </script>
 
 <main>
     {#each pages as step, i}
-    <div on:click={(e) => handleClick(i)}>
+    <div>
         <p class:active={current >= i+1}>{step.title}</p>
         <span class="bg"></span>
         <span class="bar" style={"width:" + (current >= i+1 ? "100%" : "0%")}></span>
@@ -36,7 +38,7 @@
         flex-direction: column;
         flex-grow: 1;
         margin-right: 6px;
-        cursor: pointer;
+        /* cursor: pointer; */
     }
 
     span.bg {
