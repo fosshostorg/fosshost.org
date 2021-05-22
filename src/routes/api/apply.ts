@@ -1,28 +1,20 @@
 const axios = require('axios');
+const nodemailer = require('nodemailer');
 import escape from 'validator/es/lib/escape';
+import marked from 'marked';
+import { info } from '../../_utils';
 
+let baseURL = "https://admiring-benz-a89dec.netlify.app"
 
 // TODO: write this to include more info
 function emailFormat(body: FormResponse): any {
     return (
-        `<h1 style="text-align: center"><img src="https://determined-fermi-ed1a04.netlify.app/img/HERO_IMAGE.png" alt="Fosshost Logo"/></h1>
+        `<h1 style="text-align: center"><img src="${baseURL}/img/HERO_IMAGE.png" alt="Fosshost Logo"/></h1>
         <h1 style="text-align: center; margin: 1rem 0;">Thanks for joining us!<h1>
         <h3 style="max-width: 640px; text-align: center; margin: 0 auto;">
         This email is to confirm the successful submission of your application. To learn more about our services, visit <a href="https://fosshost.org/about">our site</a>, and to review your submitted information, see below.
         </h3>
-        <hr>
-        <b>Personal Information</b><br>
-        <p>- Name: ${body.personal.name}<p>
-        <p>- Email: ${body.personal.email}<p><br>
-        <b>Project Information</b><br>
-        <p>- Name: ${body.project.name}<p>
-        <p>- Desc: ${body.project.description}<p>
-        <p>- Your Role: ${body.project.role}<p>
-        <p>- Site: ${body.project.site}<p><br>
-        <b>Requested Services</b><br>
-        <p>- ${body.technical.services.join(", ")}<p><br>
-        <h3>Cheers, <br> The Fosshost Team</h3>
-        `
+        <hr>` + marked(format(body, true))
     )
 }
 
@@ -79,7 +71,7 @@ const headers = {
     }
 }
 
-const format = (body: FormResponse) => {
+const format = (body: FormResponse, forEmail: boolean) => {
     const getFormPart = (part: string): string => {
         return (
             escape(
@@ -99,40 +91,51 @@ const format = (body: FormResponse) => {
     }
 
     return (
-        `## Fosshost Application\n${Object.keys(body).map(n => getFormPart(n)).join("\n")}`
+        `${forEmail ? "" : "## Fosshost Application"}\n${Object.keys(body).map(n => {
+            if (!forEmail || n != "security") {
+                return getFormPart(n);
+            }
+        }).join("\n")}`
     )
 }
 
 
-// const transporter = nodemailer.createTransport({
-//     service: 'gmail',
-//     auth: {
-//         user: process.env.GMAIL_EMAIL,
-//         pass: process.env.GMAIL_PASSWORD
-//     }
-// });
+const transporter = nodemailer.createTransport({
+    service: 'gmail',
+    auth: {
+        user: process.env.GMAIL_EMAIL,
+        pass: process.env.GMAIL_PASSWORD
+    }
+});
 
 export async function post(req: any, res: any, next: () => void) {
-    console.log(req.body)
+    info(`Application received: ${req.body.project.name}`)
 
-    await axios.post("https://api.github.com/repos/fosshostorg/applications/issues", 
-        {
-            title: "Application: " + req.body.project.name,
-            body: format(req.body) 
-        },
-        {
-            auth: {
-                username: process.env.GITHUB_USER,
-                password: process.env.GITHUB_PASS
-            }  
-        },
-    )
+    // await axios.post("https://api.github.com/repos/fosshostorg/applications/issues", 
+    //     {
+    //         title: "Application: " + req.body.project.name,
+    //         body: format(req.body, false) 
+    //     },
+    //     {
+    //         auth: {
+    //             username: process.env.GITHUB_USER,
+    //             password: process.env.GITHUB_PASS
+    //         }  
+    //     },
+    // )
+
+    const mailOptions = {
+        from: process.env.GMAIL_EMAIL,
+        to: '',
+        subject: 'Fosshost Application Confirmation',
+        html: emailFormat(req.body),
+    }
 
     // transporter.sendMail(mailOptions, function(error, info){
     //     if (error) {
     //         console.log(error);
     //     } else {
-    //         console.log('Email sent: ' + info.response);
+    //         info('Email sent: ' + info.response);
     //     }
     // })
 
