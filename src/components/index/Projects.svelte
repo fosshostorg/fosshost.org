@@ -47,7 +47,11 @@
         margin: 20px;
         filter: grayscale(100%);
         -webkit-filter: grayscale(100%);
-        opacity: 0.6;
+        opacity: 0.7;
+    }
+
+    a.img img {
+        max-height: 70px;
     }
 
     div {
