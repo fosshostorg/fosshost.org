@@ -25,11 +25,11 @@ export const Projects: Project[] = [
         description: "",
     },
     {
-        id: "graphene",
-        img: "graphene.svg",
-        name: "Graphene",
-        link: "https://github.com/oscarlab/graphene",
-        description: "",
+      id: 'rocky linux',
+      img: 'rockylinux.png',
+      name: 'Rocky Linux',
+      link: 'https://rockylinux.org',
+      description: ''
     },
     {
         id: 'xfce',
@@ -53,11 +53,11 @@ export const Projects: Project[] = [
         description: "",
     },
     {
-        id: "fsfe",
-        img: "",
-        name: "Free Software Foundation Europe",
-        link: "https://fsfe.org/",
-        description: "",
+      id: "graphene",
+      img: "graphene.svg",
+      name: "Graphene",
+      link: "https://github.com/oscarlab/graphene",
+      description: "",
     },
     {
       id: 'manjaro linux',
@@ -65,6 +65,13 @@ export const Projects: Project[] = [
       name: 'Manjaro Linux',
       link: 'https://manjaro.org/',
       description: ''
+    },
+    {
+        id: "fsfe",
+        img: "",
+        name: "Free Software Foundation Europe",
+        link: "https://fsfe.org/",
+        description: "",
     },
     {
       id: 'celestia space',
@@ -589,13 +596,6 @@ export const Projects: Project[] = [
       img: '',
       name: 'CuboCore',
       link: 'https://cubocore.org',
-      description: ''
-    },
-    {
-      id: 'rocky linux',
-      img: '',
-      name: 'Rocky Linux',
-      link: 'https://rockylinux.org',
       description: ''
     },
     {
