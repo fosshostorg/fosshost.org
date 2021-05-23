@@ -4,9 +4,9 @@ import escape from 'validator/es/lib/escape';
 import marked from 'marked';
 import { info } from '../../_utils';
 
+// TODO: This needs to be corrected for production
 let baseURL = "https://admiring-benz-a89dec.netlify.app"
 
-// TODO: write this to include more info
 function emailFormat(body: FormResponse): any {
     return (
         `<h1 style="text-align: center"><img src="${baseURL}/img/HERO_IMAGE.png" alt="Fosshost Logo"/></h1>
@@ -101,10 +101,10 @@ const format = (body: FormResponse, forEmail: boolean) => {
 
 
 const transporter = nodemailer.createTransport({
-    service: 'gmail',
+    service: process.env.EMAIL_PROVIDER,
     auth: {
-        user: process.env.GMAIL_EMAIL,
-        pass: process.env.GMAIL_PASSWORD
+        user: process.env.EMAIL,
+        pass: process.env.PASSWORD
     }
 });
 
@@ -124,20 +124,20 @@ export async function post(req: any, res: any, next: () => void) {
         },
     )
 
-    // const mailOptions = {
-    //     from: process.env.GMAIL_EMAIL,
-    //     to: '',
-    //     subject: 'Fosshost Application Confirmation',
-    //     html: emailFormat(req.body),
-    // }
+    const mailOptions = {
+        from: process.env.EMAIL,
+        to: req.body.personal.email,
+        subject: 'Fosshost Application Confirmation',
+        html: emailFormat(req.body),
+    }
 
-    // transporter.sendMail(mailOptions, function(error, info){
-    //     if (error) {
-    //         console.log(error);
-    //     } else {
-    //         info('Email sent: ' + info.response);
-    //     }
-    // })
+    transporter.sendMail(mailOptions, function(error, info){
+        if (error) {
+            console.log(error);
+        } else {
+            info('Email sent: ' + info.response);
+        }
+    })
 
     res.end();
 }
