@@ -29,7 +29,7 @@
 
     @media (max-width: 1024px) {
         div {
-            height: auto;
+            height: auto !important;
         }
         main {
             flex-direction: column-reverse;
