@@ -32,6 +32,7 @@
         a {
             height: 70px !important;
             width: calc(100% - 40px) !important;
+            padding: 0.75rem 0rem;
         }
     }
 
