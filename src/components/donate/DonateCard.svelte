@@ -9,15 +9,9 @@
     <span>
         We never ask for any financial reimbursement from those who we support, but if you are happy to donate any amount to help cover our running costs, it is very much appreciated. 
         <br><br>
-        To make a donation select the icon of your favourite payment processor below.
+        To make a donation select the icon below.
     </span>
     <div>
-        <a target="_blank" href="https://www.blockchain.com/btc/address/15PHtW5kLuYtFMYbSS7Lho39AQyqrMGX2v">
-            <img src="/img/icon_BitCoin.svg" alt="Donate with Bitcoin."/> 
-        </a>
-        <a target="_blank" href="https://liberapay.com/fosshost.org/donate">
-            <img src="/img/icon_LibrePay.svg" alt="Donate with LibrePay."/> 
-        </a>
         <a target="_blank" href="https://paypal.com/donate">
             <img src="/img/icon_PayPal.svg" alt="Donate with PayPal."/> 
         </a>
