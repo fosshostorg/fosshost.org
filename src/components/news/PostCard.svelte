@@ -30,7 +30,6 @@
         text-decoration: none;
         color: var(--fosshost-black);
         margin: 1rem;
-        /* min-height: 300px; TODO: Decide whether or not cards should have a fixed height. */
     }
 
     a.read-more {

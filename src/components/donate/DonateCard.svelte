@@ -12,7 +12,7 @@
         To make a donation select the icon below.
     </span>
     <div>
-        <a target="_blank" href="https://paypal.com/donate">
+        <a target="_blank" href="https://www.paypal.com/paypalme/fosshost">
             <img src="/img/icon_PayPal.svg" alt="Donate with PayPal."/> 
         </a>
     </div>
