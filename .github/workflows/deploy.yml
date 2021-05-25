@@ -12,7 +12,7 @@ jobs:
         run: sudo apt install -y sshpass
 
       - name: Build
-        run: sshpass -p '${{ secrets.PASSWORD }}' ssh -o StrictHostKeyChecking=no ${{ secrets.ORIGIN }} -J jump@proxy.dfw.aarch64.com -p 22777 "sudo -u fosshost sh -c 'cd /home/fosshost/fosshost.org && git pull && npm run build'"
+        run: sshpass -p '${{ secrets.PASSWORD }}' ssh -o StrictHostKeyChecking=no -o ProxyCommand="ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -W '[%h]:%p' jump@proxy.dfw.aarch64.com" ${{ secrets.ORIGIN }} -p 22777 "sudo -u fosshost sh -c 'cd /home/fosshost/fosshost.org && git pull && npm run build'"
 
       - name: Restart
-        run: sshpass -p '${{ secrets.PASSWORD }}' ssh -o StrictHostKeyChecking=no ${{ secrets.ORIGIN }} -J jump@proxy.dfw.aarch64.com -p 22777 "systemctl restart fosshostorg"
+        run: sshpass -p '${{ secrets.PASSWORD }}' ssh -o StrictHostKeyChecking=no -o ProxyCommand="ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -W '[%h]:%p' jump@proxy.dfw.aarch64.com" ${{ secrets.ORIGIN }} -p 22777 "systemctl restart fosshostorg"
