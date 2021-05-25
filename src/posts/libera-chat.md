@@ -4,7 +4,7 @@ author: corwin
 date: 2021-05-25
 summary: You can chat with us on Libera.Chat IRC
 thumbnail: libera-chat.png
-draft: true
+draft: false
 ---
 
 In response to the recent mass resignation of volunteer staff from Freenode, an Internet Relay Chat (IRC) network for Free Software communities, Fosshost is migrating its IRC presence to Libera Chat, a new IRC network with a similar focus founded by former Freenode staff.
