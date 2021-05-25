@@ -13,7 +13,7 @@
 <main>
 	<h1>{status}</h1>
 	<h2>The page you are looking for can't be found.</h2>
-	<img src="/img/illustration2.svg" alt="404 Illustration"/>
+	<img src="/img/illustration3.png" alt="404 Illustration"/>
 </main>
 {:else}
 <main>
