@@ -2,13 +2,15 @@ name: Deploy
 
 on:
   push:
-    branches:
-      - main
+    branches: [ main ]
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
+      - name: Install sshpass
+        run: sudo apt install -y sshpass
+
       - name: Build
         run: sshpass -p '${{ secrets.PASSWORD }}' ssh ${{ secrets.ORIGIN }} -J jump@proxy.dfw.aarch64.com -p 22777 "sudo -u fosshost sh -c 'cd /home/fosshost/fosshost.org && git pull && npm run build'"
 
