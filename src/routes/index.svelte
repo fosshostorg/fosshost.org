@@ -19,18 +19,18 @@
 	<Hero />
 	<Projects />
 	<div>
-		<Card img="/img/illustration1.svg">
+		<Card img="/img/illustration1.png">
 			The project operates free hosting services 
 			for the open source community. The infrastructure 
 			is donated by our hosting sponsors and is managed 
 			by a group of highly talented volunteers.
 		</Card>
-		<Card reverse img="/img/illustration2.svg">
+		<Card reverse img="/img/illustration2.png">
 			Many open source projects benefit from our 
 			hosting services which help to support, promote, 
 			and advance the development and movement of free software.
 		</Card>
-		<Card img="/img/illustration3.svg">
+		<Card img="/img/illustration3.png">
 			We operate a large and global infrastructure in 
 			multiple regions which delivers a resilient, scalable, 
 			and world-class hosting experience.
