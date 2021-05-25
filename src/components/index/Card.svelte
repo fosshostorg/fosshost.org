@@ -4,12 +4,12 @@
 </script>
 
 <main style="--flexNormal:{reverse ? "row-reverse" : "row"}">
-    <div>
+    <div style="max-width: 700px; margin: 0 auto;">
         <p><slot /></p>
     </div>
-    <div>
+    <!-- <div>
         <img alt="Fosshost Illustration" src={img} />
-    </div>
+    </div> -->
 </main>
 
 <style>
