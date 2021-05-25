@@ -3,7 +3,7 @@ title: Fosshost is moving our IRC presence to Libera.Chat
 author: corwin
 date: 2021-05-25
 summary: You can live with us on Libera.Chat IRC
-thumbnail: libera-chat.svg
+thumbnail: libera-chat.png
 draft: true
 ---
 
