@@ -7,7 +7,7 @@
     <div>
     {#each Projects as project, i}
         {#if i < 5}
-            <a class="img" href={project.link}><img src={"/img/project-logos/" + project.img} alt={project.name}/></a>
+            <a class="img" href={project.link}><img width="150" height="70" src={"/img/project-logos/" + project.img} alt={project.name}/></a>
         {/if}
     {/each}
     </div>
@@ -51,7 +51,7 @@
     }
 
     a.img img {
-        max-height: 70px;
+        object-fit: scale-down;
     }
 
     div {
