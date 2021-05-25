@@ -1,0 +1,16 @@
+name: Deploy
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Build
+        run: sshpass -p '${{ secrets.PASSWORD }}' ssh ${{ secrets.ORIGIN }} -J jump@proxy.dfw.aarch64.com -p 22777 "sudo -u fosshost sh -c 'cd /home/fosshost/fosshost.org && git pull && npm run build'"
+
+      - name: Restart
+        run: sshpass -p '${{ secrets.PASSWORD }}' ssh ${{ secrets.ORIGIN }} -J jump@proxy.dfw.aarch64.com -p 22777 "systemctl restart fosshostorg"
