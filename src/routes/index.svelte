@@ -36,7 +36,7 @@
 			and world-class hosting experience.
 			<br>
 			<br> 
-			You can read more about our work <a href="/about">here</a>.
+			You can read more about our work <a class="fosshost-link" href="/about">here</a>.
 		</Card>
 	</div>
 	<Quote author="Morgan Lemmer-Webber" authorDetails="Founder, ActivityPub Conference">
@@ -54,10 +54,6 @@
 		height: 100%;
 		font-family: 'Source Sans Pro', sans-serif;
 		background-color: white;
-	}
-
-	a {
-		color: var(--fosshost-color);
 	}
 
 	div {

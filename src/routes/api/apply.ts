@@ -1,11 +1,12 @@
 const axios = require('axios');
-const nodemailer = require('nodemailer');
+// const nodemailer = require('nodemailer');
+import { Message, SMTPClient } from 'emailjs';
 import escape from 'validator/es/lib/escape';
 import marked from 'marked';
 import { info } from '../../_utils';
 
-// TODO: This needs to be corrected for production
-let baseURL = "https://admiring-benz-a89dec.netlify.app"
+
+let baseURL = "https://fosshost.org"
 
 function emailFormat(body: FormResponse): any {
     return (
@@ -100,12 +101,22 @@ const format = (body: FormResponse, forEmail: boolean) => {
 }
 
 
-const transporter = nodemailer.createTransport({
-    service: process.env.EMAIL_PROVIDER,
-    auth: {
-        user: process.env.EMAIL,
-        pass: process.env.PASSWORD
-    }
+// const transporter = nodemailer.createTransport({
+//     service: process.env.EMAIL_PROVIDER,
+//     auth: {
+//         user: process.env.EMAIL,
+//         pass: process.env.PASSWORD
+//     }
+// });
+
+const client = new SMTPClient({
+	user: process.env.EMAIL,
+	password: process.env.PASSWORD,
+	host: "smtp.office365.com",
+    tls: {
+		ciphers: 'SSLv3',
+	},
+    timeout: 40000,
 });
 
 export async function post(req: any, res: any, next: () => void) {
@@ -124,20 +135,32 @@ export async function post(req: any, res: any, next: () => void) {
         },
     )
 
-    const mailOptions = {
+    const mailOptions: Message = new Message({
         from: process.env.EMAIL,
         to: req.body.personal.email,
         subject: 'Fosshost Application Confirmation',
-        html: emailFormat(req.body),
-    }
-
-    transporter.sendMail(mailOptions, function(error, info){
-        if (error) {
-            console.log(error);
-        } else {
-            info('Email sent: ' + info.response);
-        }
+        text: "",
+        attachment: [
+            { data: emailFormat(req.body), alternative: true },
+        ]
     })
+
+    client.send(mailOptions, (err, msg) => {
+        if (err) {
+            console.log(err);
+        } else if (msg) {
+            info("Email sent successfully");
+        }
+        
+    })
+
+    // transporter.sendMail(mailOptions, function(error, info){
+    //     if (error) {
+    //         console.log(error);
+    //     } else {
+    //         info('Email sent: ' + info.response);
+    //     }
+    // })
 
     res.end();
 }
