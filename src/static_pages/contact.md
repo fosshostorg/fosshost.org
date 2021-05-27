@@ -4,7 +4,7 @@
 All support is provided by our volunteers and fellow users within our online community. We pride ourselves on offering an efficient and personal service to all of projects and users. To assist with this, we support a number of communication protocols to make our service accessible, wherever you are.
 
 [Submit Ticket](https://support.fossho.st)  
-[IRC](https://webchat.freenode.net/#fosshost)  
+[IRC](https://web.libera.chat/#fosshost)  
 [Discord](https://discord.gg/8MfNdGK)  
 [Matrix](https://matrix.to/#/#fosshost:matrix.org)  
 [Telegram](https://t.me/fosshost)  
