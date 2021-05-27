@@ -5,7 +5,6 @@
     import X86Options, { validator as X86Validator, errorFormat as X86Errors } from './technical/X86Options.svelte';
     import AArch64Options, { validator as AArch64Validator, errorFormat as AArch64Errors } from './technical/AArch64Options.svelte';
     import MirrorOptions, { validator as MirrorValidator, errorFormat as MirrorErrors } from './technical/MirrorOptions.svelte';
-    import AudioVideoOptions, { validator as AudioVideoValidator, errorFormat as AudioVideoErrors } from './technical/AudioVideoOptions.svelte';
     import EmailAndWebOptions, { validator as EmailAndWebValidator, errorFormat as EmailAndWebErrors } from './technical/EmailAndWebOptions.svelte';
 
     export let data: FormResponse;
@@ -19,7 +18,6 @@
         "AArch64 VPS",
         "Email and Webhosting",
         "DNS",
-        "Audio and Video Conferencing",
     ]
 
     let error = null;
@@ -50,10 +48,6 @@
             domain: "",
             requiresHosting: null,
         },
-        "Audio and Video Conferencing": {
-            service: "",
-            specialRequirements: "",
-        },
     }
 
     let components = {
@@ -62,7 +56,6 @@
         "AArch64 VPS":                  {c: AArch64Options, validator: AArch64Validator, errors: AArch64Errors},
         "Email and Webhosting":         {c: EmailAndWebOptions, validator: EmailAndWebValidator, errors: EmailAndWebErrors},
         "DNS":                          {c: DNSOptions, validator: DNSValidator, errors: DNSErrors},
-        "Audio and Video Conferencing": {c: AudioVideoOptions, validator: AudioVideoValidator, errors: AudioVideoErrors},
     }
     
     $: if (data.technical.services) {

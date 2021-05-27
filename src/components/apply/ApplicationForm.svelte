@@ -107,7 +107,7 @@
 
 <style>
     main {
-        width: 100%;
+        width: calc(100% - 2rem);
         max-width: 600px;
         margin: 0 auto;
         display: flex;

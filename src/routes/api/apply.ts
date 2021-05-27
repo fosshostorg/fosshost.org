@@ -60,10 +60,10 @@ const headers = {
         "AArch64 VPS": {
             createdAccount: "Created an AArch64 account?",
         },
-        "Audio and Video Conferencing": {
-            service: "Requested service",
-            specialRequirements: "Special requirements?",
-        },
+        // "Audio and Video Conferencing": {
+        //     service: "Requested service",
+        //     specialRequirements: "Special requirements?",
+        // },
         "Email and Webhosting": {
             domain: "Hosting domain",
             requiresHosting: "Requires DNS hosting?",
