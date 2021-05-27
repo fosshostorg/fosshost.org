@@ -13,7 +13,7 @@
 <main in:fade={{delay: 0, duration: 400}}>
     <h1>Thank you for your interest in Fosshost</h1>
     <p>
-        Before we proceed with your application, pleace confirm that you have read and understood the
+        Before we proceed with your application, please confirm that you have read and understood the
         <a href="https://docs.fosshost.org/en/home/application" target="_blank" class="fosshost-link"><b>Eligibility Criteria</b></a>.
     </p>
     <button class="accept" on:click={handleClick}>I accept</button>
