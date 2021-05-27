@@ -14,7 +14,7 @@
     export let currentPage: number;
 
     let options = [
-        "X86 VPS",
+        "x86 VPS",
         "Mirrors-as-a-service",
         "AArch64 VPS",
         "Email and Webhosting",
@@ -25,7 +25,7 @@
     let error = null;
 
     let defaults = {
-        "X86 VPS": {
+        "x86 VPS": {
             regions: [],
             IPv4Preference: "",
             vCPUs: "",
@@ -57,7 +57,7 @@
     }
 
     let components = {
-        "X86 VPS":                      {c: X86Options, validator: X86Validator, errors: X86Errors},
+        "x86 VPS":                      {c: X86Options, validator: X86Validator, errors: X86Errors},
         "Mirrors-as-a-service":         {c: MirrorOptions, validator: MirrorValidator, errors: MirrorErrors},
         "AArch64 VPS":                  {c: AArch64Options, validator: AArch64Validator, errors: AArch64Errors},
         "Email and Webhosting":         {c: EmailAndWebOptions, validator: EmailAndWebValidator, errors: EmailAndWebErrors},

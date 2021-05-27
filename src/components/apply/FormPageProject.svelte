@@ -11,7 +11,7 @@
         name: yup.string().required(),
         description: yup.string().required(),
         role: yup.string().required(),
-        site: yup.string().url()
+        site: yup.string()
     })
 
     let errors = {

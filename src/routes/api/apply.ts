@@ -44,7 +44,7 @@ const headers = {
             domain: "Requested domain",
             requiresHosting: "Requires DNS hosting?"
         },
-        "X86 VPS": {
+        "x86 VPS": {
             regions: "Regional preferences",
             IPv4Preference: "IPv4 preference",
             vCPUs: "vCPUs",

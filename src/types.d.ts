@@ -32,7 +32,7 @@ type Post = {
     html?: string
 }
 
-type Service = "X86 VPS" | "Mirrors-as-a-service" | "AArch64 VPS" | "Email and Webhosting" | "DNS" | "Audio and Video Conferencing";
+type Service = "x86 VPS" | "Mirrors-as-a-service" | "AArch64 VPS" | "Email and Webhosting" | "DNS";
 
 type FormResponse = {
     security: {
@@ -55,7 +55,7 @@ type FormResponse = {
             domain: string,
             requiresHosting: boolean
         },
-        "X86 VPS"?: {
+        "x86 VPS"?: {
             regions: string[],
             IPv4Preference: string,
             vCPUs: string,
@@ -70,10 +70,6 @@ type FormResponse = {
         },
         "AArch64 VPS"?: {
             createdAccount: boolean,
-        },
-        "Audio and Video Conferencing"?: {
-            service: string,
-            specialRequirements: string,
         },
         "Email and Webhosting"?: {
             domain: string,
