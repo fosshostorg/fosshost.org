@@ -60,7 +60,7 @@
 </script>
 
 <main in:fade={{ delay: 0, duration: 400 }}>
-  <span><em>X86 VPS Options:</em></span>
+  <span><em>x86 VPS Options:</em></span>
   <span>
     You may select one or more regions. By default, we will provide one VM per
     region. However, if you require multiple VMs deploying in the same region,
@@ -72,7 +72,7 @@
   <CheckboxGroup
     label="Which is your preferred region? *"
     options={regionOptions}
-    bind:selected={data.technical["X86 VPS"].regions}
+    bind:selected={data.technical["x86 VPS"].regions}
     error={errors.regions}
   />
   <span>
@@ -85,11 +85,11 @@
     limit
     label="Please list your IPv4 preference: *"
     options={ipv4Options}
-    bind:selected={data.technical["X86 VPS"].IPv4Preference}
+    bind:selected={data.technical["x86 VPS"].IPv4Preference}
     error={errors.IPv4Preference}
   />
 
-  <span><em>X86 VPS Specifications:</em></span>
+  <span><em>x86 VPS Specifications:</em></span>
   <span>
     We have recently changed our policy of offering default VM specifications.
     This is because in some cases our default specification was too excessive.
@@ -102,32 +102,32 @@
     limit
     label="How many vCPUs do you require? *"
     options={vCPUOptions}
-    bind:selected={data.technical["X86 VPS"].vCPUs}
+    bind:selected={data.technical["x86 VPS"].vCPUs}
     error={errors.vCPUs}
   />
   <CheckboxGroup
     limit
     label="How much memory do you require? *"
     options={memoryOptions}
-    bind:selected={data.technical["X86 VPS"].memory}
+    bind:selected={data.technical["x86 VPS"].memory}
     error={errors.memory}
   />
   <CheckboxGroup
     limit
     label="How much storage do you require? *"
     options={storageOptions}
-    bind:selected={data.technical["X86 VPS"].storage}
+    bind:selected={data.technical["x86 VPS"].storage}
     error={errors.storage}
   />
   <CheckboxGroup
     limit
     label="Which OS would you prefer? *"
     options={osOptions}
-    bind:selected={data.technical["X86 VPS"].os}
+    bind:selected={data.technical["x86 VPS"].os}
     error={errors.os}
   />
 
-  <Input on:blur={() => {errors = validate(validator, 'SSHKey', data.technical["X86 VPS"], errors)}} error={errors.SSHKey} label="Public SSH key *" type="text" placeholder="Please provide your public SSH key" bind:value={data.technical["X86 VPS"].SSHKey}>
+  <Input on:blur={() => {errors = validate(validator, 'SSHKey', data.technical["x86 VPS"], errors)}} error={errors.SSHKey} label="Public SSH key *" type="text" placeholder="Please provide your public SSH key" bind:value={data.technical["x86 VPS"].SSHKey}>
     <span slot="help">
       Unsure how to create an SSH key? See <a class="fosshost-link" target="_blank" href="https://docs.fosshost.org/en/home/how-to-create-ssh-key">here</a>.
     </span>
