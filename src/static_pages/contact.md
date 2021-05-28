@@ -8,7 +8,6 @@ All support is provided by our volunteers and fellow users within our online com
 [IRC](https://web.libera.chat/#fosshost)      
 Telephone Support: +44 (0) 208 154 4278
 
-
 ## Write to us
 
 Fosshost C.I.C.  
