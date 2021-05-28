@@ -1,4 +1,5 @@
 <script>
+    import HideDetails from "./HideDetails.svelte";
 
 </script>
 
@@ -8,12 +9,56 @@
     </h2>
     <span>
         We never ask for any financial reimbursement from those who we support, but if you are happy to donate any amount to help cover our running costs, it is very much appreciated. 
-        <br><br>
-        To make a donation select the icon below.
+        
+        <HideDetails>
+            <p slot="title">Want to make a donation in EURO?</p>
+            <span slot="body">
+                <p>This account accepts payments from within the EU and SEPA.</p>
+                <p>Please deposit into the following account:</p><br>
+
+                <p>Account Name: Fosshost C.I.C</p>
+                <p>SWIFT/BIC: TRWIBEB1XXX</p>
+                <p>IBAN: BE54 9672 0293 7197</p>
+                <p>Address: Avenue Louise 54, Room S52, Brussels, 1050, Belgium</p>
+            </span>
+        </HideDetails>
+        <HideDetails>
+            <p slot="title">Want to make a donation in GBP?</p>
+            <span slot="body">
+                <p>Please deposit into the following account:</p><br>
+
+                <p>Account Name: Fosshost C.I.C</p>
+                <p>Sortcode: 23-14-70</p>
+                <p>Account Number: 37343617</p>
+                <p>SWIFT/BIC: TRWIGB2L</p>
+                <p>IBAN: GB88 TRWI 2314 7037 3436 17</p>
+                <p>Address: TransferWise, 56 Shoreditch High Street, London, E1 6JJ, United Kingdom</p>
+            </span>
+        </HideDetails>
+        <HideDetails>
+            <p slot="title">Want to make a donation in USD?</p>
+            <span slot="body">
+                <p>If you are making a donation in USD from <em>within</em> the USA please deposit into the following account:</p>
+                <br>
+                <p>Account Name: Fosshost C.I.C</p>
+                <p>Routing Number: 084009519</p>
+                <p>Account Number: 9600 0001 9973 3949</p>
+                <p>Account Type: Checking</p>
+                <p>Address: TransferWise, 19 W 24th Street, New York NY 10010, United States</p>
+                <br>
+                <p>If you are making a donation in USD from <em>outside</em> the USA please deposit into the following account:</p>
+                <br>
+                <p>Account Name: Fosshost C.I.C</p>
+                <p>SWIFT/BIC: CMFGUS33</p>
+                <p>Account Number: 8311067189</p>
+                <p>Address: TransferWise, 19 W 24th Street, New York NY 10010, United States</p>
+            </span>
+        </HideDetails>
+        Or to make a donation with PayPal, select the icon below.
     </span>
     <div>
         <a target="_blank" href="https://www.paypal.com/paypalme/fosshost">
-            <img src="/img/icon_PayPal.svg" alt="Donate with PayPal."/> 
+            <img height="80" width="80" src="/img/icon_PayPal.svg" alt="Donate with PayPal."/> 
         </a>
     </div>
 </main>
