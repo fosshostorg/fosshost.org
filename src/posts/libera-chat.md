@@ -13,8 +13,6 @@ Fosshost has been present on Freenode since our formation in March 2020.  Throug
 All existing users of the `#fosshost` family of channels on Freenode are invited to join us in `#fosshost` and friends. on Libera Chat.
 For the time being it is still possible to send a message to us by chatting in Freenode #fosshost.  This will forward a message to our [Discord](https://discord.gg/pEU5eZ9hhh) which now is otherwise bridged with our channels on Libera.Chat.  Our other channels on Freenode forward to #fosshost.
 
-As always, you can start a conversation with our team by email.
-
 # Our Channels
 
  * #fosshost -our main channel, Q&A and discussion
