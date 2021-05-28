@@ -8,7 +8,7 @@
 </script>
 
 <svelte:head>
-	<title>About</title>
+	<title>Fosshost - About</title>
 </svelte:head>
 
 <main>
