@@ -137,8 +137,8 @@ export async function post(req: any, res: any, next: () => void) {
 
     const mailOptions: Message = new Message({
         from: process.env.EMAIL,
-        to: req.body.personal.email,
-	bcc: 'support@fosshost.org',
+        to: 'support@fosshost.org',
+	cc: req.body.personal.email,
         subject: 'Fosshost Application Confirmation',
         text: "",
         attachment: [
