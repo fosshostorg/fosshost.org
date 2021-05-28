@@ -31,9 +31,13 @@
         display: none;      
     }
 
-    span.body :global(p, br) {
+    span.body :global(p) {
         font-size: 18px !important;
         line-height: 22px;
+    }
+
+    span.body :global(br) {
+        line-height: 10px;
     }
 
     span.body :global(em) {
