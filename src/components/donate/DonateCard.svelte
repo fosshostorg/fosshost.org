@@ -14,8 +14,7 @@
             <p slot="title">Want to make a donation in EURO?</p>
             <span slot="body">
                 <p>This account accepts payments from within the EU and SEPA.</p>
-                <p>Please deposit into the following account:</p><br>
-
+                <p>Please deposit into the following account:<br><br></p>
                 <p>Account Name: Fosshost C.I.C</p>
                 <p>SWIFT/BIC: TRWIBEB1XXX</p>
                 <p>IBAN: BE54 9672 0293 7197</p>
@@ -25,8 +24,7 @@
         <HideDetails>
             <p slot="title">Want to make a donation in GBP?</p>
             <span slot="body">
-                <p>Please deposit into the following account:</p><br>
-
+                <p>Please deposit into the following account:<br><br></p>
                 <p>Account Name: Fosshost C.I.C</p>
                 <p>Sortcode: 23-14-70</p>
                 <p>Account Number: 37343617</p>
@@ -38,20 +36,20 @@
         <HideDetails>
             <p slot="title">Want to make a donation in USD?</p>
             <span slot="body">
-                <p>If you are making a donation in USD from <em>within</em> the USA please deposit into the following account:</p>
-                <br>
+                <p>If you are making a donation in USD from <em>within</em> the USA please deposit into the following account:<br><br></p>
                 <p>Account Name: Fosshost C.I.C</p>
                 <p>Routing Number: 084009519</p>
                 <p>Account Number: 9600 0001 9973 3949</p>
                 <p>Account Type: Checking</p>
-                <p>Address: TransferWise, 19 W 24th Street, New York NY 10010, United States</p>
-                <br>
-                <p>If you are making a donation in USD from <em>outside</em> the USA please deposit into the following account:</p>
-                <br>
+                <p>Address: TransferWise, 19 W 24th Street, New York NY 10010, United States<br><br></p>
+
+                <p>If you are making a donation in USD from <em>outside</em> the USA please deposit into the following account:<br><br></p>
                 <p>Account Name: Fosshost C.I.C</p>
                 <p>SWIFT/BIC: CMFGUS33</p>
                 <p>Account Number: 8311067189</p>
-                <p>Address: TransferWise, 19 W 24th Street, New York NY 10010, United States</p>
+                <p>Address: TransferWise, 19 W 24th Street, New York NY 10010, United States<br><br></p>
+                
+                <p>When you make a transfer to the above account(s), you may see Community Federal Savings Bank (CFSB), Evolve Bank and Trust (EVOLVE). This is because our USD accounts are with both CFSB and EVOLVE.</p>
             </span>
         </HideDetails>
         Or to make a donation with PayPal, select the icon below.
