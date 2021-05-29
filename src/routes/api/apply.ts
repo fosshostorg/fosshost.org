@@ -15,6 +15,9 @@ function emailFormat(body: FormResponse): any {
         <h3 style="max-width: 640px; text-align: center; margin: 0 auto;">
         This email is to confirm the successful submission of your application. To learn more about our services, visit <a href="https://fosshost.org/about">our site</a>, and to review your submitted information, see below.
         </h3>
+        <h5 style="max-width: 640px; text-align: center; margin: 0 auto;">
+        <br>Your application is currently being reviewed by our team. Within the next 72 working hours you should receive a follow up email detailing our decision or a request for further information.
+        </h5>
         <hr>` + marked(format(body, true))
     )
 }
@@ -100,15 +103,6 @@ const format = (body: FormResponse, forEmail: boolean) => {
     )
 }
 
-
-// const transporter = nodemailer.createTransport({
-//     service: process.env.EMAIL_PROVIDER,
-//     auth: {
-//         user: process.env.EMAIL,
-//         pass: process.env.PASSWORD
-//     }
-// });
-
 const client = new SMTPClient({
 	user: process.env.EMAIL,
 	password: process.env.PASSWORD,
@@ -138,7 +132,7 @@ export async function post(req: any, res: any, next: () => void) {
     const mailOptions: Message = new Message({
         from: process.env.EMAIL,
         to: 'support@fosshost.org',
-	cc: req.body.personal.email,
+	    cc: req.body.personal.email,
         subject: 'Fosshost Application Confirmation',
         text: "",
         attachment: [
@@ -154,14 +148,6 @@ export async function post(req: any, res: any, next: () => void) {
         }
         
     })
-
-    // transporter.sendMail(mailOptions, function(error, info){
-    //     if (error) {
-    //         console.log(error);
-    //     } else {
-    //         info('Email sent: ' + info.response);
-    //     }
-    // })
 
     res.end();
 }
