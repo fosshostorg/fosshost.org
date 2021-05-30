@@ -343,13 +343,6 @@ export const Projects: Project[] = [
     description: "",
   },
   {
-    id: "free software foundation europe",
-    img: "",
-    name: "Free Software Foundation Europe",
-    link: "https://fsfe.org",
-    description: "",
-  },
-  {
     id: "f-droid",
     img: "",
     name: "F-Droid",
