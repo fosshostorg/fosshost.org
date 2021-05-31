@@ -5,7 +5,13 @@
 </script>
 
 <svelte:head>
-    <title>Fosshost - Donate</title>
+	<title>Fosshost - Donate</title>
+	<meta name="description" content="Donate to Fosshost! Help us keep the lights on by providing a donation today.">
+	<meta property="og:title" content="Fosshost - Donate" />
+	<meta property="og:description" content="Donate to Fosshost! Help us keep the lights on by providing a donation today." />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://fosshost.org/donate" />
+	<meta property="og:image" content="https://fosshost.org/img/HERO_IMAGE.png" />
 </svelte:head>
 
 <main>
