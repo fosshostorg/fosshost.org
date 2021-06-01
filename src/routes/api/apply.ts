@@ -133,7 +133,7 @@ export async function post(req: any, res: any, next: () => void) {
         from: process.env.EMAIL,
         to: 'support@fosshost.org',
 	    cc: req.body.personal.email,
-        subject: 'Fosshost Application Confirmation',
+        subject: `Fosshost Application - ${escape(req.body.project.name)}`,
         text: "",
         attachment: [
             { data: emailFormat(req.body), alternative: true },
