@@ -1,7 +1,7 @@
 ---
-title: FOSSHOST ENTERS PARTNERSHIP WITH FREENODE
+title: Fosshost Enters Partnership with freenode
 date: 2021-06-01
-summary: Fosshost will partner with freenode to host and operate Freenode IRC.
+summary: Fosshost and Freenode will partner to host and operate IRC
 author: corwin
 thumbnail: freenode.png
 ---
