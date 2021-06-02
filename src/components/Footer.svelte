@@ -17,6 +17,7 @@
             <li><a rel="prefetch" href="/media">Media</a></li>
             <li><a rel="prefetch" href="/status">Network Status</a></li>
             <li><a rel="prefetch" href="/legal">Legal</a></li>
+            <li><a rel="prefetch" href="/news/feed.xml">RSS</a></li>
         </ul>
         <span>
             <ul class="copy-info">
