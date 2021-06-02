@@ -11,6 +11,16 @@ No, Fosshost has not been sold.
 ### Did Andrew Lee give Fosshost money? 
 Yes. We received a donation from Freenode to ensure that our work remains sustainable. Mr Lee sent a follow-up email thanking us for our work in the community, and this sparked a conversation between our directors and Freenode Limited. We had recently made some announcements on Reddit and other media asking for help from the community to fund growing our network and bring our service to more projects. 
 
+With his permission, and in keeping with our foundational spirit of maximum prudent disclosure, the funds donated by Mr. Lee comprise:
+
+| Type | Amount | Description |
+| --- | --- | --- |
+| CASH/TRANSFER |  $52,000 | (USD) |
+| PAYPAL | £32,126.76 | (GBP) |
+| CRYPTO | 500000 HNS | (current value of $137,800.00 USD, subject to change - live market) |
+
+Fosshost has not yet drawn upon or released any of these funds.
+
 ### Is Andrew Lee on the board of Fosshost? 
 No. 
 
