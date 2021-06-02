@@ -27,10 +27,10 @@ We will provide exact figures after we have consulted UK law regarding disclosur
 Yes, to every dollar. We do this as soon as possible; however, it may take several days or weeks. We will certainly publish our detailed accounts not later than Jan 15, 2022, and hope to publish them (publicly) by July 15 to establish at least a semi-annual reporting cadence. We had not yet completed our CIC organization stats at the beginning of Q2 2021 and did not produce regular reports before we had formally organized. We have kept (we believe) complete records and hope also to publish these as time permits. 
 
 ### Andrew Lee is a businessman; why have you partnered with a businessman/commercial interest?
-We have not partnered with Andrew Lee. We have accepted an agreement we have partnered with Freenode, in which Andrew Lee has presented himself as the owner and operator of an application for our service. 
+We have not partnered with Andrew Lee. We have accepted an application as we do for all potential hosting relationships, in this Andrew Lee has presented himself as the owner and operator of an Freenode IRC as a FOSS application to be considered for hosting.. 
 
 ### Why did you not refuse the donation? 
-Fosshost is not generally (as an organization, our members otherwise represent themselves however they choose) in the practice of "wading in" to "political" drams within the community. We will not generally refuse donations made to us unless we have concerns of a legal nature, for an attempt to donate money to us illegally, to donate stolen money, etc. 
+Fosshost is not generally (as an organization, our members otherwise represent themselves however they choose) in the practice of "wading in" to "political" drams within the community. We will not generally refuse donations made to us unless we have concerns of a legal nature, for example an attempt to donate money to us illegally, to donate stolen money, etc. 
 
 ### I left Freenode because of recent developments, and now I can't trust Fosshost because of its connections back to Freenode? 
 We are sorry to learn that. We intend to provide your project with a safe and stable hosting environment for decades, irrespective of how popular or unpopular it may become. But we understand. Sometimes it doesn't work out, and people need a sandbox a little further away. We are currently researching viable alternatives to our service and will soon list some here. In all events: Best of luck, and thank you for your service and commitment to Free and Open Source Software. 
