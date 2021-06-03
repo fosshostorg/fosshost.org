@@ -14,13 +14,6 @@ export const Projects: Project[] = [
     description: "",
   },
   {
-    id: "armbian",
-    img: "armbian.svg",
-    name: "armbian",
-    link: "https://www.armbian.com",
-    description: "",
-  },
-  {
     id: "debian",
     img: "debian.svg",
     name: "Debian",
