@@ -24,7 +24,7 @@ Fosshost has not yet drawn upon or released any of these funds.
 ### Is Andrew Lee on the board of Fosshost? 
 No. 
 
-### Has Andrew Lew become part of the Fosshost Staff? 
+### Has Andrew Lee become part of the Fosshost Staff? 
 No. 
 
 ### Why have dbo, nikola and eth01 now become Freenode staff members? 
