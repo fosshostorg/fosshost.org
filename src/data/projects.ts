@@ -182,13 +182,6 @@ export const Projects: Project[] = [
     description: "",
   },
   {
-    id: "hosted status page",
-    img: "",
-    name: "Hosted Status Page",
-    link: "https://github.com/dragstor",
-    description: "",
-  },
-  {
     id: "web2pdf",
     img: "",
     name: "Web2PDF",
@@ -289,7 +282,7 @@ export const Projects: Project[] = [
   {
     id: "dendrite",
     img: "",
-    name: "Dendrite",
+    name: "Unofficial Dendrite Fork",
     link: "https://github.com/matrix-org/dendrite",
     description: "",
   },
@@ -399,24 +392,10 @@ export const Projects: Project[] = [
     description: "",
   },
   {
-    id: "institute for computing in research",
-    img: "",
-    name: "Institute for Computing in Research",
-    link: "https://computinginresearch.org/",
-    description: "",
-  },
-  {
     id: "packetframe",
     img: "",
     name: "Packetframe",
     link: "https://packetframe.com/",
-    description: "",
-  },
-  {
-    id: "unofficial spacex community",
-    img: "",
-    name: "Unofficial SpaceX Community",
-    link: "https://spacex.sp.fyi/",
     description: "",
   },
   {
@@ -602,13 +581,6 @@ export const Projects: Project[] = [
     description: "",
   },
   {
-    id: "blog do edivaldo",
-    img: "",
-    name: "Blog do Edivaldo",
-    link: "https://edivaldobrito.com.br",
-    description: "",
-  },
-  {
     id: "generic linux",
     img: "",
     name: "Generic Linux",
@@ -667,7 +639,7 @@ export const Projects: Project[] = [
   {
     id: "jitesoft - docker images",
     img: "",
-    name: "Jitesoft - Docker Images",
+    name: "Docker Images",
     link: "https://github.com/orgs/jitesoft/packages",
     description: "",
   },
