@@ -6,14 +6,17 @@ All support is provided by our volunteers and fellow users within our online com
 [Support Ticket](https://support.fossho.st)     
 [Discord](https://discord.gg/8MfNdGK)   
 [IRC](https://web.libera.chat/#fosshost)      
-Telephone Support: +44 (0) 208 154 4278
+Emergency Telephone Support: +44 (0) 208 154 4278 
 
-## Write to us
+## Organisation Information
 
-Fosshost C.I.C.  
+Fosshost C.I.C
 7 Bell Yard  
 London  
 WC2A 2JR  
 United Kingdom  
 
-Fosshost is a Community Interest Company (CIC - pronounced 'kik') that provides charitable and non-profit services to the open source community. We are registered in England and Wales.
+Fosshost C.I.C is a Community Interest Company (C.I.C), Limited by Guarantee (without share capital), registered in England and Wales.  Company Registration Number: 13356530.
+
+Fosshost is a contributing member of Software in the Public Interest, Inc, a 501 (c) (3) non-profit organization. 1732 1st Ave #20327, New York, NY 10128-5177, United States.
+
