@@ -21,7 +21,7 @@
         </ul>
         <span>
             <ul class="copy-info">
-                <li>Fosshost C.I.C. All rights reserved &copy; 2021</li>
+                <li>Fosshost C.I.C is a Community Interest Company (C.I.C), Limited by Guarantee (without share capital), registered in England and Wales. Company Registration Number: 13356530. All rights reserved &copy; 2021</li>
             </ul>
         </span>
     </span>
