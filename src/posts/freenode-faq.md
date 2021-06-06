@@ -17,7 +17,7 @@ With his permission, and in keeping with our foundational spirit of maximum prud
 | --- | --- | --- |
 | CASH/TRANSFER |  $52,000 | (USD) |
 | PAYPAL | £32,126.76 | (GBP) |
-| CRYPTO | 500000 HNS | (current value of $137,800.00 USD, subject to change - live market) |
+| CRYPTO | 500000 HNS | |
 
 Fosshost has not yet drawn upon or released any of these funds.
 
@@ -29,9 +29,6 @@ No.
 
 ### Why have dbo, nikola and eth01 now become Freenode staff members? 
 Three members of the Fosshost board have agreed to help with management and oversight at the Freenode IRC network. In particular, they will help ensure a consistent tone of community on the network that adheres to the Fosshost Terms of Service. 
-
-### How much money was donated? 
-We will provide exact figures after we have consulted UK law regarding disclosures of the identity of donors. We will also ask permission from Mr Lee to publish his record of donation. 
 
 ### Will you provide financial accounts and reports? 
 Yes, to every dollar. We do this as soon as possible; however, it may take several days or weeks. We will certainly publish our detailed accounts not later than Jan 15, 2022, and hope to publish them (publicly) by July 15 to establish at least a semi-annual reporting cadence. We had not yet completed our CIC organization stats at the beginning of Q2 2021 and did not produce regular reports before we had formally organized. We have kept (we believe) complete records and hope also to publish these as time permits. 
