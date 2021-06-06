@@ -119,13 +119,6 @@ export const Projects: Project[] = [
     description: "",
   },
   {
-    id: "cinelartv",
-    img: "",
-    name: "CinelarTV",
-    link: "https://github.com/CinelarTV/",
-    description: "",
-  },
-  {
     id: "freecad",
     img: "",
     name: "FreeCAD",
