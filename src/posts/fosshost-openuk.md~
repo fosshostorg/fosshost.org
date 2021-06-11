@@ -13,9 +13,9 @@ The advocacy made by the nice folks at OpenUK is directed at individuals, busine
 
 - be a single voice for the Open industries, representing and bringing together Open in the UK. 
 
-- build a body of expertise and experience and provide tools and resources about the Open sectors. 
+- build a body of expertise and experience and provide tools and resources about the Open sectors.
 
-Currently, OpenUK is at the second phase of the “[State of Open](https://openuk.uk/stateofopen/)” survey, focusing on the state of Open Technology in the UK. Participation is possible until June 13, 11:59 BST, so don’t wait any longer and complete the survey. The third and last phase will start in September. 
+OpenUK is now at the second phase of their “[State of Open](https://openuk.uk/stateofopen/)” survey. This focuses on the state of Open Technology in the UK.  Participation is open until June 13, 11:59 BST, so please do respond soon! The third and final phase will start in September. 
 
 Like Fosshost, OpenUK is made up of partners, volunteers, and supporters who share a common value around Open Technology. 
 
