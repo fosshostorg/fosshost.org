@@ -5,7 +5,7 @@ summary: We have been invited to write about Fosshost for OpenUK. Like Fosshost,
 author: Bruno Miguel
 ---
 
-Recently, we've been invited to write about Fosshost for OpenUK. OpenUK is a not-for-profit company limited by guarantee, based in the United Kingdom, advocating for Open Technology - open-source software, open-source hardware, and open data. 
+Recently, we were invited to write about Fosshost for OpenUK. OpenUK is a not-for-profit company limited by guarantee, based in the United Kingdom, advocating for Open Technology - open-source software, open-source hardware, and open data. 
 
 The advocacy made by the nice folks at OpenUK is directed at individuals, businesses, and the public sector across the United Kingdom. Their mission is, quoting from their website: 
 
