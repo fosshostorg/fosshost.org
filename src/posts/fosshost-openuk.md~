@@ -1,7 +1,7 @@
 ---
 title: Fosshost highlighted by OpenUK 
 date: 2021-06-11
-summary: We have been invited to write about Fosshost for OpenUK, a not-for-profit company limited by guarantee, based in the United Kingdom, advocating for Open Technology
+summary: We have been invited to write about Fosshost for OpenUK. Like Fosshost, OpenUK is a not-for-profit company limited by guarantee. They are based in the United Kingdom and advocate for Open Technology
 author: Bruno Miguel
 ---
 
