@@ -27,14 +27,14 @@ their trusted advisor, mentor and conservator, whilst ensuring FOSS
 projects can develop their concept, project or idea on a rock solid
 foundation.
 
-To deliver world-class, no-cost, elastic FOSS hosting services in x86
+* To deliver world-class, no-cost, elastic FOSS hosting services in x86
 and AArch64 architecture throughout the Fosshost Global CDN;
 
-To provide guardian services to FOSS projects, including
+* To provide guardian services to FOSS projects, including
 administrative, financial, legal and custodianship, allowing projects
 to focus on core development;
 
-To provide financial support and grants to FOSS projects, to remove
+* To provide financial support and grants to FOSS projects, to remove
 the barriers associated with developing and maintaining free,
 open-source software;
 
@@ -55,7 +55,7 @@ We invite interested and well-qualified community members to apply to
 participate in our ACB and help advise future difficult decisions,
 such as those we write about here, today.
 
-Recent Developments
+## Recent Developments
 
 On the 1st of June, 2021, we released a press statement called
 Freenode Partnership. The blog post articulated a collaboration with
