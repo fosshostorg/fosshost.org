@@ -30,6 +30,13 @@
         text-decoration: none;
         color: var(--fosshost-black);
         margin: 1rem;
+        max-width: 30%;
+    }
+
+    @media (max-width: 1280px) {
+        a.card {
+            max-width: 100%;
+        }
     }
 
     a.read-more {
