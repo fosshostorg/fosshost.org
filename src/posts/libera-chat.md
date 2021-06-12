@@ -24,4 +24,4 @@ We would like to thank Freenode for hosting us up to now.  We also want to thank
 
 We look forward to seeing you on [Libera.Chat](https://libera.chat).
 
-NOTE: this post was edited June 11th, 2021, to reflect the re-opening of our channels on Freenode following discussion with community members (and our own volunteers) sence the original posting.
+NOTE: this post was edited June 11th, 2021, to reflect the re-opening of our channels on Freenode following discussion with community members (and our own volunteers) since the original posting.
