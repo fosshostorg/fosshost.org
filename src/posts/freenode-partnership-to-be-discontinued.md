@@ -189,8 +189,7 @@ Freenode is a hosted project, treated like any other according to our
 criteria. Our directors plan to continue as staff of Freenode
 providing advice personally from our own skills and experience.
 
-### We left Fosshost after hearing about the Freenode Partnership and
-would like to return to using your service.
+### We left Fosshost after hearing about the Freenode Partnership and would like to return to using your service.
 
 You are always welcome back, providing you continue to meet our
 eligibility criteria and legal terms of service.
