@@ -170,8 +170,7 @@ become sustainable to protect our future for as long as possible.
 No, there have been no changes since we have started exploring a
 partnership with Freenode.
 
-### I am a corporate sponsor, and I would like to explore supporting
-Fosshost
+### I am a corporate sponsor. How can I explore supporting Fosshost?
 
 Please email [board@fosshost.org](mailto:board@fosshost.org)
 
