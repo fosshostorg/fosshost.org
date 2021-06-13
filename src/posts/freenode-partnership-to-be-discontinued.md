@@ -38,7 +38,7 @@ to focus on core development;
 the barriers associated with developing and maintaining free,
 open-source software;
 
-Champion and advocate FOSS by running networking events, creating
+* Champion and advocate FOSS by running networking events, creating
 volunteering and employment prospects, mentoring, and project pairing
 services to allow open-source developers to network and share
 resources.
