@@ -1,7 +1,7 @@
 ---
 title: Update to Freenode Press Release Statement
 date: 2021-06-12
-summary: Fosshost will not persue partnership with Freenode
+summary: Fosshost will not pursue partnership with Freenode
 author: thomas
 ---
 
