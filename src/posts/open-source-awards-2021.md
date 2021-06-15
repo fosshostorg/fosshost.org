@@ -17,9 +17,9 @@ This is why we are so pleased to announce three award categories for our amazing
 
 The awards are a recognition of volunteer excellence, promoting high standards and advancing the Fosshost community.
 
-If you are interested in volunteering opportunities at Fosshost and how you can help, visit Volunteering Opportunities. We are always interested in hearing from individuals who feel that they have the time and skills to help.
+If you are interested in what volunteering opportunities exist at Fosshost and how you can help, visit [Volunteering Opportunities](https://docs.fosshost.org/en/home/volunteering-opportunities). We are always interested in hearing from individuals who feel that they have the time and skills to be able to help.
 
-The Fosshost volunteers are our most important asset, which is why we provide our volunteers with some nice perks, such as the ability to use our infrastructure for their own FOSS projects (as many do). In addition to accessing 1:1 mentoring opportunities, obtain a real-world experience of managing live production platforms, pizza days (fully funded) and goody bag. Overall, we treat every volunteer as a family member. Cheers guys - you are awesome :love:
+The Fosshost volunteers are our most important asset, which is why we provide our volunteers with some nice perks, such as the ability to use our infrastructure for their own FOSS projects (as many do). In addition to accessing 1:1 mentoring opportunities, obtain a real-world experience of managing live production platforms, pizza days (fully funded) and goody bag. Overall, we treat every volunteer as a family member. Cheers guys - you are awesome ❤️
 
 Thank you for reading.
 
