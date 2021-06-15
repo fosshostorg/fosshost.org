@@ -5,7 +5,6 @@
     import X86Options, { validator as X86Validator, errorFormat as X86Errors } from './technical/X86Options.svelte';
     import AArch64Options, { validator as AArch64Validator, errorFormat as AArch64Errors } from './technical/AArch64Options.svelte';
     import MirrorOptions, { validator as MirrorValidator, errorFormat as MirrorErrors } from './technical/MirrorOptions.svelte';
-    import EmailAndWebOptions, { validator as EmailAndWebValidator, errorFormat as EmailAndWebErrors } from './technical/EmailAndWebOptions.svelte';
 
     export let data: FormResponse;
     export let pageValidate: any;
@@ -16,7 +15,6 @@
         "x86 VPS",
         "Mirrors-as-a-service",
         "AArch64 VPS",
-        "Email and Webhosting",
         "DNS",
     ]
 
@@ -39,11 +37,6 @@
         "AArch64 VPS": {
             createdAccount: null,
         },
-        "Email and Webhosting": {
-            domain: "",
-            requiresHosting: null,
-            specialRequirements: "",
-        },
         "DNS": {
             domain: "",
             requiresHosting: null,
@@ -54,7 +47,6 @@
         "x86 VPS":                      {c: X86Options, validator: X86Validator, errors: X86Errors},
         "Mirrors-as-a-service":         {c: MirrorOptions, validator: MirrorValidator, errors: MirrorErrors},
         "AArch64 VPS":                  {c: AArch64Options, validator: AArch64Validator, errors: AArch64Errors},
-        "Email and Webhosting":         {c: EmailAndWebOptions, validator: EmailAndWebValidator, errors: EmailAndWebErrors},
         "DNS":                          {c: DNSOptions, validator: DNSValidator, errors: DNSErrors},
     }
     
