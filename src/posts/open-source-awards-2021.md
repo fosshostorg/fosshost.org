@@ -4,7 +4,6 @@ date: 2020-10-16
 summary: Fosshost is launching a volunteer awards programme to recognise the individual contributions and efforts of our volunteers.
 author: nikola
 thumbnail: awards-2021.png
-draft: true
 ---
 
 Fosshost is launching a volunteer awards programme to recognise our volunteers' contributions and efforts who help to manage, coordinate and support the Fosshost infrastructure day-to-day, and ultimately you, as our dedicated reader.
