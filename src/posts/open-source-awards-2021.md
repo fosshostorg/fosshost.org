@@ -1,6 +1,6 @@
 ---
 title: Fosshost Open Source Awards 2021
-date: 2020-10-16
+date: 2021-06-15
 summary: Fosshost is launching a volunteer awards programme to recognise the individual contributions and efforts of our volunteers.
 author: nikola
 thumbnail: awards-2021.png
