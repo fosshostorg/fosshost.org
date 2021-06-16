@@ -136,8 +136,7 @@ class Application {
     sendConfirmationEmail = () => {
         const mailOptions: Message = new Message({
             from: process.env.EMAIL,
-            to: 'support@fosshost.org',
-              cc: this.body.personal.email,
+            to: this.body.personal.email,
             subject: `Fosshost Application - ${escape(this.body.project.name)}`,
             text: "",
             attachment: [
