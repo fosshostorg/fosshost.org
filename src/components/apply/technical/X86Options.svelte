@@ -7,6 +7,7 @@
     storage: yup.string().required(),
     os: yup.string().required(),
     SSHKey: yup.string().required(),
+    specialRequirements: yup.string(),
   });
 
   export const errorFormat = {
@@ -17,6 +18,7 @@
     storage: null,
     os: null,
     SSHKey: null,
+    specialRequirements: null,
   };
 </script>
 
@@ -38,6 +40,7 @@
     storage: null,
     os: null,
     SSHKey: null,
+    specialRequirements: null,
   };
 
   let regionOptions = [
@@ -133,6 +136,7 @@
     </span>
   </Input>
 
+  <Input on:blur={() => {errors = validate(validator, 'specialRequirements', data.technical["x86 VPS"], errors)}} error={errors.specialRequirements} label="Special Requirements" type="text" placeholder="Do you have any special requirements or comments to add?" bind:value={data.technical["x86 VPS"].specialRequirements} />
 
 </main>
 
