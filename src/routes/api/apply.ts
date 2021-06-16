@@ -1,12 +1,21 @@
 const axios = require('axios');
-// const nodemailer = require('nodemailer');
 import { Message, SMTPClient } from 'emailjs';
 import escape from 'validator/es/lib/escape';
 import marked from 'marked';
 import { info } from '../../_utils';
 
-
 let baseURL = "https://fosshost.org"
+
+export async function post(req: any, res: any, next: () => void) {
+    info(`Application received: ${req.body.project.name}`)
+
+    const application = new Application(req.body);
+    // await application.createGithubIssue();
+    await application.createOSTicket();
+    application.sendConfirmationEmail();
+
+    res.end();
+}
 
 const headers = {
     security: {
@@ -158,19 +167,6 @@ class Application {
         const ticket = new osTicket(this);
         await ticket.send();
     }
-}
-
-
-
-export async function post(req: any, res: any, next: () => void) {
-    info(`Application received: ${req.body.project.name}`)
-
-    const application = new Application(req.body);
-    // await application.createGithubIssue();
-    await application.createOSTicket();
-    application.sendConfirmationEmail();
-
-    res.end();
 }
 
 class osTicket {
