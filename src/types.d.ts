@@ -63,6 +63,7 @@ type FormResponse = {
             storage: string,
             os: string,
             SSHKey: string,
+            specialRequirements: string,
         },
         "Mirrors-as-a-service"?: {
             storage: string,

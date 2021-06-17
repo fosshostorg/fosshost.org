@@ -1,6 +1,6 @@
 <script context="module" lang="ts">
   export const validator = yup.object().shape({
-    createdAccount: yup.boolean().required().nullable()
+    createdAccount: yup.boolean().required().nullable().oneOf([true])
   })
 
   export const errorFormat = {
@@ -20,6 +20,9 @@
     createdAccount: null,
   }
 
+  $: if (errors.createdAccount && errors.createdAccount.includes('true')) {
+    errors.createdAccount = "You must create an AArch64 account to continue.";
+  }
 </script>
 
 <main in:fade={{delay: 0, duration: 400}}>

@@ -73,7 +73,6 @@
         } catch (err) {
             for (const error of err.inner) {
                 errors[error.path] = error.message;
-                console.log(error.path)
             }
 
             let paths = err.inner.map(err => err.path);
