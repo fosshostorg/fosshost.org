@@ -246,7 +246,7 @@ export const Projects: Project[] = [
   },
   {
     id: "dungeon-mode",
-    img: "dungeonmode.svg",
+    img: "dungeonmode.png",
     name: "Dungeon-mode",
     link: "https://github.com/dungeon-mode/game",
     description: "",
