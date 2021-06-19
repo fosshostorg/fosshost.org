@@ -55,6 +55,7 @@ const headers = {
             storage: "Storage",
             os: "Operating System",
             SSHKey: "Public SSH Key",
+            specialRequirements: "Special requirements / comments?",
         },
         "Mirrors-as-a-service": {
             storage: "Storage",
