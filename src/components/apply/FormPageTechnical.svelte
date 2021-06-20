@@ -15,7 +15,7 @@
         "x86 VPS",
         "Mirrors-as-a-service",
         "AArch64 VPS",
-        "DNS",
+        "Domain Name and DNS",
     ]
 
     let error = null;
@@ -29,15 +29,17 @@
             storage: "",
             os: "",
             SSHKey: "",
+            specialRequirements: "",
         },
         "Mirrors-as-a-service": {
             storage: "",
+            rsyncURL: "",
             specialRequirements: "",
         },
         "AArch64 VPS": {
             createdAccount: null,
         },
-        "DNS": {
+        "Domain Name and DNS": {
             domain: "",
             requiresHosting: null,
         },
@@ -47,7 +49,7 @@
         "x86 VPS":                      {c: X86Options, validator: X86Validator, errors: X86Errors},
         "Mirrors-as-a-service":         {c: MirrorOptions, validator: MirrorValidator, errors: MirrorErrors},
         "AArch64 VPS":                  {c: AArch64Options, validator: AArch64Validator, errors: AArch64Errors},
-        "DNS":                          {c: DNSOptions, validator: DNSValidator, errors: DNSErrors},
+        "Domain Name and DNS":          {c: DNSOptions, validator: DNSValidator, errors: DNSErrors},
     }
     
     $: if (data.technical.services) {
@@ -68,6 +70,8 @@
     const servicesError = () => {
         if (data.technical.services.length < 1) {
             error = "Please choose at least one service.";
+        } else if (data.technical.services.includes("Domain Name and DNS") && data.technical.services.length == 1) {
+            error = "Domain name services are only offered in addition to the use of another service."
         } else {
             error = "";
         }

@@ -43,7 +43,7 @@ const headers = {
     technical: {
         header: "Technical Information",
         services: "Selected services",
-        "DNS": {
+        "Domain Name and DNS": {
             domain: "Requested domain",
             requiresHosting: "Requires DNS hosting?"
         },
@@ -59,6 +59,7 @@ const headers = {
         },
         "Mirrors-as-a-service": {
             storage: "Storage",
+            rsyncURL: "rsync URL",
             specialRequirements: "Special requirements?",
         },
         "AArch64 VPS": {
