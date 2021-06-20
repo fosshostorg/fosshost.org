@@ -210,24 +210,10 @@ export const Projects: Project[] = [
     description: "",
   },
   {
-    id: "resistancecn",
-    img: "resistancecn.png",
-    name: "ResistanceCN",
-    link: "https://github.com/ResistanceCN",
-    description: "",
-  },
-  {
     id: "genixcms",
     img: "genixcms.png",
     name: "GeniXCMS",
     link: "https://github.com/semplon/GeniXCMS",
-    description: "",
-  },
-  {
-    id: "dot hq",
-    img: "dot.png",
-    name: "Dot HQ",
-    link: "https://dothq.co/",
     description: "",
   },
   {
@@ -413,13 +399,6 @@ export const Projects: Project[] = [
     description: "",
   },
   {
-    id: "librematrix",
-    img: "",
-    name: "LibreMatrix",
-    link: "https://github.com/LibreMatrix/LibreMatrix",
-    description: "",
-  },
-  {
     id: "ersilia",
     img: "",
     name: "Ersilia",
@@ -438,13 +417,6 @@ export const Projects: Project[] = [
     img: "",
     name: "macOSicons",
     link: "https://macosicons.com/",
-    description: "",
-  },
-  {
-    id: "chamilo",
-    img: "",
-    name: "Chamilo",
-    link: "https://chamilo.org/",
     description: "",
   },
   {
@@ -483,13 +455,6 @@ export const Projects: Project[] = [
     description: "",
   },
   {
-    id: "laxer os",
-    img: "",
-    name: "Laxer OS",
-    link: "https://www.laxeros.org/",
-    description: "",
-  },
-  {
     id: "aurora store",
     img: "",
     name: "Aurora Store",
@@ -521,7 +486,7 @@ export const Projects: Project[] = [
     id: "the network ups tools",
     img: "",
     name: "The Network UPS Tools",
-    link: "https://github.com/networkupstools/nut/",
+    link: "https://networkupstools.org/",
     description: "",
   },
   {
@@ -574,20 +539,6 @@ export const Projects: Project[] = [
     description: "",
   },
   {
-    id: "app manager",
-    img: "",
-    name: "App Manager",
-    link: "https://github.com/tahoe-lafs/tahoe-lafs",
-    description: "",
-  },
-  {
-    id: "generic linux",
-    img: "",
-    name: "Generic Linux",
-    link: "https://genericlinux.org",
-    description: "",
-  },
-  {
     id: "tahoe-lafs",
     img: "",
     name: "Tahoe-LAFS",
@@ -599,13 +550,6 @@ export const Projects: Project[] = [
     img: "",
     name: "Pionir",
     link: "https://github.com/pioniredu",
-    description: "",
-  },
-  {
-    id: "orangemn6",
-    img: "",
-    name: "OrangeMN6",
-    link: "https://github.com/orangemn6",
     description: "",
   },
   {
@@ -627,13 +571,6 @@ export const Projects: Project[] = [
     img: "",
     name: "HeptaPod",
     link: "https://heptapod.net",
-    description: "",
-  },
-  {
-    id: "cob:web",
-    img: "",
-    name: "Cob:web",
-    link: "https://cob-web.xyz/",
     description: "",
   },
   {
