@@ -29,9 +29,11 @@
             storage: "",
             os: "",
             SSHKey: "",
+            specialRequirements: "",
         },
         "Mirrors-as-a-service": {
             storage: "",
+            rsyncURL: "",
             specialRequirements: "",
         },
         "AArch64 VPS": {

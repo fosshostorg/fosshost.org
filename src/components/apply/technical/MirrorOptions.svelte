@@ -1,11 +1,13 @@
 <script context="module" lang="ts">
   export const validator = yup.object().shape({
     storage: yup.string().required(),
+    rsyncURL: yup.string().required(),
     specialRequirements: yup.string(),
   })
 
   export const errorFormat = {
     storage: null,
+    rsyncURL: null,
     specialRequirements: null,
   }
 </script>
@@ -20,6 +22,7 @@
 
   export let errors = {
     storage: null,
+    rsyncURL: null,
     specialRequirements: null,
   }
 
@@ -34,6 +37,7 @@
       Please provide the storage in GB/TB required to run mirrors for your project and the source of where we will synchronize from. We only support rsync.
     </span>
   </Input>
+  <Input on:blur={() => {errors = validate(validator, 'rsyncURL', data.technical["Mirrors-as-a-service"], errors)}} error={errors.rsyncURL} label="rsync URL" type="text" placeholder="rsync://project-mirror" bind:value={data.technical["Mirrors-as-a-service"].rsyncURL} />
   <Input on:blur={() => {errors = validate(validator, 'specialRequirements', data.technical["Mirrors-as-a-service"], errors)}} error={errors.specialRequirements} label="Special Requirements" type="text" placeholder="Do you have any special requirements or comments to add?" bind:value={data.technical["Mirrors-as-a-service"].specialRequirements} />
 
 </main>

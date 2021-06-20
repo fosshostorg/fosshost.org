@@ -67,6 +67,7 @@ type FormResponse = {
         },
         "Mirrors-as-a-service"?: {
             storage: string,
+            rsyncURL: string,
             specialRequirements: string,
         },
         "AArch64 VPS"?: {

@@ -59,6 +59,7 @@ const headers = {
         },
         "Mirrors-as-a-service": {
             storage: "Storage",
+            rsyncURL: "rsync URL",
             specialRequirements: "Special requirements?",
         },
         "AArch64 VPS": {
