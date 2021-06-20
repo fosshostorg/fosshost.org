@@ -5,6 +5,8 @@ summary: Common questions and answers about Fosshost and Freenode
 author: nikola
 ---
 
+# We have now fully withdrawn from the Freenode Partnership.   The below blog post will be kept for historical and referential purposes, though the vision remains unchanged. 
+
 ### Has Fosshost been sold? 
 No, Fosshost has not been sold. 
 
