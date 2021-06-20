@@ -7,6 +7,8 @@ author: thomas
 
 # Update to Freenode Press Release Statement
 
+*** We have now fully withdrawn from the Freenode Partnership.   The below blog post will be kept for historical and referential purposes. ***
+
 Fosshost is a non-profit home and superstructure of FOSS projects. We
 provide a range of services to support, promote, advance, and underpin
 the global FOSS community, comprising 130,352 active open-source
