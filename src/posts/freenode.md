@@ -6,7 +6,7 @@ author: corwin
 thumbnail: freenode.png
 ---
 
-# We have now fully withdrawn from the Freenode Partnership.   The below blog post will be kept for historical and referential purposes, though the vision remains unchanged. 
+# We have now fully withdrawn from the Freenode Partnership.  
 
 Fosshost C.I.C, a UK non-profit provider of cloud computing services
 for FOSS, enters into a long term partnership with Freenode Limited
