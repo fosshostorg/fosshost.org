@@ -31,6 +31,9 @@
     <em>DNS Options:</em>
   </span>
   <span>
+    In order to better balance usage of domains, please only apply for domain name services if you have also applied for another Fosshost service.
+  </span>
+  <span>
     TLDs available: .com, .org., .net., tech, .website, .io, .info. All domains subject to status and availability. If you would like us to provide a sub domain to your project, we can offer subdomains of the following domains: *.sp.fyi, *.project.fossho.st
   </span>
   <Input on:blur={() => {errors = validate(validator, 'domain', data.technical["DNS"], errors)}} error={errors.domain} label="Domain name: *" type="text" placeholder="What domain name would you like?" bind:value={data.technical["DNS"].domain} />

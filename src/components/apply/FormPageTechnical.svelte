@@ -70,6 +70,9 @@
     const servicesError = () => {
         if (data.technical.services.length < 1) {
             error = "Please choose at least one service.";
+        } else if (data.technical.services.includes("DNS") && data.technical.services.length == 1) {
+            console.log('only domain services')
+            error = "DNS is only offered in addition to the use of another service."
         } else {
             error = "";
         }
