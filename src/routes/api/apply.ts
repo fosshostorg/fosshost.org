@@ -65,15 +65,6 @@ const headers = {
         "AArch64 VPS": {
             createdAccount: "Created an AArch64 account?",
         },
-        // "Audio and Video Conferencing": {
-        //     service: "Requested service",
-        //     specialRequirements: "Special requirements?",
-        // },
-        "Email and Webhosting": {
-            domain: "Hosting domain",
-            requiresHosting: "Requires DNS hosting?",
-            specialRequirements: "Special requirements?",
-        }
     }
 }
 
@@ -115,13 +106,21 @@ const client = new SMTPClient({
     timeout: 40000,
 });
 
+const labels = {
+    "Domain Name and DNS": "DNS",
+    "x86 VPS": "VPS x86",
+    "Mirrors-as-a-service": "Maas", 
+    "AArch64 VPS": "VPS AArch64",
+}
+
 export async function post(req: any, res: any, next: () => void) {
     info(`Application received: ${req.body.project.name}`)
 
     await axios.post("https://api.github.com/repos/fosshostorg/applications/issues", 
         {
             title: "Application: " + req.body.project.name,
-            body: format(req.body, false) 
+            body: format(req.body, false),
+            labels: req.body.technical.services.map((s: string) => labels[s]),
         },
         {
             auth: {
