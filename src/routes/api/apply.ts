@@ -43,7 +43,7 @@ const headers = {
     technical: {
         header: "Technical Information",
         services: "Selected services",
-        "DNS": {
+        "Domain Name and DNS": {
             domain: "Requested domain",
             requiresHosting: "Requires DNS hosting?"
         },

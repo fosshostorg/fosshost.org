@@ -15,7 +15,7 @@
         "x86 VPS",
         "Mirrors-as-a-service",
         "AArch64 VPS",
-        "DNS",
+        "Domain Name and DNS",
     ]
 
     let error = null;
@@ -39,7 +39,7 @@
         "AArch64 VPS": {
             createdAccount: null,
         },
-        "DNS": {
+        "Domain Name and DNS": {
             domain: "",
             requiresHosting: null,
         },
@@ -49,7 +49,7 @@
         "x86 VPS":                      {c: X86Options, validator: X86Validator, errors: X86Errors},
         "Mirrors-as-a-service":         {c: MirrorOptions, validator: MirrorValidator, errors: MirrorErrors},
         "AArch64 VPS":                  {c: AArch64Options, validator: AArch64Validator, errors: AArch64Errors},
-        "DNS":                          {c: DNSOptions, validator: DNSValidator, errors: DNSErrors},
+        "Domain Name and DNS":                          {c: DNSOptions, validator: DNSValidator, errors: DNSErrors},
     }
     
     $: if (data.technical.services) {
