@@ -70,12 +70,6 @@
           This is because our USD accounts are with both CFSB and EVOLVE.
         </p>
     </HideDetails>
-                  <HideDetails>
-      <p slot="title">Want to make a Bitcoin (BTC) donation?</p>
-      <span slot="body">
-        <p>Please deposit into the following wallet: 3KydyNubTMzvACRHN1rr5Q46tEkBAHwnY1<br /><br /></p>
-        <p>Only send Bitcoin (BTC) to this address. Any other asset sent to this address, including Bitcoin Cash (BCH) and USDT, will be permanently lost.</p>
-      </span>
       </span>
     </HideDetails>
     Or to make a donation with PayPal, select the icon below.
