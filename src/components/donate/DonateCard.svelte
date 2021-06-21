@@ -66,6 +66,20 @@
                 <p>Only send Bitcoin (BTC) to this address. Any other asset sent to this address, including Bitcoin Cash (BCH) and USDT, will be permanently lost.</p>
             </span>
         </HideDetails>
+        <HideDetails>
+            <p slot="title">Want to donate using Ether (ETH)?</p>
+            <span slot="body">
+                <p>Please deposit into the following wallet: 0x3a8ba2edb6f3fbc63f22409925238b15bee57640<br /><br /></p>
+                <p>Only send Ether (ETH) or supported ERC20 tokens to this address. Any other asset sent to this address will be permanently lost.</p>
+            </span>
+        </HideDetails>
+        <HideDetails>
+            <p slot="title">Want to donate LTC (Litecoin)?</p>
+            <span slot="body">
+                <p>Please deposit into the following wallet: MGEUJpe1CjHXZzG9QPaSqHbJP6gASUrkxo<br /><br /></p>
+                <p>We use Litecoin's new P2SH address format.</p>
+            </span>
+        </HideDetails>
         Or to make a donation with PayPal, select the icon below.
     </span>
     <div>
