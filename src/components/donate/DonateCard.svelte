@@ -4,6 +4,7 @@
 
 <main>
   <h2>Donate to Fosshost</h2>
+  
   <span>
     We don't expect financial reimbursement from those whom we support, but if
     you can do so, please carefully consider how much you can donate, either on
