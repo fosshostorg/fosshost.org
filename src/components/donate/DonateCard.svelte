@@ -74,7 +74,7 @@
             </span>
         </HideDetails>
         <HideDetails>
-            <p slot="title">Want to donate using LTC (Litecoin)?</p>
+            <p slot="title">Want to donate using Litecoin (LTC)?</p>
             <span slot="body">
                 <p>Please deposit into the following wallet: MGEUJpe1CjHXZzG9QPaSqHbJP6gASUrkxo<br /><br /></p>
                 <p>We use Litecoin's new P2SH address format.</p>
