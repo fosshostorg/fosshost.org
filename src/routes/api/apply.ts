@@ -1,5 +1,4 @@
 const axios = require('axios');
-// const nodemailer = require('nodemailer');
 import { Message, SMTPClient } from 'emailjs';
 import escape from 'validator/es/lib/escape';
 import marked from 'marked';
