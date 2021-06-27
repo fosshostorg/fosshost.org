@@ -28,7 +28,6 @@
             memory: "",
             storage: "",
             os: "",
-            SSHKey: "",
             specialRequirements: "",
         },
         "Mirrors-as-a-service": {

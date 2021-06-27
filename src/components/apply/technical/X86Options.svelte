@@ -6,7 +6,6 @@
     memory: yup.string().required(),
     storage: yup.string().required(),
     os: yup.string().required(),
-    SSHKey: yup.string().required(),
     specialRequirements: yup.string(),
   });
 
@@ -17,7 +16,6 @@
     memory: null,
     storage: null,
     os: null,
-    SSHKey: null,
     specialRequirements: null,
   };
 </script>
@@ -39,7 +37,6 @@
     memory: null,
     storage: null,
     os: null,
-    SSHKey: null,
     specialRequirements: null,
   };
 
@@ -129,13 +126,6 @@
     bind:selected={data.technical["x86 VPS"].os}
     error={errors.os}
   />
-
-  <Input on:blur={() => {errors = validate(validator, 'SSHKey', data.technical["x86 VPS"], errors)}} error={errors.SSHKey} label="Public SSH key *" type="text" placeholder="Please provide your public SSH key" bind:value={data.technical["x86 VPS"].SSHKey}>
-    <span slot="help">
-      Unsure how to create an SSH key? See <a class="fosshost-link" target="_blank" href="https://docs.fosshost.org/en/home/how-to-create-ssh-key">here</a>.
-    </span>
-  </Input>
-
   <Input on:blur={() => {errors = validate(validator, 'specialRequirements', data.technical["x86 VPS"], errors)}} error={errors.specialRequirements} label="Special Requirements" type="text" placeholder="Do you have any special requirements or comments to add?" bind:value={data.technical["x86 VPS"].specialRequirements} />
 
 </main>
