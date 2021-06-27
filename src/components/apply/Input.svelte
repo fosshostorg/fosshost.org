@@ -5,13 +5,19 @@
     export let name: string = "input";
     export let textarea: boolean = false;
     export let error: string = null;
-
+    export let minCharacters: number = null;
+    export let maxCharacters: number = null;
 </script>
 
 <!-- svelte-ignore a11y-label-has-associated-control -->
 <label>
     {label}
     <slot name="help" />
+    {#if minCharacters}
+    <span class="chars">{value.length} / {minCharacters} character minimum.</span>
+    {:else if maxCharacters}
+    <span class="chars">{value.length} / {maxCharacters} character maximum.</span>
+    {/if}
     {#if textarea}
     <textarea class:error on:blur bind:value on:change {name} {placeholder} {...$$restProps} />
     {:else}
@@ -54,6 +60,13 @@
 
     .error {
         border: 2px solid red;
+    }
+
+    span.chars {
+        line-height: normal;
+        font-size: 14px;
+        margin-bottom: 0.5rem;
+        color: var(--fosshost-grey);
     }
 
 </style>
