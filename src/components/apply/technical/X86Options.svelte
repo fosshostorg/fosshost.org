@@ -41,11 +41,11 @@
   };
 
   let regionOptions = [
-    "Chicago, US",
-    "Los Angeles, US",
-    "North Dallas, US",
-    "Oregon, US",
     "London, UK",
+    "Amsterdam, NL",
+    "West Coast, US",
+    "Midwest, US",
+    "East Coast, US",
   ];
 
   let ipv4Options = ["IPv6 only", "IPv4 only", "Both v4 and v6"];
@@ -56,7 +56,7 @@
 
   let storageOptions = ["50GB", "100GB", "200GB", "300GB", "400GB"];
 
-  let osOptions = ["Debian", "CentOS", "Ubuntu", "FreeBSD", "ArchLinux", "Other / Personal"]
+  let osOptions = ["Debian", "Rocky Linux", "Ubuntu", "FreeBSD", "ArchLinux", "Other / Personal"]
 </script>
 
 <main in:fade={{ delay: 0, duration: 400 }}>
