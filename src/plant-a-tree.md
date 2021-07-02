@@ -5,7 +5,7 @@ summary: We have partnered with THG:eco (more:trees) to develop a CO2 sustainabi
 author: thomas
 ---
 
-Fosshost C.I.C, a UK non-profit provider of cloud computing services for FOSS, launches Fosshost ECO, a CO2 offset sustainability programme that plants a tree for every approved application.  We are working in partnership with thg:eco to deliver tree planting in Madagascar, Kenya and Haiti.
+Fosshost C.I.C, a UK non-profit provider of cloud computing services for FOSS, launches Fosshost ECO, a CO2 offset sustainability programme that plants a tree for every approved application.  We are working in partnership with THG(eco) to deliver tree planting in Madagascar, Kenya and Haiti.
 
 # Why do we do it?
 
