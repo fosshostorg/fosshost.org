@@ -1,7 +1,7 @@
 ---
 title: Fosshost ECO 
 date: 2021-07-01
-summary: We have partnered with THG:eco (more:trees) to develop a CO2 sustainability programme
+summary: We have launched a CO2 offset sustainability programme
 author: thomas
 ---
 
