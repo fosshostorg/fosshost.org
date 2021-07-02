@@ -3,6 +3,7 @@ title: Fosshost ECO
 date: 2021-07-01
 summary: We have launched a CO2 offset sustainability programme
 author: thomas
+thumbnail: fosshosteco.png
 ---
 
 Fosshost C.I.C, a UK non-profit provider of cloud computing services for FOSS, launches [Fosshost ECO](https://eco.fossho.st), a CO2 offset sustainability programme that plants a tree for every approved application.  We are working in partnership with THG(eco) to deliver tree planting in Madagascar, Kenya and Haiti.
