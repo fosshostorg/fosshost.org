@@ -14,6 +14,9 @@
         site: yup.string()
     })
 
+    // Not so sure about using this, so I will leave it for another time:
+    // .matches(/^[\w.,'’ ]+$/, 'description must contain only alpha-numeric characters, periods, and commas'),
+
     let errors = {
         name: null,
         description: null,
