@@ -580,4 +580,11 @@ export const Projects: Project[] = [
     link: "https://github.com/orgs/jitesoft/packages",
     description: "",
   },
+  {
+    id: "pathvector",
+    img: "",
+    name: "Pathvector",
+    link: "https://pathvector.io",
+    description: "",
+  }
 ];
