@@ -9,7 +9,7 @@
 
     const validator = yup.object().shape({
         name: yup.string().required(),
-        description: yup.string().required().min(350, 'description must be at least 350 characters'),
+        description: yup.string().required().min(350, 'description must be at least 350 characters').matches(/^[\w.,]+$/, 'description must contain only alpha-numeric characters, periods, and commas'),
         role: yup.string().required(),
         site: yup.string()
     })
