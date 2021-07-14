@@ -53,7 +53,7 @@
 
     span.err {
         margin: 0;
-        height: 24px;
+        min-height: 24px;
         font-size: 14px;
         color: red;
     }
