@@ -1,8 +1,8 @@
 import sirv from "sirv";
-import polka from "polka";
 import express from "express";
 import compression from "compression";
 import * as sapper from "@sapper/server";
+import helmet from "helmet";
 
 const rateLimit = require("express-rate-limit");
 const bodyParser = require("body-parser");
@@ -18,7 +18,8 @@ const apiLimiter = rateLimit({
   },
 });
 
-const app = express() // You can also use Express
+const app = express()
+  .use(helmet())
   .use("/api/apply", apiLimiter)
   .use(
     bodyParser.json(),
@@ -26,7 +27,4 @@ const app = express() // You can also use Express
     sirv("static", { dev }),
     sapper.middleware()
   )
-  .listen(PORT, () => {
-    // if (err) console.log('error', err);
-  });
-app.disable("x-powered-by"); // please remove the express header, expressjs docs says not to show them in production.
+  .listen(PORT);

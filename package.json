@@ -16,6 +16,7 @@
     "express": "^4.17.1",
     "express-rate-limit": "^5.2.6",
     "gray-matter": "^4.0.2",
+    "helmet": "^4.6.0",
     "marked": "^2.0.1",
     "nodemailer": "^6.5.0",
     "polka": "next",
