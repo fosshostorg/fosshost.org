@@ -1,31 +1,32 @@
-import sirv from 'sirv';
-import polka from 'polka';
-import express from 'express';
-import compression from 'compression';
-import * as sapper from '@sapper/server';
+import sirv from "sirv";
+import polka from "polka";
+import express from "express";
+import compression from "compression";
+import * as sapper from "@sapper/server";
 
 const rateLimit = require("express-rate-limit");
-const bodyParser = require('body-parser');
+const bodyParser = require("body-parser");
 
 const { PORT, NODE_ENV } = process.env;
-const dev = NODE_ENV === 'development';
+const dev = NODE_ENV === "development";
 
 const apiLimiter = rateLimit({
-	windowMs: 60 * 60 * 1000,
-	max: 2,
-	handler: function (req, res) {
-		res.status(429).send(req.rateLimit.resetTime);
-	}
-})
+  windowMs: 60 * 60 * 1000,
+  max: 2,
+  handler: function (req, res) {
+    res.status(429).send(req.rateLimit.resetTime);
+  },
+});
 
-express() // You can also use Express
-	.use("/api/apply", apiLimiter)
-	.use(
-		bodyParser.json(),
-		compression({ threshold: 0 }),
-		sirv('static', { dev }),
-		sapper.middleware(),
-	)
-	.listen(PORT, () => {
-		// if (err) console.log('error', err);
-	});
+const app = express() // You can also use Express
+  .use("/api/apply", apiLimiter)
+  .use(
+    bodyParser.json(),
+    compression({ threshold: 0 }),
+    sirv("static", { dev }),
+    sapper.middleware()
+  )
+  .listen(PORT, () => {
+    // if (err) console.log('error', err);
+  });
+app.disable("x-powered-by"); // please remove the express header, expressjs docs says not to show them in production.

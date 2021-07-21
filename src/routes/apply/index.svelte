@@ -10,6 +10,7 @@
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="https://fosshost.org/apply" />
 	<meta property="og:image" content="https://fosshost.org/img/HERO_IMAGE.png" />
+	<meta name="twitter:card" content="summary_large_image">
 </svelte:head>
 
 <ApplicationForm />
