@@ -19,7 +19,9 @@ const apiLimiter = rateLimit({
 });
 
 const app = express()
-  //.use(helmet())
+  .use(helmet({
+    contentSecurityPolicy: false,
+  }))
   .use("/api/apply", apiLimiter)
   .use(
     bodyParser.json(),
