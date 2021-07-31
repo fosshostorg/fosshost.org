@@ -28,7 +28,7 @@ I have spent the majority of my life hacking on free software, my work includes 
 Kubilay Kocak
 Kubilay Kocak is responsible for community engagement, project branding, culture and advocacy at The FreeBSD Project.  In addition, Kubilay is responsible for several official FreeBSD Twitter channels, including @FreeBSDHelp @FreeBSDJobs @FreeBSDLove @VuXM The FreeBSD Bugmeisters Team, responsible for ensuring that the problem report software is in working order.
 
-Further information regarding the Fosshost ACB can be found on our Team Overview.
+Further information regarding the Fosshost ACB can be found on our [Team Overview](https://docs.fosshost.org/en/home/team)
 
 ## On behalf of the board of Directors at Fosshost, may I take this opportunity to express my sincere gratitude to those who have joined the Fosshost ACB as part of our ongoing commitment to complete transparency.
 
