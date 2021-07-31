@@ -30,7 +30,7 @@ Kubilay Kocak is responsible for community engagement, project branding, culture
 
 Further information regarding the Fosshost ACB can be found on our [Team Overview](https://docs.fosshost.org/en/home/team)
 
-## On behalf of the board of Directors at Fosshost, may I take this opportunity to express my sincere gratitude to those who have joined the Fosshost ACB as part of our ongoing commitment to complete transparency.
+**On behalf of the board of Directors at Fosshost, may I take this opportunity to express my sincere gratitude to those who have joined the Fosshost ACB as part of our ongoing commitment to complete transparency.**
 
 Kind regards  
 Thomas Markey (eth01)  
