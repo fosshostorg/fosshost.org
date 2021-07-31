@@ -9,7 +9,7 @@ author: thomas
 
 The ACB includes Industry Experts, FOSS Advocates and Academics at both local and international levels. Committee Members contribute a set number of hours every quarter. The advisory produces a report of recommendations and minutes to the Executive Board. This helps to provide the Fosshost Board with expert knowledge and research that allows the board to shape our strategy and vision, as well as ensure that we are accountable for our actions and decisions.  Commitee Members have a proven track record within the open source community, and often hold appointments and roles elsewhere. 
 
-The ACB will be meeting (date TBC) to formally meet with each other; and agree minuting, due diligence, and controls for their quarterly meets.
+The ACB will be meeting shortly to formally meet with each other; and agree minuting, due diligence, and controls for their quarterly meets.
 
 The following individuals from the open-source community have accepted a role on the ACB, with immediate effect:
 
