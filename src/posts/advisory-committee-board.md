@@ -30,6 +30,6 @@ Kubilay Kocak is responsible for community engagement, project branding, culture
 
 On behalf of the board of Directors at Fosshost, may I take this opportunity to express my sincere gratitude to those who have joined the Fosshost ACB as part of our ongoing commitment to complete transparency.
 
-Kind regards
-Thomas Markey (eth01)
-Chief Executive Officer
+Kind regards  
+Thomas Markey (eth01)  
+Chief Executive Officer  
