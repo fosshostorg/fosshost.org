@@ -115,12 +115,6 @@ const labels = {
 export async function post(req: any, res: any, next: () => void) {
     info(`Application received: ${req.body.project.name}`)
 
-    if (!(req.body.security.criteriaQuestionResponse).toLowerCase().includes("siberia")) {
-        info(`Application rejected: ${req.body.project.name}`);
-        res.end();
-        return;
-    }
-
     await axios.post("https://api.github.com/repos/fosshostorg/applications/issues", 
         {
             title: "Application: " + req.body.project.name,
