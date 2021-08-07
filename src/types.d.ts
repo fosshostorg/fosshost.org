@@ -55,22 +55,13 @@ type FormResponse = {
             domain: string,
             requiresHosting: boolean
         },
-        "x86 VPS"?: {
-            regions: string[],
-            IPv4Preference: string,
-            vCPUs: string,
-            memory: string,
-            storage: string,
-            os: string,
-            specialRequirements: string,
+        "VPS"?: {
+            info: string,
         },
         "Mirrors-as-a-service"?: {
             storage: string,
             rsyncURL: string,
             specialRequirements: string,
-        },
-        "AArch64 VPS"?: {
-            createdAccount: boolean,
         },
     }
 }

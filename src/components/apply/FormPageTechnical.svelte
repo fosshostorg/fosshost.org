@@ -2,8 +2,7 @@
     import { fade } from 'svelte/transition';
     import CheckboxGroup from './CheckboxGroup.svelte';
     import DNSOptions, { validator as DNSValidator, errorFormat as DNSErrors } from './technical/DNSOptions.svelte';
-    import X86Options, { validator as X86Validator, errorFormat as X86Errors } from './technical/X86Options.svelte';
-    import AArch64Options, { validator as AArch64Validator, errorFormat as AArch64Errors } from './technical/AArch64Options.svelte';
+    import VPSOptions, { validator as VPSValidator, errorFormat as VPSErrors } from './technical/VPSOptions.svelte';
     import MirrorOptions, { validator as MirrorValidator, errorFormat as MirrorErrors } from './technical/MirrorOptions.svelte';
 
     export let data: FormResponse;
@@ -12,31 +11,21 @@
     export let currentPage: number;
 
     let options = [
-        "x86 VPS",
+        "VPS",
         "Mirrors-as-a-service",
-        "AArch64 VPS",
         "Domain Name and DNS",
     ]
 
     let error = null;
 
     let defaults = {
-        "x86 VPS": {
-            regions: [],
-            IPv4Preference: "",
-            vCPUs: "",
-            memory: "",
-            storage: "",
-            os: "",
-            specialRequirements: "",
+        "VPS": {
+            info: "",
         },
         "Mirrors-as-a-service": {
             storage: "",
             rsyncURL: "",
             specialRequirements: "",
-        },
-        "AArch64 VPS": {
-            createdAccount: null,
         },
         "Domain Name and DNS": {
             domain: "",
@@ -45,9 +34,8 @@
     }
 
     let components = {
-        "x86 VPS":                      {c: X86Options, validator: X86Validator, errors: X86Errors},
+        "VPS":                          {c: VPSOptions, validator: VPSValidator, errors: VPSErrors},
         "Mirrors-as-a-service":         {c: MirrorOptions, validator: MirrorValidator, errors: MirrorErrors},
-        "AArch64 VPS":                  {c: AArch64Options, validator: AArch64Validator, errors: AArch64Errors},
         "Domain Name and DNS":          {c: DNSOptions, validator: DNSValidator, errors: DNSErrors},
     }
     

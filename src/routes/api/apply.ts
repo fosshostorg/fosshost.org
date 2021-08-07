@@ -46,23 +46,13 @@ const headers = {
             domain: "Requested domain",
             requiresHosting: "Requires DNS hosting?"
         },
-        "x86 VPS": {
-            regions: "Regional preferences",
-            IPv4Preference: "IPv4 preference",
-            vCPUs: "vCPUs",
-            memory: "Memory",
-            storage: "Storage",
-            os: "Operating System",
-            SSHKey: "Public SSH Key",
-            specialRequirements: "Special requirements / comments?",
+        "VPS": {
+            info: "Information"
         },
         "Mirrors-as-a-service": {
             storage: "Storage",
             rsyncURL: "rsync URL",
             specialRequirements: "Special requirements?",
-        },
-        "AArch64 VPS": {
-            createdAccount: "Created an AArch64 account?",
         },
     }
 }
@@ -107,9 +97,8 @@ const client = new SMTPClient({
 
 const labels = {
     "Domain Name and DNS": "DNS",
-    "x86 VPS": "VPS x86",
+    "VPS": "VPS",
     "Mirrors-as-a-service": "Maas", 
-    "AArch64 VPS": "VPS AArch64",
 }
 
 export async function post(req: any, res: any, next: () => void) {
