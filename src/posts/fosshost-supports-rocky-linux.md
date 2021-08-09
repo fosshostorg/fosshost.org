@@ -3,7 +3,7 @@ title: Fosshost supports Rocky Linux, the most expected CentOS replacement
 date: 2021-03-28
 summary: Fosshost continues its commitment to supporting open-source projects and initiatives
 author: Thomas Markey
-thumbnail: fosshost-supports-rocky-linux.png
+thumbnail: fosshost-supports-rocky-linux.webp
 ---
 
 Fosshost is delighted to announce that it is working closely with [Rocky Linux](https://rockylinux.org/) to provide cloud infrastructure to the project. Rocky Linux is led by Gregory Kurtzer. The project intends to be a downstream, complete binary-compatible release, fork of the Red Hat Enterprise Linux (RHEL) operating system source code.

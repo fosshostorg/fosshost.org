@@ -23,7 +23,7 @@ declare module "*.jpeg" {
 	export = value;
 }
 
-declare module "*.png" {
+declare module "*.webp" {
 	const value: string;
 	export = value;
 }

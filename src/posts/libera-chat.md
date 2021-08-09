@@ -3,7 +3,7 @@ title: Fosshost is on Libera.Chat
 author: corwin
 date: 2021-05-25
 summary: You can chat with us on Libera.Chat IRC
-thumbnail: libera-chat.png
+thumbnail: libera-chat.webp
 ---
 
 Fosshost has established a presence on [Libera.Chat](https://libera.chat), a new IRC network created by former staffers of freenode.  The new network is similar in sharing the historical focus of the older network on supporting the development of peer-directed Free and Open Source Software development.

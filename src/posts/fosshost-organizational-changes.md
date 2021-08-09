@@ -25,7 +25,7 @@ Fosshost defines the following “officer” positions: CEO, CTO and COO. Each o
 
 ### Leadership
 
-<img src="/article-content/fosshost-organizational-changes/thomas-200x200.png"></img>
+<img src="/article-content/fosshost-organizational-changes/thomas-200x200.webp"></img>
 
 **Thomas Markey**
 
@@ -39,7 +39,7 @@ While Thomas' overall responsibilities aren't changing, the new model favours ov
 
 ### Technology
 
-<img src="/article-content/fosshost-organizational-changes/nate-200x200.png"></img>
+<img src="/article-content/fosshost-organizational-changes/nate-200x200.webp"></img>
 
 **Nate Sales**
 
@@ -51,7 +51,7 @@ In this role, Nate will take on additional accountability including oversight re
 
 ### Service
 
-<img src="/article-content/fosshost-organizational-changes/corwin-200x200.png"></img>
+<img src="/article-content/fosshost-organizational-changes/corwin-200x200.webp"></img>
 
 **Corwin Brust**
 
@@ -63,7 +63,7 @@ In this role, Corwin will take on additional accountability including oversight 
 
 ### Transformation
 
-<img src="/article-content/fosshost-organizational-changes/nik-200x200.png"></img>
+<img src="/article-content/fosshost-organizational-changes/nik-200x200.webp"></img>
 
 **Niklas Anderson**
 
@@ -75,7 +75,7 @@ In this role, Niklas will take on responsibility for the delivery of net-new and
 
 ### Trustees
 
-<img src="/article-content/fosshost-organizational-changes/nikola-200x200.png"></img><img src="/article-content/fosshost-organizational-changes/jonathon-200x200.png"></img>
+<img src="/article-content/fosshost-organizational-changes/nikola-200x200.webp"></img><img src="/article-content/fosshost-organizational-changes/jonathon-200x200.webp"></img>
 
 **Nikola Stojkovic (chair), Jonathon Fernyhough; Trustees**
 
@@ -87,7 +87,7 @@ Nikola leads the Fosshost Trustees, serving as Chairman of our Board of Director
 
 ### OUTREACH
 
-<img src="/article-content/fosshost-organizational-changes/corwin-200x200.png"></img><img src="/article-content/fosshost-organizational-changes/nate-200x200.png"></img><img src="/article-content/fosshost-organizational-changes/thomas-200x200.png"></img><img src="/article-content/fosshost-organizational-changes/jonathon-200x200.png"></img><img src="/article-content/fosshost-organizational-changes/nikola-200x200.png"></img>
+<img src="/article-content/fosshost-organizational-changes/corwin-200x200.webp"></img><img src="/article-content/fosshost-organizational-changes/nate-200x200.webp"></img><img src="/article-content/fosshost-organizational-changes/thomas-200x200.webp"></img><img src="/article-content/fosshost-organizational-changes/jonathon-200x200.webp"></img><img src="/article-content/fosshost-organizational-changes/nikola-200x200.webp"></img>
 
 **Corwin, Nate, Thomas, Jonathon, and Nikola (Chair)**
 

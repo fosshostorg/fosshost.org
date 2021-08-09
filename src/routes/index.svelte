@@ -5,7 +5,7 @@
 	<meta property="og:description" content="At Fosshost we provide free hosting and related services to hundreds of open source projects. Apply today!" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="https://fosshost.org" />
-	<meta property="og:image" content="https://fosshost.org/img/HERO_IMAGE.png" />
+	<meta property="og:image" content="https://fosshost.org/img/HERO_IMAGE.webp" />
 	<meta name="twitter:card" content="summary_large_image">
 </svelte:head>
 
@@ -20,18 +20,18 @@
 	<Hero />
 	<Projects />
 	<div>
-		<Card img="/img/illustration1.png">
+		<Card img="/img/illustration1.webp">
 			The project operates free hosting services 
 			for the open source community. The infrastructure 
 			is donated by our hosting sponsors and is managed 
 			by a group of highly talented volunteers.
 		</Card>
-		<Card reverse img="/img/illustration2.png">
+		<Card reverse img="/img/illustration2.webp">
 			Many open source projects benefit from our 
 			hosting services which help to support, promote, 
 			and advance the development and movement of free software.
 		</Card>
-		<Card img="/img/illustration3.png">
+		<Card img="/img/illustration3.webp">
 			We operate a large and global infrastructure in 
 			multiple regions which delivers a resilient, scalable, 
 			and world-class hosting experience.

@@ -33,7 +33,7 @@
     <meta property="og:article:published_time" content={post.details.date} />
     <meta property="og:article:author" content={post.details.author} />
     <meta property="og:url" content="https://fosshost.org/news/{slug}" />
-    <meta property="og:image" content={post.details.thumbnail ? "https://fosshost.org/thumbnails/" + post.details.thumbnail : "https://fosshost.org/img/HERO_IMAGE.png"} />
+    <meta property="og:image" content={post.details.thumbnail ? "https://fosshost.org/thumbnails/" + post.details.thumbnail : "https://fosshost.org/img/HERO_IMAGE.webp"} />
 </svelte:head>
 
 <main>

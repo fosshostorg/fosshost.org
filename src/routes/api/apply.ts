@@ -9,7 +9,7 @@ let baseURL = "https://fosshost.org"
 
 function emailFormat(body: FormResponse): any {
     return (
-        `<h1 style="text-align: center"><img src="${baseURL}/img/HERO_IMAGE.png" alt="Fosshost Logo"/></h1>
+        `<h1 style="text-align: center"><img src="${baseURL}/img/HERO_IMAGE.webp" alt="Fosshost Logo"/></h1>
         <h1 style="text-align: center; margin: 1rem 0;">Thanks for joining us!<h1>
         <h3 style="max-width: 640px; text-align: center; margin: 0 auto;">
         This email is to confirm the successful submission of your application. To learn more about our services, visit <a href="https://fosshost.org/about">our site</a>, and to review your submitted information, see below.

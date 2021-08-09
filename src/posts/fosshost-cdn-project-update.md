@@ -3,7 +3,7 @@ title: Fosshost CDN Project Update
 date: 2020-10-17
 summary: Fosshost CDN project is now operating from 17 PoPs
 author: Thomas Markey
-thumbnail: fosshost-cdn-project-update.png
+thumbnail: fosshost-cdn-project-update.webp
 ---
 
 Nearly a month ago we posted a news article launching the fosshost CDN project an AnyCast authoritative DNS, which will have a GeoIP service for load balancing between nodes in multiple regions globally.  To enhance the AnyCast service we are working hard on a fully AnyCast caching proxy in three core locations for HTTPs traffic.  

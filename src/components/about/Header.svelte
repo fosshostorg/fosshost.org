@@ -8,7 +8,7 @@
         <p>We are a non-profit organisation that exists to serve the hosting needs of the global open source community.</p>
     </div>
     <div>
-        <img src="/img/illustration0.png" alt="Fosshost Drawing" />
+        <img src="/img/illustration0.webp" alt="Fosshost Drawing" />
     </div>
 </main>
 

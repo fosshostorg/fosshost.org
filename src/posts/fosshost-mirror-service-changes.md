@@ -3,7 +3,7 @@ title: Our mirror service is changing to better serve the free and open-source c
 date: 2021-03-01
 summary: We've partnered with Fastly CDN to improve our mirror service
 author: Thomas Markey
-thumbnail: fosshost-mirror-service-changes.png
+thumbnail: fosshost-mirror-service-changes.webp
 ---
 
 In our endeavour to provide a world-class service, [Fosshost](/) is making changes to the mirror service. Thanks to [Fastly CDN](https://www.fastly.com/) sponsorship, our mirror service will change the addresses to [mirrors.fosshost.org](https://mirrors.fosshost.org) and [mirrors.fossho.st](https://mirrors.fossho.st).

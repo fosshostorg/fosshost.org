@@ -19,7 +19,7 @@ draft: true
 
 Image:
 
-![Image](/img/FosshostLogo.png)
+![Image](/img/FosshostLogo.webp)
 
 > Blockquote, which will render this text slightly differently so it stands out from the crowd. To denote the author of the quote:
 > # - do this, cool right?
