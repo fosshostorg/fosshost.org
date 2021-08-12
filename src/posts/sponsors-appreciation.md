@@ -6,9 +6,7 @@ author: Bruno Miguel
 thumbnail: friendship.jpg
 ---
 
-For over a year, Fosshost has been providing rock-solid services to the FOSS community. Having world-class volunteers and Core Sponsors is what makes it possible.
-
-From the very beginning, both our volunteers and our Core Sponsors have made our project possible. And it's about these superb sponsors, to whom we're very thankful, we're blogging today.
+For over a year, Fosshost has been providing rock-solid services to the FOSS community. From the very beginning, both our world-class volunteers and Core Sponsors have made our project possible. And it's about these superb sponsors, to whom we're very thankful, we're blogging today.
 
 In this blog post, we'll succinctly present to you our sponsors and what they do. Please consider sending love their way where you can.
 
