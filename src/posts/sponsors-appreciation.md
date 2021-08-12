@@ -3,7 +3,7 @@ title: A word of appreciation to our Core Sponsors
 date: 2021-08-12
 summary: Know our world-class Core Sponsors and what they do
 author: Bruno Miguel
-thumbnail: friendship.png
+thumbnail: friendship.jpg
 ---
 
 For over a year now, Fosshost has been providing rock-solid services to the FOSS community. Having world-class volunteers and Core Sponsors from the very beginning is what makes it possible. And it's about these superb sponsors, to whom we're very thankful, we're blogging today.
