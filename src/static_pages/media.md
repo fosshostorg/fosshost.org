@@ -2,4 +2,4 @@
 
 ---
 
-You can download Fosshost media assets [here](https://fosshost.net/img/fosshost-badges.zip).
+You can download Fosshost media assets [here](/img/fosshost-branding.zip).
