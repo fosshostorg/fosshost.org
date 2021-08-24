@@ -17,7 +17,7 @@
 <svelte:window bind:innerWidth={width}></svelte:window>
 
 <nav>
-	<a href="/"><img src="/img/logo.png" alt="Fosshost Logo" /></a>
+	<a href="/"><img src="/img/fosshost-logo.png" alt="Fosshost Logo" /></a>
 	<ul class:open>
 		<li><a on:click={() => open = false} aria-current="{segment === undefined ? 'page' : undefined}" href=".">Home</a></li>
 		<li><a on:click={() => open = false} aria-current="{segment === 'projects' ? 'page' : undefined}" href="projects">Projects</a></li>
