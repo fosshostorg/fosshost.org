@@ -6,10 +6,12 @@ All support is provided by our volunteers and fellow users within our online com
 [Support Ticket](https://support.fossho.st)     
 [Discord](https://discord.gg/8MfNdGK)   
 [IRC](https://web.libera.chat/#fosshost)      
-Emergency Telephone Support: +44 (0) 208 154 4278 
+UK Emergency Telephone Support: +44 (0) 208 154 4278 
+US Emergency Telephone Support: +001 (415) 610-7165
 
 ## Organisation Information
 
+(By appointment only)
 Fosshost C.I.C  
 7 Bell Yard  
 London  
