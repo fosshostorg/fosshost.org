@@ -3,6 +3,7 @@ import resolve from '@rollup/plugin-node-resolve';
 import replace from '@rollup/plugin-replace';
 import commonjs from '@rollup/plugin-commonjs';
 import url from '@rollup/plugin-url';
+import json from '@rollup/plugin-json';
 import svelte from 'rollup-plugin-svelte';
 import babel from '@rollup/plugin-babel';
 import { terser } from 'rollup-plugin-terser';
@@ -11,7 +12,7 @@ import typescript from '@rollup/plugin-typescript';
 import config from 'sapper/config/rollup.js';
 import pkg from './package.json';
 import copy from 'rollup-plugin-copy';
-import { string } from "rollup-plugin-string";
+import { string } from 'rollup-plugin-string';
 
 const mode = process.env.NODE_ENV;
 const dev = mode === 'development';
@@ -33,6 +34,7 @@ export default {
 				'process.env.NODE_ENV': JSON.stringify(mode)
 			}),
 			string({include: "**/*.md"}),
+			json(),
 			svelte({
 				preprocess: sveltePreprocess({}),
 				compilerOptions: {
@@ -89,6 +91,7 @@ export default {
 				'process.env.NODE_ENV': JSON.stringify(mode),
 				'process.env.BASE64_API_KEY': process.env.BASE64_API_KEY
 			}),
+			json(),
 			string({include: "**/*.md"}),
 			svelte({
 				preprocess: sveltePreprocess(),

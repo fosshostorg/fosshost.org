@@ -3,9 +3,9 @@
   "description": "website for fosshost.org",
   "version": "0.0.1",
   "scripts": {
-    "dev": "node scripts/gen-projects.js && sapper dev",
-    "build": "node scripts/gen-projects.js && sapper build --legacy",
-    "export": "node scripts/gen-projects.js && sapper export --legacy",
+    "dev": "sapper dev",
+    "build": "sapper build --legacy",
+    "export": "sapper export --legacy",
     "start": "node __sapper__/build",
     "validate": "svelte-check --ignore src/node_modules/@sapper"
   },
@@ -22,7 +22,6 @@
     "polka": "next",
     "s-ago": "^2.2.0",
     "sirv": "^1.0.0",
-    "tosource": "^2.0.0-alpha.3",
     "validator": "^13.6.0",
     "yup": "^0.32.9"
   },
@@ -34,6 +33,7 @@
     "@babel/runtime": "^7.0.0",
     "@rollup/plugin-babel": "^5.0.0",
     "@rollup/plugin-commonjs": "^14.0.0",
+    "@rollup/plugin-json": "^4.1.0",
     "@rollup/plugin-node-resolve": "^8.0.0",
     "@rollup/plugin-replace": "^2.2.0",
     "@rollup/plugin-typescript": "^6.0.0",
