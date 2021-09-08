@@ -1,5 +1,5 @@
 <script>
-    import { Projects } from "../../data/projects";
+    import Projects from "../../data/project-list.json";
     import { fade } from "svelte/transition"
     
 </script>
