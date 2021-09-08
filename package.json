@@ -3,7 +3,7 @@
   "description": "website for fosshost.org",
   "version": "0.0.1",
   "scripts": {
-    "dev": "sapper dev",
+    "dev": "dotenv sapper dev",
     "build": "sapper build --legacy",
     "export": "sapper export --legacy",
     "start": "node __sapper__/build",
@@ -53,6 +53,7 @@
     "svelte-check": "^1.0.46",
     "svelte-preprocess": "^4.3.0",
     "tslib": "^2.0.1",
-    "typescript": "^4.0.3"
+    "typescript": "^4.0.3",
+    "dotenv-cli": "^4.0.0"
   }
 }
