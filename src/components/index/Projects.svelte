@@ -1,5 +1,5 @@
-<script lang="ts">
-  import { Projects } from "../../data/projects";
+<script>
+  import Projects from "../../data/project-list.json";
 </script>
 
 <main>
