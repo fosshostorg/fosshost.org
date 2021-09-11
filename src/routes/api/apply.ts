@@ -52,6 +52,7 @@ const headers = {
         },
     }
 }
+
 class Application {
   body: FormResponse;
   forEmail: boolean;
