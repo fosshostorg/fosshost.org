@@ -4,7 +4,7 @@
 </script>
 
 <svelte:head>
-  <title>Fosshost - Legal</title>
+  <title>Fosshost - Contact</title>
 </svelte:head>
 
 <main>
