@@ -11,3 +11,6 @@ Our volunteers are doing their best to reply to all applicants, so we can restor
 
 **Update - Aug. 11, 2021:**
 Applications have been temporarily re-suspended to again allow for the clearing of our current backlog. The application form is expected to reopen two weeks from today.
+
+**Update - Sep. 18, 2021:**
+We're currently revamping our applications process due to rapid growth and in order to scale our systems, we require a small break.  Please check back later, when we may be able to accept your application.  Thank you for your interest in Fosshost and for everything you are doing to support the open-source ecosystem.
