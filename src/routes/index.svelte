@@ -48,8 +48,8 @@
 	</Quote>
 	<Quote author="Ayane Satomi" authorDetails="Project lead, Vignette">
 		When we started out Vignette, we weren't sure if we would be able to launch successfully 
-                because of our lack of budget, until Fosshost agreed to host our open-source project's web resources.
-                It's because of their unwavering support that Vignette became successful as an open-source project.
+      because of our lack of budget, until Fosshost agreed to host our open-source project's web resources.
+      It's because of their unwavering support that Vignette became successful as an open-source project.
         </Quote>
 </main>
 
