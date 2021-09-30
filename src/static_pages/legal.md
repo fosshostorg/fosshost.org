@@ -5,7 +5,7 @@ Last Updated: September 2021
 
 ## Terms of Service
 
-**This agreement is between Fosshost C.I.C, a community interest company (#) registered in England and Wales ("the provider", "we", "fosshost", "our", "us") and You ("your project", "project", "your", "end-user", "user", "users") and the terms herein are mutually binding and enforceable.**
+**This agreement is between Fosshost C.I.C, a community interest company (#13356530) registered in England and Wales ("the provider", "we", "fosshost", "our", "us") and You ("your project", "project", "your", "end-user", "user", "users") and the terms herein are mutually binding and enforceable.**
 
 You should keep a copy of this agreement for your records as it contains essential information which you may need to refer to now or in the future. We are not usually the ones that handle providing duplicate copies of such agreements. By using our services, you agree to all clauses herein.
 
