@@ -10,9 +10,9 @@ marked.setOptions({
 const getPost = slug =>
     fs.readFileSync(path.resolve("src/posts", `${slug}.md`), "utf-8");
 
-export async function get(req, res, next) {
-
-    const { slug } = req.params;
+export async function get(page) {
+    
+    const { slug } = page.params;
 
     const content = getPost(slug);
     const parsed = matter(content);
@@ -24,10 +24,5 @@ export async function get(req, res, next) {
         html,
     }
 
-    if (post !== null) {
-		res.setHeader('Content-Type', 'application/json');
-		res.end(JSON.stringify(post));
-	} else {
-		next();
-	}
+    return {body: post}
 }

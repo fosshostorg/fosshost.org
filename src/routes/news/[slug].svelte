@@ -1,11 +1,12 @@
 <script context="module">
-	export async function preload(page, session) {
+	export async function load({page, fetch}) {
 		const { slug } = page.params;
 
-		const res = await this.fetch(`news/${slug}.json`);
+		const res = await fetch(`/news/${slug}.json`);
 		let post = await res.json();
-
-		return { post, slug };
+        if (post)return { props: {post, slug} };
+        else return
+		
 	}
 </script>
 
@@ -57,6 +58,7 @@
 <!-- TODO: stylize code inline/blocks: not sure exactly how this should look. -->
 
 <style>
+    /*
     main {
         width: auto;
         max-width: 780px;
@@ -89,5 +91,5 @@
         color: var(--fosshost-light-grey);
         margin: 0;
     }
-
+*/
 </style>

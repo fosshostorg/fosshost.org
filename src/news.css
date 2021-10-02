@@ -1,0 +1,35 @@
+.error {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 600px;
+    text-align: center;
+}
+
+.error > img {
+    margin-top: 2rem;
+    max-width: 382px;
+}
+
+.error > h1, .error > h2 {
+    margin: 0px;
+    font-weight: 400;
+}
+
+.error > h1 {
+    font-size: 12rem;
+    line-height: 0.95;
+}
+
+@media (max-width: 382px) {
+    .error > h1 {
+        font-size: 6rem;
+    }
+    .error > h2 {
+        font-size: 1rem;
+    }
+    .error > img {
+        width: 98%;
+    }
+}

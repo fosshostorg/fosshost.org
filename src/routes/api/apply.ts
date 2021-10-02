@@ -1,9 +1,9 @@
-const axios = require("axios");
+import axios from "axios";
 import { Message, SMTPClient } from "emailjs";
-import escape from "validator/es/lib/escape";
+import validator from "validator";
 import marked from "marked";
 import { info } from "../../_utils";
-
+console.log(process)
 let baseURL = "https://fosshost.org";
 
 export async function post(req: any, res: any, next: () => void) {
@@ -13,8 +13,7 @@ export async function post(req: any, res: any, next: () => void) {
 
   await application.createOSTicket();
   application.sendConfirmationEmail();
-
-  res.end();
+  return {}
 }
 
 const headers = {
@@ -87,7 +86,7 @@ class Application {
   };
 
   getFormPart = (part: string): string => {
-    return escape(
+    return validator.escape(
       `\n### ${headers[part].header}\n${Object.keys(this.body[part])
         .map((n) => {
           if (n == "services" || part != "technical") {
@@ -147,7 +146,7 @@ class Application {
         from: process.env.EMAIL,
         to: this.body.personal.email,
 	    //   cc: ,
-        subject: `Fosshost Application - ${escape(this.body.project.name)}`,
+        subject: `Fosshost Application - ${validator.escape(this.body.project.name)}`,
         text: "",
         attachment: [
             { data: this.emailFormat(), alternative: true },

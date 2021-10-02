@@ -1,5 +1,11 @@
 <script lang="ts">
-	export let segment: string;
+	import { onDestroy } from 'svelte'; 
+	import { page } from '$app/stores'; 
+	let segment: string; 
+	const unsubscribe = page.subscribe(value => { 
+		segment = value.path; 
+	});
+	onDestroy(unsubscribe); 
 	let open = true;
 	let width;
 
@@ -19,11 +25,11 @@
 <nav>
 	<a href="/"><img src="/img/fosshost-logo.png" alt="Fosshost Logo" /></a>
 	<ul class:open>
-		<li><a on:click={() => open = false} aria-current="{segment === undefined ? 'page' : undefined}" href=".">Home</a></li>
-		<li><a on:click={() => open = false} aria-current="{segment === 'projects' ? 'page' : undefined}" href="projects">Projects</a></li>
-		<li><a rel="prefetch" on:click={() => open = false} aria-current="{segment === 'news' ? 'page' : undefined}" href="news">News</a></li>
-		<li><a on:click={() => open = false} aria-current="{segment === 'about' ? 'page' : undefined}" href="about">About</a></li>
-		<li><a on:click={() => open = false} aria-current="{segment === 'donate' ? 'page' : undefined}" href="donate">Donate</a></li>
+		<li><a on:click={() => open = false} aria-current="{segment === '/' ? 'page' : undefined}" href=".">Home</a></li>
+		<li><a on:click={() => open = false} aria-current="{segment === '/projects' ? 'page' : undefined}" href="/projects">Projects</a></li>
+		<li><a rel="prefetch" on:click={() => open = false} aria-current="{segment === '/news' ? 'page' : undefined}" href="/news">News</a></li>
+		<li><a on:click={() => open = false} aria-current="{segment === '/about' ? 'page' : undefined}" href="/about">About</a></li>
+		<li><a on:click={() => open = false} aria-current="{segment === '/donate' ? 'page' : undefined}" href="/donate">Donate</a></li>
 		<li><a on:click={() => open = false} class="apply" href="apply">Apply</a></li>
 	</ul>
 	<span class="nav-expand" class:open></span>
