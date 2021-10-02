@@ -58,7 +58,6 @@
 <!-- TODO: stylize code inline/blocks: not sure exactly how this should look. -->
 
 <style>
-    /*
     main {
         width: auto;
         max-width: 780px;
@@ -91,5 +90,4 @@
         color: var(--fosshost-light-grey);
         margin: 0;
     }
-*/
 </style>
