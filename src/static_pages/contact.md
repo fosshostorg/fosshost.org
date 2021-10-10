@@ -4,7 +4,7 @@
 All support is provided by our volunteers and fellow users within our online community. We pride ourselves on offering an efficient and personal service to all of projects and users. To assist with this, we support a number of communication protocols to make our service accessible, wherever you are.
 
 [Support Ticket](https://support.fossho.st)     
-[Discord](https://discord.gg/8MfNdGK)   
+[Discord](https://discord.gg/ayH8yWUwKW)   
 [IRC](https://web.libera.chat/#fosshost)     
 
 UK Emergency Telephone Support: +44 (0) 208 154 4278   
