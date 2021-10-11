@@ -6,8 +6,8 @@ author: corwin
 thumbnail: freenode.png
 ---
 
-# Update:
-**We have now fully withdrawn from the Freenode Partnership, with no Fosshost staff involved and supporting freenode's IRC network. To learn more about this, [please read our blog post](https://fosshost.org/news/freenode-partnership-to-be-discontinued) about ending the partnership**
+# UPDATE:
+### We have now fully withdrawn from the Freenode Partnership, with no Fosshost staff involved and supporting freenode's IRC network. To learn more about this, [please read our blog post](https://fosshost.org/news/freenode-partnership-to-be-discontinued) about ending the partnership**
 
 Fosshost C.I.C, a UK non-profit provider of cloud computing services
 for FOSS, enters into a long term partnership with Freenode Limited
