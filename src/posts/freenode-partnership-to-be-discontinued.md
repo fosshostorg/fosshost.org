@@ -1,11 +1,11 @@
 ---
-title: Update to Freenode Press Release Statement
+title: We have withdrawn from the freenode partnership
 date: 2021-06-12
 summary: Fosshost will not pursue partnership with Freenode
 author: thomas
 ---
 
-# We have now fully withdrawn from the Freenode Partnership.   The below blog post will be kept for historical and referential purposes, though the vision remains unchanged. 
+# We have now fully withdrawn from the Freenode Partnership. The below blog post will be kept for historical and referential purposes, though the vision remains unchanged.
 
 Fosshost is a non-profit home and superstructure of FOSS projects. We
 provide a range of services to support, promote, advance, and underpin
