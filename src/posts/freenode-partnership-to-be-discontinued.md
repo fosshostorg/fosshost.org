@@ -5,7 +5,7 @@ summary: Fosshost will not pursue partnership with Freenode
 author: thomas
 ---
 
-# We have now fully withdrawn from the Freenode Partnership. The below blog post will be kept for historical and referential purposes, though the vision remains unchanged.
+# We have now fully withdrawn from the Freenode Partnership. The below blog post will be kept for historical and referential purposes, though the vision remains unchanged. The [original blog post](https://fosshost.org/news/freenode) about the partnership was updated to reflect the ending of it.
 
 Fosshost is a non-profit home and superstructure of FOSS projects. We
 provide a range of services to support, promote, advance, and underpin
