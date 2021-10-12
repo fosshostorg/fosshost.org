@@ -28,7 +28,7 @@ export const Sponsors: Sponsor[] = [
     link: "https://metal.equinix.com/"
   },
   {
-    name: "OSUSOL.org",
+    name: "OSUOSL.org",
     link: "https://osuosl.org/"
   },
   {
