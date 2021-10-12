@@ -18,7 +18,7 @@ In this blog post, we'll succinctly present to you our sponsors and what they do
 - FDCservers
 - HostKey
 - Jolt
-- OSUSOL
+- OSUOSL
 - Packetframe
 - RapidSwitch
 - Severius
@@ -43,7 +43,7 @@ HostKey works with Dedicated Servers and GPU Servers, with default and tailored 
 ### [Jolt](https://jolt.co.uk/)
 Jolt provides several hosting-related services, like Web Hosting, VPS's and Dedicated Servers, DNS and SSL Certificates.
 
-### [OSUSOL](https://osuosl.org/)
+### [OSUOSL](https://osuosl.org/)
 OSUSOL is Oregon's State University Open-Source Lab, a nonprofit organisation working to advance open-source technologies.
 
 ### [Packetframe](https://packetframe.com/)
