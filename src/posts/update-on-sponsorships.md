@@ -25,7 +25,7 @@ Every single supporter of fosshost is part of our supply chain and are all of eq
 [DigitalOcean.com](https://digitalocean.com) DigitalOcean, Inc.  
 [Equinix Metal](https://metal.equinix.com) Equinix, Inc.  
 [Heficed.com](https://heficed.com) Digital Energy Technologies Ltd  
-[OSUSOL.org](https://osuosl.org) Oregon State University Open Source Labs  
+[OSUOSL.org](https://osuosl.org) Oregon State University Open Source Labs  
 [CustodianDC.com](https://custodiandc.com) CustodianDC Ltd  
 
 [Gandi.net](https://gandi.net) (Domain Registration Services)  
