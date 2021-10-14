@@ -44,7 +44,7 @@ HostKey works with Dedicated Servers and GPU Servers, with default and tailored 
 Jolt provides several hosting-related services, like Web Hosting, VPS's and Dedicated Servers, DNS and SSL Certificates.
 
 ### [OSUOSL](https://osuosl.org/)
-OSUSOL is Oregon's State University Open-Source Lab, a nonprofit organisation working to advance open-source technologies.
+OSUOSL is Oregon's State University Open-Source Lab, a nonprofit organisation working to advance open-source technologies.
 
 ### [Packetframe](https://packetframe.com/)
 Packetframe is an open-source Content Delivery Network (CDN) built for developers, available across 41 geographical locations. We work as a joint venture.
