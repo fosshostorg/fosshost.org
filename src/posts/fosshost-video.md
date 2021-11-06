@@ -9,6 +9,8 @@ Today we published a video, the first in a series explaining the Fosshost projec
 
 We hope you enjoy and - *ahem* - share and give it a like on Youtube :D
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/RkV3F8OXrHM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 In the video, Corwin acts as the interviewer, giving questions for Thomas to answer and develop. This FAQ-like format is something we hope to return to in the future. We welcome your comments in our chat forums or via Youtube. We're excited to share more about Fosshost project, what we are doing, and what our future holds.
 
 Some of the essential takes from the video are:
@@ -20,5 +22,3 @@ Some of the essential takes from the video are:
 - Plus stories of sleepless nights and new volunteering opportunities
 
 We hope this helps you better understand our project and that you enjoyed the interview format. As always, we welcome your thoughts and questions. Please do [reach out](https://fosshost.org/contact).
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/RkV3F8OXrHM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
