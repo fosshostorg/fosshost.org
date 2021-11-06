@@ -10,12 +10,28 @@ marked.setOptions({
 const getPost = slug =>
     fs.readFileSync(path.resolve("src/posts", `${slug}.md`), "utf-8");
 
+const renderer = {
+    link(href, title, text) {
+
+        if (text.includes("embed|youtube")) {
+            return (
+                `<div class="youtube-iframe-wrapper">
+                    <iframe class="youtube-iframe" src="https://www.youtube.com/embed/${href.split("v=")[1]}" allowfullscreen></iframe>
+                </div>`
+            )
+        }
+
+        return `<a href="${href}">${text}</a>`
+    }
+}
+
 export async function get(req, res, next) {
 
     const { slug } = req.params;
 
     const content = getPost(slug);
     const parsed = matter(content);
+    marked.use({ renderer });
     const html = marked(parsed.content);
 
     const post = {
