@@ -5,7 +5,7 @@ summary: We are launching a video series about our project
 author: bruno
 ---
 
-Today we published a video, the first in a series explaining the Fosshost project. You can watch [on Youtube](https://www.youtube.com/watch?v=RkV3F8OXrHM) (also embedded on this page) or download the [original file](https://bru.st/i/2021-10-30%2013-26-10.mkv). 
+Today we published a video, the first in a series explaining the Fosshost project. You can watch on [Youtube](https://www.youtube.com/watch?v=RkV3F8OXrHM) (also embedded on this page) or download the [original file](https://bru.st/i/2021-10-30%2013-26-10.mkv). 
 
 We hope you enjoy and - *ahem* - share and give it a like on Youtube :D
 
