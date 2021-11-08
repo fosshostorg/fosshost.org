@@ -39,7 +39,7 @@
   </Input>
   <Input on:blur={() => {errors = validate(validator, 'rsyncURL', data.technical["Mirrors-as-a-service"], errors)}} error={errors.rsyncURL} label="rsync URL" type="text" placeholder="rsync://project-mirror" bind:value={data.technical["Mirrors-as-a-service"].rsyncURL}>
     <span slot="help">
-      We will mirror / sync from this source.  We will not provide this to you.<br> To learn more, please see <a href="https://docs.fosshost.org/en/home/mirrors-as-a-service" target="_blank" class="fosshost-link">our documentation.</a>
+      We will mirror / sync from this source.  We will not provide this to you.<br> To learn more, please see <a href="https://docs.fosshost.org/products-and-services/mirrors-as-a-service" target="_blank" class="fosshost-link">our documentation.</a>
     </span>
   </Input>
   <Input on:blur={() => {errors = validate(validator, 'specialRequirements', data.technical["Mirrors-as-a-service"], errors)}} error={errors.specialRequirements} label="Special Requirements" type="text" placeholder="Do you have any special requirements or comments to add?" bind:value={data.technical["Mirrors-as-a-service"].specialRequirements} />

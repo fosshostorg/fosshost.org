@@ -8,7 +8,7 @@ thumbnail: libera-chat.png
 
 Fosshost has established a presence on [Libera.Chat](https://libera.chat), a new IRC network created by former staffers of freenode.  The new network is similar in sharing the historical focus of the older network on supporting the development of peer-directed Free and Open Source Software development.
 
-As of June 11th, we have also re-opened our channels on Freenode.   For a comprehensive list please see [our support page](https://docs.fosshost.org/en/home/support).
+As of June 11th, we have also re-opened our channels on Freenode.   For a comprehensive list please see [our support page](https://docs.fosshost.org/about/support).
 
 Fosshost has been present on Freenode since our formation in March 2020.  Throughout our tenure, we have experienced only dedication, care, and professionalism from the network's volunteer staff. When they felt forced to resign and launch a new network, we followed to continue experiencing the same level of care and dedication.  When Andrew Lee then reached out to make personal contact, and to listen to (and since act from) our specific concerns regarding the future of freenode, we were encouraged and have resumed offering support to our tenants and community though the freenode IRC network.
 

@@ -39,4 +39,4 @@ Quoting Thomas Markey, Fosshost founder and CEO: «Fosshost chose a Community In
 
 Chief Operating Officer, Corwin Brust added: «This step, as all we take, advances Thomas's vision. That we are building something cool, something that people can and will depend on, and doing it such as to most directly benefit our community now and down the road.»
 
-Before you go, we would like to remind you that you can donate to Fosshost and volunteer with us. See our [_Donate page_](https://fosshost.org/donate) to learn more about donations and our [Wiki](https://docs.fosshost.org/en/home/volunteering-opportunities) for the volunteering opportunities.
+Before you go, we would like to remind you that you can donate to Fosshost and volunteer with us. See our [_Donate page_](https://fosshost.org/donate) to learn more about donations and our [Wiki](https://docs.fosshost.org/about/volunteering-opportunities) for the volunteering opportunities.

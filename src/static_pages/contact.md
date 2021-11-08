@@ -19,7 +19,7 @@ London
 WC2A 2JR  
 United Kingdom  
 
-Fosshost C.I.C is a Community Interest Company (C.I.C), Limited by Guarantee (without share capital), registered in England and Wales.  Company Registration Number: 13356530.  You can read more about the people behind Fosshost at [Team Overview](https://docs.fosshost.org/en/home/team).
+Fosshost C.I.C is a Community Interest Company (C.I.C), Limited by Guarantee (without share capital), registered in England and Wales.  Company Registration Number: 13356530.  You can read more about the people behind Fosshost at [Team Overview](https://docs.fosshost.org/about/team).
 
 Fosshost is a contributing member of Software in the Public Interest, Inc, a 501 (c) (3) non-profit organization. 1732 1st Ave #20327, New York, NY 10128-5177, United States.  This means that you can make tax deductable donations in the US via our SPI membership, if a sponsoring organisation only recongises 501 (c) (3).  Please contact us directly if this is applicable to you.
 
