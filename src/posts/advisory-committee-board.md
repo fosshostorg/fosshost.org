@@ -33,7 +33,7 @@ I have spent the majority of my life hacking on free software, my work includes 
 
 Kubilay Kocak is an independent technology consultant with over 20 years commercial experience exclusively in Open Source systems architecture and engineering, infrastructure and operations, product development, and cultivating technology teams that excel. He is a FreeBSD Ports committer and works on community engagement, project branding, culture and advocacy in The FreeBSD Project through several community facing channels including Twitter ([@FreeBSDHelp](https://twitter.com/freebsdhelp)), IRC and Bugmeister (Issue Triage & Management). Other interests include the Open Access and Open Science movement and Sustainable Open Source Funding. You can find him on [Twitter](https://twitter.com/koobs), [LinkedIn](https://www.linkedin.com/in/kubilaykocak/) and the [FreeBSD Wiki](https://wiki.freebsd.org/KubilayKocak/).
 
-Further information regarding the Fosshost ACB can be found on our [Team Overview](https://docs.fosshost.org/en/home/team)
+Further information regarding the Fosshost ACB can be found on our [Team Overview](https://docs.fosshost.org/about/team)
 
 On behalf of the board of Directors at Fosshost, may I take this opportunity to express my sincere gratitude to those who have joined the Fosshost ACB as part of our ongoing commitment to complete transparency.
 
