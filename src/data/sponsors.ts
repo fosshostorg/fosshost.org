@@ -36,6 +36,10 @@ export const Sponsors: Sponsor[] = [
     link: "https://fastly.net/"
   },
   {
+    name: "Gitpod",
+    link: "https://www.gitpod.io/"
+  },
+  {
     name: "Packetframe.com",
     link: "https://packetframe.com/"
   },
