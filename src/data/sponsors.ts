@@ -1,7 +1,7 @@
 export const Sponsors: Sponsor[] = [
   {
-    name: "RapidSwitch.com",
-    link: "https://rapidswitch.com"
+    name: "iomart.com",
+    link: "https://www.iomart.com/"
   },
   {
     name: "Jolt.co.uk",
@@ -24,8 +24,8 @@ export const Sponsors: Sponsor[] = [
     link: "https://digitalocean.com/"
   },
   {
-    name: "Equinix Metal",
-    link: "https://metal.equinix.com/"
+    name: "WebNX.com",
+    link: "https://webnx.com/"
   },
   {
     name: "OSUOSL.org",
