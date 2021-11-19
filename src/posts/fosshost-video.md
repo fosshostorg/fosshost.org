@@ -1,5 +1,5 @@
 ---
-title: Fosshost, raw and uncut - take 1
+title: Fosshost, the video series
 date: 2021-11-06
 summary: We are launching a video series about our project
 author: bruno
