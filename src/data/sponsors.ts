@@ -39,8 +39,4 @@ export const Sponsors: Sponsor[] = [
     name: "Gitpod",
     link: "https://www.gitpod.io/"
   },
-  {
-    name: "Packetframe.com",
-    link: "https://packetframe.com/"
-  },
 ]
