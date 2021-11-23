@@ -9,7 +9,7 @@
 
 <main>
   <Header
-    title="We provide a tailored hosting service to fit your needs"
+    title="We provide a hosting service to fit your needs"
     subtitle="Below is a list of some of the projects that benefit from our service. Some of these projects may have hundreds of sub-projects that we do not list here."
     src="/img/illustration0.png"
   />
