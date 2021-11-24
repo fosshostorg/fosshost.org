@@ -13,7 +13,7 @@
     let options = [
         "VPS",
         "Mirrors-as-a-service",
-        "Domain Name and DNS",
+        "Domain Registration",
     ]
 
     let error = null;
@@ -27,16 +27,15 @@
             rsyncURL: "",
             specialRequirements: "",
         },
-        "Domain Name and DNS": {
+        "Domain Registration": {
             domain: "",
-            requiresHosting: null,
         },
     }
 
     let components = {
         "VPS":                          {c: VPSOptions, validator: VPSValidator, errors: VPSErrors},
         "Mirrors-as-a-service":         {c: MirrorOptions, validator: MirrorValidator, errors: MirrorErrors},
-        "Domain Name and DNS":          {c: DNSOptions, validator: DNSValidator, errors: DNSErrors},
+        "Domain Registration":          {c: DNSOptions, validator: DNSValidator, errors: DNSErrors},
     }
     
     $: if (data.technical.services) {
@@ -57,7 +56,7 @@
     const servicesError = () => {
         if (data.technical.services.length < 1) {
             error = "Please choose at least one service.";
-        } else if (data.technical.services.includes("Domain Name and DNS") && data.technical.services.length == 1) {
+        } else if (data.technical.services.includes("Domain Registration") && data.technical.services.length == 1) {
             error = "Domain name services are only offered in addition to the use of another service."
         } else {
             error = "";

@@ -32,7 +32,7 @@ type Post = {
     html?: string
 }
 
-type Service = "x86 VPS" | "Mirrors-as-a-service" | "AArch64 VPS" | "Domain Name and DNS";
+type Service = "x86 VPS" | "Mirrors-as-a-service" | "AArch64 VPS" | "Domain Registration";
 
 type FormResponse = {
     security: {
@@ -51,9 +51,8 @@ type FormResponse = {
     },
     technical: {
         services: Service[],
-        "Domain Name and DNS"?: {
-            domain: string,
-            requiresHosting: boolean
+        "Domain Registration"?: {
+            domain: string
         },
         "VPS"?: {
             info: string,
