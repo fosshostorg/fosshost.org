@@ -59,7 +59,8 @@ class Application {
   client: SMTPClient = new SMTPClient({
     user: process.env.EMAIL,
     password: process.env.PASSWORD,
-    host: "smtp.office365.com",
+    // TODO: This should be an ENV variable
+    host: "smtp.migadu.com",
     tls: {
       ciphers: "SSLv3",
     },
