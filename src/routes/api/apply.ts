@@ -60,7 +60,7 @@ class Application {
     user: process.env.EMAIL,
     password: process.env.PASSWORD,
     // TODO: This should be an ENV variable
-    host: "smtp.migadu.com",
+    host: process.env.HOST,
     tls: {
       ciphers: "SSLv3",
     },
