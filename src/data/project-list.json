@@ -217,13 +217,6 @@
     "description": ""
   },
   {
-    "id": "turbowarp",
-    "img": "",
-    "name": "TurboWarp",
-    "link": "https://turbowarp.org/",
-    "description": ""
-  },
-  {
     "id": "dungeon-mode",
     "img": "dungeonmode.png",
     "name": "Dungeon-mode",
