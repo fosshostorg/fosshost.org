@@ -20,10 +20,6 @@ export const Sponsors: Sponsor[] = [
     link: "http://serverius.net/"
   },
   {
-    name: "DigitalOcean.com",
-    link: "https://digitalocean.com/"
-  },
-  {
     name: "WebNX.com",
     link: "https://webnx.com/"
   },
