@@ -20,11 +20,10 @@
 			<br><br>
 			Fosshost C.I.C. is a non-profit UK-registered Community Interest Company (CIC), Limited by Guarantee, without share capital. Launched in April 2020 by founder and present CEO, Thomas Markey to provide open-source projects and initiatives access to no-cost distributed cloud computing services.
 			<br><br>
-			Today, we help provide world-class hosting services to hundreds of open source projects.
+			Today, we help provide world-class hosting services to many open source projects.
 			<br><br>
-			To make this a success, we operate several nodes which are usually donated by our hosting sponsors, and the Fosshost Volunteers manage the infrastructure donated to us, on behalf of the projects we help. Those open source projects eligible for our services, typically apply for a virtual private server (VPS).
+			To make this a success, we operate nodes which are either donated by our hosting sponsors or funded through donations.  We have a strong team of Fosshost Volunteers who manage the infrastructure on behalf of the projects we help. Those open source projects eligible for our services, typically apply for a virtual private server (VPS).
 			<br><br>
-			You can apply for all of our services via the application form, or read more about the services we offer here.
 		</div>
 	</Mission>
 	<!-- <Section>
