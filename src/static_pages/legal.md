@@ -100,7 +100,7 @@ You may not apply with us or sign up or use our services for the purposes of tes
 
 In the event the bandwidth, the number of websites or disk space usage of your account presents a risk to the stability, performance or uptime of our servers, data storage, networking or other infrastructure, you may be required to cease all activity or consider alternative arrangements, or we may take action to restrict the resources your services are utilising.
 
-** Content**
+**Content**
 
 The storage that we allocate to you will not be used as a file storage method for purposes other than serving content for your open source project, and in any event, may not contain the following content, not but limited to:
 
