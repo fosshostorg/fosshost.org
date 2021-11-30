@@ -9,7 +9,7 @@
         currentPage += 1;
     }
 
-    const formDisabled: boolean = false;
+    const formDisabled: boolean = true;
 </script>
 
 <main in:fade={{delay: 0, duration: 400}}>
