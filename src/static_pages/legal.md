@@ -210,7 +210,7 @@ We process your data as outlined above to provide an efficient service; therefor
 
 We do not share any data with anybody unless we make a referral to another organisation that we work with; however, this would always be done with your permission, such as on occasions where we are unable to directly help a project.
 
-If we are required to share your data because of a subpoena, legal request or any other matter where the law dictates that it is acceptable to do so, we will comply and share any and all information pertaining to you as required by law. We will only release such data with appropriate legal orders, which will be reviewed by our board of directors and an independent legal expert who provides pro-bono legal advice to fosshost.org.
+If we are required to share your data because of a subpoena, legal request or any other matter where the law dictates that it is acceptable to do so, we will comply and share any and all information pertaining to you as required by law. We will only release such data with appropriate legal orders, which will be reviewed by our board of directors and an independent legal expert who provides pro-bono legal advice.
 
 **How we store your data**
 
