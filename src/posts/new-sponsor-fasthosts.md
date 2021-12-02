@@ -1,6 +1,6 @@
 ---
 title: We have a new sponsor, Fasthosts
-date: 2021-11-22
+date: 2021-12-02
 summary: Fasthosts will help us achieve our goal -  to empower and support every free and open-source software project
 author: bruno
 thumbnail: fasthosts.png
