@@ -1,7 +1,7 @@
 ---
 title: We have a new sponsor, Fasthosts
 date: 2021-12-02
-summary: Fasthosts will help us achieve our goal -  to empower and support every free and open-source software project
+summary: Fasthosts will help us achieve our goal - to empower and support every free and open-source software project
 author: bruno
 thumbnail: fasthosts.png
 ---
@@ -18,4 +18,4 @@ A cornerstone in pursuing our goal is our newest sponsor, [Fasthosts](https://ww
 
 The new hardware will help us accommodate the increasing number of tenants and provide an even better service. It will also allow us to fulfil our vision and be a trustworthy entity for our sponsors.
 
-We are very proud of having [Fasthosts])(https://www.fasthosts.co.uk/) sponsoring us, and we'll do our best to uphold the trust you placed in us.
+We are very proud of having [Fasthosts](https://www.fasthosts.co.uk/) sponsoring us, and we'll do our best to uphold the trust you placed in us.
