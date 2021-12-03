@@ -8,8 +8,11 @@
 </script>
 
 <script lang="ts">
+    import Paginator from "../../components/news/Paginator.svelte";
     import PostCard from "../../components/news/PostCard.svelte";
     export let posts: Post[];
+
+    let currentPage = 0;
 </script>
 
 <svelte:head>
@@ -22,10 +25,11 @@
         <p>Stay up to date with the latest updates, announcements and more from Fosshost.</p>
     </div>
     <span>
-        {#each posts as post, index}
+        {#each posts.slice(currentPage * 9, (currentPage+1) * 9) as post, index}
             <PostCard {post} {index}/>
         {/each}
     </span>
+    <Paginator bind:page={currentPage} totalPages={Math.round(posts.length / 9)} />
 </main>
 
 <style>
