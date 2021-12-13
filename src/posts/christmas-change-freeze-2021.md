@@ -26,3 +26,11 @@ We will not honour any migrations of services during this time.
 ### Domains
 
 We will not register domains during the Christmas Period. 
+
+### Infrastructure 
+
+We will not be completing any new infrastructure upgrades or deployments during the Christmas Period. 
+
+Thank you for your support during 2021 and we wish you, your families, project and associates, a pleasent festive break.
+
+
