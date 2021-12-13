@@ -5,13 +5,13 @@ summary: Its that time of the year again when we start to think about changes an
 author: Thomas
 ---
 
-Again it's that time of year when we update you on our change freeze.
+It's that time of year when we update you on our change freeze.
 We know that the services we provide to you are in peak demand over this period, and we want to give you confidence that they will operate as expected, without interruption.
 
-Please read through the contents of this page to see when and how the change freeze 2021-22 will affect your projects, users and the wider community. The Change Freeze will be in place between the 16th December 00:00 2021 UTC to the 4th January 00:00 UTC 2022.
+Please read through the contents of this page to see when and how the change freeze 2021-22 will affect your projects, users, and the wider community. The Change Freeze will be in place between the 16th December 00:00 2021 UTC to the 4th January 00:00 UTC 2022.
 
 ### Hosting Applications
-CUrrently, remain offline until further notice pending restructuring of infrastructure.
+Currently, remain offline until further notice pending restructuring of infrastructure.
 
 ### Support Tickets
 We will continue to support projects across our services where there is a total loss of service or outage.
