@@ -9,7 +9,7 @@ It's that time of year again where we update you on our change freeze.
 
 We know that the services we provide to you are in peak demand over this period, and we want to give you confidence that they will operate as expected, without interruption.
 
-Please read through the contents of this page to see when and how the change freeze 2021-22 will affect your projects, users and the wider community.
+Please read through the contents of this page to see when and how the change freeze 2021-22 will affect your projects, users and the wider community.  The Change Freeze will be in place between the 16th December 00:00 2021 UTC to the 4th Janurary 00:00 UTC 2022.
 
 ### Hosting Applications
 
