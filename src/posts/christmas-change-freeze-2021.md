@@ -17,7 +17,7 @@ CUrrently, remain offline until further notice pending restructuring of infrastr
 We will continue to support projects across our services where there is a total loss of service or outage.
 
 ### Migrations
-We will not honour any migrations of services during this time.
+We will not honour any migrations of services during this time with exception of the currently active DFW migration (only applies to projects emailed about it)
 
 ### Domains
 We will not register domains during the Christmas Period.
