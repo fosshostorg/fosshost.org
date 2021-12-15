@@ -3,7 +3,7 @@ title: We have a new logo
 date: 2021-12-15
 summary: Our logo competition is over, and we've chosen the winner.
 author: Bruno Miguel
-thumbnail: fosshoot.png
+thumbnail: fosshoot-logo.png
 ---
 
 Over two weeks, we held a competition for the FOSS community to design a new logo for us. We want to create a more modern, friendly and welcoming image to use in both our online and offline presences.
