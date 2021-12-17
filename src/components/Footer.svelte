@@ -12,8 +12,9 @@
             <li><a href="https://docs.fosshost.org/">Docs</a></li>
             <li><a rel="prefetch" href="/contact">Contact</a></li>
             <li><a rel="prefetch" href="/donate">Donate</a></li>
+            <li><a rel="prefetch" href="https://fosshost.gumroad.com">Merch</a></li>
             <li><a rel="prefetch" href="/about#sponsors">Sponsors</a></li>
-            <li><a rel="prefetch" href="/media">Media</a></li>
+            <li><a rel="prefetch" href="/media">Media Assets</a></li>
             <li><a rel="prefetch" href="/status">Network Status</a></li>
             <li><a rel="prefetch" href="/web-stats">Web Stats</a></li>
             <li><a rel="prefetch" href="/legal">Legal</a></li>
@@ -21,7 +22,7 @@
         </ul>
         <span>
             <ul class="copy-info">
-                <li>Fosshost C.I.C LBG (without share capital) is registered in England and Wales. Company Registration Number: 13356530. All rights reserved &copy; 2021</li>
+                <li>Fosshost is a non-profit org registered in England and Wales. Our Company Registration Number: 13356530. All rights reserved &copy; 2021</li>
             </ul>
         </span>
     </span>
