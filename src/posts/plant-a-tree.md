@@ -27,3 +27,6 @@ However, to give the Fosshost Plant a Tree programme a head start, we have plant
 Fosshost is one of the first open-source projects to launch a CO2 sustainability programme.
 
 Thomas Markey, the founder of Fosshost, said, "Fosshost ECO is a great way to do our bit for the world by helping towards the fight against climate change. We use a lot of electricity, some of which is already green, but unfortunately, we are not as green as we would like."
+
+# Update - 2021-12-19
+We have since taken the decision to withdraw ECO and will instead, focus our efforts on reinvesting into the FOSS community, through grants and support packages to directly help our most important asset.
