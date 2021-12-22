@@ -1,7 +1,7 @@
 ---
 title: Update from our CEO Thomas Markey
 date: 2021-12-22
-summary: Our year end balance for 2021
+summary: Our year-end balance for 2021
 author: thomas
 ---
 
