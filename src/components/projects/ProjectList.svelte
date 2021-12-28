@@ -45,21 +45,23 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        transition: ease background-color 0.3s;
+        transition: ease background-color 0.3s, filter 0.3s, -webkit-filter 0.3s;
         font-size: 1.85rem;
         color: #787878;
         font-weight: 600;
         text-align: center;
         text-decoration: none;
+        filter: grayscale(100%);
+        -webkit-filter: grayscale(100%);
+
     }
 
     a:hover {
         background-color: #e2e2e2;
+        filter: revert;
     }
 
     img {
-        filter: grayscale(100%);
-        -webkit-filter: grayscale(100%);
         opacity: 0.6;
         object-fit: scale-down;
     }
