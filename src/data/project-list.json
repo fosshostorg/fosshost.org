@@ -222,5 +222,13 @@
     "name": "Dungeon-mode",
     "link": "https://github.com/dungeon-mode/game",
     "description": ""
+  }, 
+  {
+    "id": "ejenda",
+    "img": "ejenda.svg",
+    "name": "Ejenda",
+    "link": "https://ejenda.org/",
+    "description": ""
   }
+
 ]
