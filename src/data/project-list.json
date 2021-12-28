@@ -222,5 +222,12 @@
     "name": "Dungeon-mode",
     "link": "https://github.com/dungeon-mode/game",
     "description": ""
+  },
+    {
+    "id": "vignette",
+    "img": "",
+    "name": "Vignette",
+    "link": "https://vignetteapp.org",
+    "description": ""
   }
 ]
