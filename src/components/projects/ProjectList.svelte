@@ -57,12 +57,13 @@
 
     a:hover {
         background-color: #e2e2e2;
-        filter: revert;
+        filter: grayscale(0%);
+        -webkit-filter: grayscale(0%);
     }
     
     img {
         opacity: 0.6;
         object-fit: scale-down;
     }
-    
+
 </style>
