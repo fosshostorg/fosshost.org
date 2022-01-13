@@ -1,5 +1,5 @@
 ---
-title: New sponsor: UKFast.Net Limited
+title: New sponsor, UKFast.Net Limited
 date: 2022-01-13
 summary: Say hello to our newest sponsor
 author: bruno
