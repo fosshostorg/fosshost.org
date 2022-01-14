@@ -1,0 +1,209 @@
+Omitting both --window and --windowclass arguments is not recommended
+Icon theme "gnome" not found.
+Icon theme "gnome" not found.
+kf.plasma.quick: Applet preload policy set to 1
+trying to show an empty dialog
+file:///usr/share/plasma/shells/org.kde.plasma.desktop/contents/views/Desktop.qml:134:19: QML Loader: Binding loop detected for property "height"
+file:///usr/share/plasma/shells/org.kde.plasma.desktop/contents/views/Desktop.qml:134:19: QML Loader: Binding loop detected for property "height"
+Error: cannot change the containment to AppletsLayout
+Plasma Shell startup completed
+file:///usr/share/plasma/plasmoids/org.kde.plasma.eventcalendar/contents/ui/calendars/PlasmaCalendarManager.qml:16: Error: Qt.createQmlObject(): failed to create object: 
+    file:///usr/share/plasma/plasmoids/org.kde.plasma.eventcalendar/contents/ui/calendars/inline:1:1: module "org.kde.plasma.PimCalendars" is not installed
+Trying to use rootObject before initialization is completed, whilst using setInitializationDelayed. Forcing completion
+Entry is not valid "kontact.desktop" QSharedPointer(0x55a2762b68a0)
+Entry is not valid "ktp-contactlist.desktop" QSharedPointer(0x55a2762b68a0)
+Entry is not valid "org.kde.discover.desktop" QSharedPointer(0x55a2762b68f0)
+Entry is not valid "kontact.desktop" QSharedPointer(0x55a2762b68a0)
+Entry is not valid "ktp-contactlist.desktop" QSharedPointer(0x55a2762b68f0)
+Entry is not valid "org.kde.discover.desktop" QSharedPointer(0x55a276488880)
+file:///usr/share/plasma/plasmoids/org.kde.panel/contents/ui/main.qml:18:1: QML DropArea (parent or ancestor of QQuickLayoutAttached): Binding loop detected for property "minimumWidth"
+trying to show an empty dialog
+file:///usr/share/plasma/shells/org.kde.plasma.desktop/contents/views/Desktop.qml:134:19: QML Loader: Binding loop detected for property "height"
+file:///usr/share/plasma/shells/org.kde.plasma.desktop/contents/views/Desktop.qml:134:19: QML Loader: Binding loop detected for property "height"
+trying to show an empty dialog
+trying to show an empty dialog
+trying to show an empty dialog
+file:///usr/share/plasma/shells/org.kde.plasma.desktop/contents/applet/CompactApplet.qml:52: TypeError: Cannot read property 'implicitWidth' of null
+file:///usr/share/plasma/shells/org.kde.plasma.desktop/contents/applet/CompactApplet.qml:70: TypeError: Cannot read property 'implicitHeight' of null
+org.kde.plasma.pulseaudio: No object for name "alsa_output.pci-0000_00_09.2.analog-stereo.monitor"
+file:///usr/share/plasma/plasmoids/org.kde.plasma.eventcalendar/contents/ui/Logic.qml:96: TypeError: Cannot read property 'showMeteogram' of null
+file:///usr/share/plasma/plasmoids/org.kde.plasma.eventcalendar/contents/ui/Logic.qml:140: TypeError: Cannot call method 'updateUI' of null
+trying to show an empty dialog
+QQmlComponent: Component is not ready
+QQmlEngine::setContextForObject(): Object already has a QQmlContext
+file:///usr/share/plasma/shells/org.kde.plasma.desktop/contents/configuration/panelconfiguration/ToolBar.qml:102:9: QML SpinBox: Binding loop detected for property "implicitWidth"
+Error: cannot change the containment to AppletsLayout
+file:///usr/share/plasma/shells/org.kde.plasma.desktop/contents/applet/CompactApplet.qml:52: TypeError: Cannot read property 'implicitWidth' of null
+file:///usr/share/plasma/shells/org.kde.plasma.desktop/contents/applet/CompactApplet.qml:70: TypeError: Cannot read property 'implicitHeight' of null
+file:///usr/share/plasma/plasmoids/org.kde.plasma.eventcalendar/contents/ui/calendars/PlasmaCalendarManager.qml:16: Error: Qt.createQmlObject(): failed to create object: 
+    file:///usr/share/plasma/plasmoids/org.kde.plasma.eventcalendar/contents/ui/calendars/inline:1:1: module "org.kde.plasma.PimCalendars" is not installed
+file:///usr/lib/qt/qml/org/kde/plasma/components/ModelContextMenu.qml:38:1: QML ModelContextMenu: Accessible must be attached to an Item
+file:///usr/lib/qt/qml/org/kde/plasma/components/ModelContextMenu.qml:38:1: QML ModelContextMenu: Accessible must be attached to an Item
+TODO: port listCategories()
+file:///usr/lib/qt/qml/org/kde/plasma/extras/PlasmoidHeading.qml:74: ReferenceError: plasmoid is not defined
+file:///usr/share/plasma/plasmoids/org.kde.panel/contents/ui/main.qml:18:1: QML DropArea (parent or ancestor of QQuickLayoutAttached): Binding loop detected for property "minimumWidth"
+Arrived mimeData () ("text/x-plasmoidservicename") at 907 ,  486
+adding "org.kde.plasma.systemtray"
+QDBusConnection: error: could not send signal to service "" path "/plasma-org.kde.plasma.desktop-appletsrc" interface "org.kde.kconfig.notify" member "ConfigChanged": Invalid object path: /plasma-org.kde.plasma.desktop-appletsrc
+QDBusConnection: error: could not send signal to service "" path "/plasma-org.kde.plasma.desktop-appletsrc" interface "org.kde.kconfig.notify" member "ConfigChanged": Invalid object path: /plasma-org.kde.plasma.desktop-appletsrc
+QDBusConnection: error: could not send signal to service "" path "/plasma-org.kde.plasma.desktop-appletsrc" interface "org.kde.kconfig.notify" member "ConfigChanged": Invalid object path: /plasma-org.kde.plasma.desktop-appletsrc
+QDBusConnection: error: could not send signal to service "" path "/plasma-org.kde.plasma.desktop-appletsrc" interface "org.kde.kconfig.notify" member "ConfigChanged": Invalid object path: /plasma-org.kde.plasma.desktop-appletsrc
+QDBusConnection: error: could not send signal to service "" path "/plasma-org.kde.plasma.desktop-appletsrc" interface "org.kde.kconfig.notify" member "ConfigChanged": Invalid object path: /plasma-org.kde.plasma.desktop-appletsrc
+QDBusConnection: error: could not send signal to service "" path "/plasma-org.kde.plasma.desktop-appletsrc" interface "org.kde.kconfig.notify" member "ConfigChanged": Invalid object path: /plasma-org.kde.plasma.desktop-appletsrc
+QDBusConnection: error: could not send signal to service "" path "/plasma-org.kde.plasma.desktop-appletsrc" interface "org.kde.kconfig.notify" member "ConfigChanged": Invalid object path: /plasma-org.kde.plasma.desktop-appletsrc
+QDBusConnection: error: could not send signal to service "" path "/plasma-org.kde.plasma.desktop-appletsrc" interface "org.kde.kconfig.notify" member "ConfigChanged": Invalid object path: /plasma-org.kde.plasma.desktop-appletsrc
+QDBusConnection: error: could not send signal to service "" path "/plasma-org.kde.plasma.desktop-appletsrc" interface "org.kde.kconfig.notify" member "ConfigChanged": Invalid object path: /plasma-org.kde.plasma.desktop-appletsrc
+QDBusConnection: error: could not send signal to service "" path "/plasma-org.kde.plasma.desktop-appletsrc" interface "org.kde.kconfig.notify" member "ConfigChanged": Invalid object path: /plasma-org.kde.plasma.desktop-appletsrc
+QDBusConnection: error: could not send signal to service "" path "/plasma-org.kde.plasma.desktop-appletsrc" interface "org.kde.kconfig.notify" member "ConfigChanged": Invalid object path: /plasma-org.kde.plasma.desktop-appletsrc
+QDBusConnection: error: could not send signal to service "" path "/plasma-org.kde.plasma.desktop-appletsrc" interface "org.kde.kconfig.notify" member "ConfigChanged": Invalid object path: /plasma-org.kde.plasma.desktop-appletsrc
+QDBusConnection: error: could not send signal to service "" path "/plasma-org.kde.plasma.desktop-appletsrc" interface "org.kde.kconfig.notify" member "ConfigChanged": Invalid object path: /plasma-org.kde.plasma.desktop-appletsrc
+QDBusConnection: error: could not send signal to service "" path "/plasma-org.kde.plasma.desktop-appletsrc" interface "org.kde.kconfig.notify" member "ConfigChanged": Invalid object path: /plasma-org.kde.plasma.desktop-appletsrc
+QDBusConnection: error: could not send signal to service "" path "/plasma-org.kde.plasma.desktop-appletsrc" interface "org.kde.kconfig.notify" member "ConfigChanged": Invalid object path: /plasma-org.kde.plasma.desktop-appletsrc
+QDBusConnection: error: could not send signal to service "" path "/plasma-org.kde.plasma.desktop-appletsrc" interface "org.kde.kconfig.notify" member "ConfigChanged": Invalid object path: /plasma-org.kde.plasma.desktop-appletsrc
+QDBusConnection: error: could not send signal to service "" path "/plasma-org.kde.plasma.desktop-appletsrc" interface "org.kde.kconfig.notify" member "ConfigChanged": Invalid object path: /plasma-org.kde.plasma.desktop-appletsrc
+QDBusConnection: error: could not send signal to service "" path "/plasma-org.kde.plasma.desktop-appletsrc" interface "org.kde.kconfig.notify" member "ConfigChanged": Invalid object path: /plasma-org.kde.plasma.desktop-appletsrc
+QDBusConnection: error: could not send signal to service "" path "/plasma-org.kde.plasma.desktop-appletsrc" interface "org.kde.kconfig.notify" member "ConfigChanged": Invalid object path: /plasma-org.kde.plasma.desktop-appletsrc
+QDBusConnection: error: could not send signal to service "" path "/plasma-org.kde.plasma.desktop-appletsrc" interface "org.kde.kconfig.notify" member "ConfigChanged": Invalid object path: /plasma-org.kde.plasma.desktop-appletsrc
+QDBusConnection: error: could not send signal to service "" path "/plasma-org.kde.plasma.desktop-appletsrc" interface "org.kde.kconfig.notify" member "ConfigChanged": Invalid object path: /plasma-org.kde.plasma.desktop-appletsrc
+QDBusConnection: error: could not send signal to service "" path "/plasma-org.kde.plasma.desktop-appletsrc" interface "org.kde.kconfig.notify" member "ConfigChanged": Invalid object path: /plasma-org.kde.plasma.desktop-appletsrc
+QDBusConnection: error: could not send signal to service "" path "/plasma-org.kde.plasma.desktop-appletsrc" interface "org.kde.kconfig.notify" member "ConfigChanged": Invalid object path: /plasma-org.kde.plasma.desktop-appletsrc
+QDBusConnection: error: could not send signal to service "" path "/plasma-org.kde.plasma.desktop-appletsrc" interface "org.kde.kconfig.notify" member "ConfigChanged": Invalid object path: /plasma-org.kde.plasma.desktop-appletsrc
+QDBusConnection: error: could not send signal to service "" path "/plasma-org.kde.plasma.desktop-appletsrc" interface "org.kde.kconfig.notify" member "ConfigChanged": Invalid object path: /plasma-org.kde.plasma.desktop-appletsrc
+QDBusConnection: error: could not send signal to service "" path "/plasma-org.kde.plasma.desktop-appletsrc" interface "org.kde.kconfig.notify" member "ConfigChanged": Invalid object path: /plasma-org.kde.plasma.desktop-appletsrc
+QDBusConnection: error: could not send signal to service "" path "/plasma-org.kde.plasma.desktop-appletsrc" interface "org.kde.kconfig.notify" member "ConfigChanged": Invalid object path: /plasma-org.kde.plasma.desktop-appletsrc
+QDBusConnection: error: could not send signal to service "" path "/plasma-org.kde.plasma.desktop-appletsrc" interface "org.kde.kconfig.notify" member "ConfigChanged": Invalid object path: /plasma-org.kde.plasma.desktop-appletsrc
+file:///usr/lib/qt/qml/org/kde/plasma/extras/PlasmoidHeading.qml:74: ReferenceError: plasmoid is not defined
+file:///usr/lib/qt/qml/org/kde/plasma/extras/PlasmoidHeading.qml:74: ReferenceError: plasmoid is not defined
+Cyclic dependency detected between "file:///usr/share/plasma/plasmoids/org.kde.plasma.notifications/contents/ui/global/Globals.qml" and "file:///usr/share/plasma/plasmoids/org.kde.plasma.notifications/contents/ui/NotificationHeader.qml"
+libkcups: CUPS-Get-Printers last error: 1282 Mau descritor de ficheiro
+libkcups: Create-Printer-Subscriptions last error: 1282 Mau descritor de ficheiro
+libkcups: Request failed 1282 -1
+libkcups: Create-Printer-Subscriptions last error: 1282 Mau descritor de ficheiro
+libkcups: Request failed 1282 -1
+libkcups: Get-Jobs last error: 1282 Mau descritor de ficheiro
+libkcups: Get-Jobs last error: 1282 Mau descritor de ficheiro
+qml: SystemTray ItemLoader: Invalid state, cannot determine source!
+file:///usr/lib/qt/qml/org/kde/plasma/extras/PlasmoidHeading.qml:74: ReferenceError: plasmoid is not defined
+Error: cannot change the containment to AppletsLayout
+file:///usr/share/plasma/shells/org.kde.plasma.desktop/contents/applet/CompactApplet.qml:52: TypeError: Cannot read property 'implicitWidth' of null
+file:///usr/share/plasma/shells/org.kde.plasma.desktop/contents/applet/CompactApplet.qml:70: TypeError: Cannot read property 'implicitHeight' of null
+file:///usr/share/plasma/plasmoids/org.kde.plasma.eventcalendar/contents/ui/calendars/PlasmaCalendarManager.qml:16: Error: Qt.createQmlObject(): failed to create object: 
+    file:///usr/share/plasma/plasmoids/org.kde.plasma.eventcalendar/contents/ui/calendars/inline:1:1: module "org.kde.plasma.PimCalendars" is not installed
+QFont::setPointSizeF: Point size <= 0 (0.000000), must be greater than 0
+file:///usr/lib/qt/qml/org/kde/plasma/components/ModelContextMenu.qml:38:1: QML ModelContextMenu: Accessible must be attached to an Item
+QObject::connect: Cannot connect Plasma::Containment::(nullptr) to SystemTrayContainer::(nullptr)
+QDBusConnection: error: could not send signal to service "" path "/plasma-org.kde.plasma.desktop-appletsrc" interface "org.kde.kconfig.notify" member "ConfigChanged": Invalid object path: /plasma-org.kde.plasma.desktop-appletsrc
+trying to show an empty dialog
+kf.i18n: "0 instead of 1 arguments to message {Em %1} supplied before conversion."
+libkcups: Create-Printer-Subscriptions last error: 1282 Mau descritor de ficheiro
+libkcups: Request failed 1282 -1
+libkcups: Create-Printer-Subscriptions last error: 1282 Mau descritor de ficheiro
+libkcups: Request failed 1282 -1
+libkcups: Create-Printer-Subscriptions last error: 1282 Mau descritor de ficheiro
+libkcups: Request failed 1282 -1
+trying to show an empty dialog
+libkcups: Create-Printer-Subscriptions last error: 1282 Mau descritor de ficheiro
+libkcups: Request failed 1282 -1
+kf.service.services: The desktop entry file "/usr/share/applications/qemu.desktop" has Type= "Application" but no Exec line
+kf.service.sycoca: Invalid Service :  "/usr/share/applications/qemu.desktop"
+file:///usr/share/plasma/packages/org.kde.paneltoolbox/contents/ui/main.qml:18: TypeError: Cannot read property 'formFactor' of null
+file:///usr/share/plasma/packages/org.kde.paneltoolbox/contents/ui/main.qml:90: TypeError: Cannot read property 'editMode' of null
+file:///usr/share/plasma/packages/org.kde.paneltoolbox/contents/ui/main.qml:35: TypeError: Cannot read property 'editMode' of null
+file:///usr/share/plasma/packages/org.kde.paneltoolbox/contents/ui/main.qml:24: TypeError: Cannot read property 'editMode' of null
+trying to show an empty dialog
+file:///usr/share/plasma/shells/org.kde.plasma.desktop/contents/applet/CompactApplet.qml:48: TypeError: Cannot read property 'Layout' of null
+file:///usr/share/plasma/shells/org.kde.plasma.desktop/contents/applet/CompactApplet.qml:66: TypeError: Cannot read property 'Layout' of null
+file:///usr/share/plasma/plasmoids/org.kde.plasma.eventcalendar/contents/ui/main.qml:196: TypeError: Cannot read property 'location' of null
+file:///usr/share/plasma/plasmoids/org.kde.plasma.eventcalendar/contents/ui/Logic.qml:160: TypeError: Cannot read property 'configuration' of null
+file:///usr/share/plasma/plasmoids/org.kde.plasma.eventcalendar/contents/ui/Logic.qml:29: TypeError: Cannot read property 'configuration' of null
+file:///usr/share/plasma/plasmoids/org.kde.plasma.eventcalendar/contents/ui/Logic.qml:194: TypeError: Cannot read property 'configuration' of null
+file:///usr/share/plasma/plasmoids/org.kde.plasma.eventcalendar/contents/ui/UpcomingEvents.qml:11: TypeError: Cannot read property 'configuration' of null
+file:///usr/share/plasma/plasmoids/org.kde.plasma.eventcalendar/contents/ui/calendars/PlasmaCalendarManager.qml:121: TypeError: Cannot read property 'configuration' of null
+file:///usr/share/plasma/plasmoids/org.kde.plasma.eventcalendar/contents/ui/calendars/PlasmaCalendarManager.qml:108: TypeError: Cannot read property 'configuration' of null
+file:///usr/share/plasma/plasmoids/org.kde.plasma.eventcalendar/contents/ui/calendars/GoogleTasksManager.qml:24: TypeError: Cannot read property 'configuration' of null
+file:///usr/share/plasma/plasmoids/org.kde.plasma.eventcalendar/contents/ui/calendars/GoogleCalendarManager.qml:17: TypeError: Cannot read property 'configuration' of null
+file:///usr/share/plasma/plasmoids/org.kde.plasma.eventcalendar/contents/ui/calendars/GoogleApiSession.qml:8: TypeError: Cannot read property 'configuration' of null
+file:///usr/share/plasma/plasmoids/org.kde.plasma.eventcalendar/contents/ui/TimerModel.qml:8: TypeError: Cannot read property 'configuration' of null
+file:///usr/share/plasma/plasmoids/org.kde.plasma.eventcalendar/contents/ui/TimerModel.qml:9: TypeError: Cannot read property 'configuration' of null
+file:///usr/share/plasma/plasmoids/org.kde.plasma.eventcalendar/contents/ui/TimerModel.qml:10: TypeError: Cannot read property 'configuration' of null
+file:///usr/share/plasma/plasmoids/org.kde.plasma.eventcalendar/contents/ui/TimeModel.qml:12: TypeError: Cannot read property 'configuration' of null
+file:///usr/share/plasma/plasmoids/org.kde.plasma.eventcalendar/contents/ui/AppletConfig.qml:10: TypeError: Cannot read property 'configuration' of null
+file:///usr/share/plasma/plasmoids/org.kde.plasma.eventcalendar/contents/ui/AppletConfig.qml:30: TypeError: Cannot read property 'configuration' of null
+file:///usr/share/plasma/plasmoids/org.kde.plasma.eventcalendar/contents/ui/AppletConfig.qml:31: TypeError: Cannot read property 'configuration' of null
+file:///usr/share/plasma/plasmoids/org.kde.plasma.eventcalendar/contents/ui/AppletConfig.qml:32: TypeError: Cannot read property 'configuration' of null
+file:///usr/share/plasma/plasmoids/org.kde.plasma.eventcalendar/contents/ui/AppletConfig.qml:36: TypeError: Cannot read property 'configuration' of null
+file:///usr/share/plasma/plasmoids/org.kde.plasma.eventcalendar/contents/ui/AppletConfig.qml:37: TypeError: Cannot read property 'configuration' of null
+file:///usr/share/plasma/plasmoids/org.kde.plasma.eventcalendar/contents/ui/AppletConfig.qml:38: TypeError: Cannot read property 'configuration' of null
+file:///usr/share/plasma/plasmoids/org.kde.plasma.eventcalendar/contents/ui/AppletConfig.qml:42: TypeError: Cannot read property 'configuration' of null
+file:///usr/share/plasma/plasmoids/org.kde.plasma.eventcalendar/contents/ui/AppletConfig.qml:45: TypeError: Cannot read property 'configuration' of null
+file:///usr/share/plasma/plasmoids/org.kde.plasma.eventcalendar/contents/ui/AppletConfig.qml:46: TypeError: Cannot read property 'configuration' of null
+file:///usr/share/plasma/plasmoids/org.kde.plasma.eventcalendar/contents/ui/AppletConfig.qml:48: TypeError: Cannot read property 'configuration' of null
+file:///usr/share/plasma/plasmoids/org.kde.plasma.eventcalendar/contents/ui/AppletConfig.qml:52: TypeError: Cannot read property 'configuration' of null
+file:///usr/share/plasma/plasmoids/org.kde.plasma.eventcalendar/contents/ui/lib/Base64Json.qml:5: TypeError: Cannot read property 'configuration' of null
+file:///usr/share/plasma/plasmoids/org.kde.plasma.eventcalendar/contents/ui/lib/Base64Json.qml:5: TypeError: Cannot read property 'configuration' of null
+file:///usr/share/plasma/plasmoids/org.kde.plasma.eventcalendar/contents/ui/AppletConfig.qml:68: TypeError: Cannot read property 'configuration' of null
+file:///usr/share/plasma/plasmoids/org.kde.plasma.eventcalendar/contents/ui/AppletConfig.qml:70: TypeError: Cannot read property 'configuration' of null
+file:///usr/share/plasma/plasmoids/org.kde.plasma.eventcalendar/contents/ui/AppletConfig.qml:71: TypeError: Cannot read property 'configuration' of null
+file:///usr/share/plasma/plasmoids/org.kde.plasma.eventcalendar/contents/ui/AppletConfig.qml:75: TypeError: Cannot read property 'configuration' of null
+file:///usr/share/plasma/plasmoids/org.kde.plasma.eventcalendar/contents/ui/AppletConfig.qml:76: TypeError: Cannot read property 'configuration' of null
+file:///usr/share/plasma/plasmoids/org.kde.plasma.eventcalendar/contents/ui/AppletConfig.qml:78: TypeError: Cannot read property 'configuration' of null
+file:///usr/share/plasma/plasmoids/org.kde.plasma.eventcalendar/contents/ui/main.qml:18: TypeError: Cannot read property 'configuration' of null
+file:///usr/share/plasma/plasmoids/org.kde.plasma.eventcalendar/contents/ui/TooltipView.qml:114: TypeError: Cannot read property 'configuration' of null
+file:///usr/share/plasma/shells/org.kde.plasma.desktop/contents/applet/CompactApplet.qml:52: TypeError: Cannot read property 'implicitWidth' of null
+file:///usr/share/plasma/shells/org.kde.plasma.desktop/contents/applet/CompactApplet.qml:70: TypeError: Cannot read property 'implicitHeight' of null
+file:///usr/share/plasma/plasmoids/org.kde.plasma.kickoff/contents/ui/Kickoff.qml:26: TypeError: Cannot read property 'location' of null
+file:///usr/share/plasma/plasmoids/org.kde.plasma.kickoff/contents/ui/Kickoff.qml:30: TypeError: Cannot read property 'formFactor' of null
+file:///usr/share/plasma/plasmoids/org.kde.plasma.kickoff/contents/ui/Kickoff.qml:33: TypeError: Cannot read property 'configuration' of null
+file:///usr/share/plasma/plasmoids/org.kde.plasma.kickoff/contents/ui/Kickoff.qml:43: TypeError: Cannot read property 'configuration' of null
+file:///usr/share/plasma/plasmoids/org.kde.plasma.kickoff/contents/ui/Kickoff.qml:79: TypeError: Cannot read property 'configuration' of null
+file:///usr/share/plasma/plasmoids/org.kde.plasma.kickoff/contents/ui/Kickoff.qml:119: TypeError: Cannot read property 'formFactor' of null
+file:///usr/share/plasma/plasmoids/org.kde.plasma.volume/contents/ui/main.qml:26: TypeError: Cannot read property 'configuration' of null
+file:///usr/share/plasma/plasmoids/org.kde.plasma.keyboardindicator/contents/ui/main.qml:21: TypeError: Cannot read property 'configuration' of null
+file:///usr/share/plasma/plasmoids/org.kde.kdeconnect/contents/ui/main.qml:38: TypeError: Cannot read property 'formFactor' of null
+file:///usr/share/plasma/plasmoids/org.kde.plasma.notifications/contents/ui/main.qml:141: TypeError: Cannot read property 'nativeInterface' of null
+file:///usr/share/plasma/plasmoids/org.kde.plasma.notifications/contents/ui/global/Globals.qml:65:5: Unable to assign [undefined] to QObject*
+file:///usr/share/plasma/plasmoids/org.kde.plasma.notifications/contents/ui/global/Globals.qml:162: TypeError: Cannot read property 'nativeInterface' of null
+libkcups: Create-Printer-Subscriptions last error: 1282 Mau descritor de ficheiro
+libkcups: Request failed 1282 -1
+libkcups: Create-Printer-Subscriptions last error: 1282 Mau descritor de ficheiro
+libkcups: Request failed 1282 -1
+libkcups: Create-Printer-Subscriptions last error: 1282 Mau descritor de ficheiro
+libkcups: Request failed 1282 -1
+libkcups: Create-Printer-Subscriptions last error: 1282 Mau descritor de ficheiro
+libkcups: Request failed 1282 -1
+libkcups: Create-Printer-Subscriptions last error: 1282 Mau descritor de ficheiro
+libkcups: Request failed 1282 -1
+libkcups: Create-Printer-Subscriptions last error: 1282 Mau descritor de ficheiro
+libkcups: Request failed 1282 -1
+libkcups: Create-Printer-Subscriptions last error: 1282 Mau descritor de ficheiro
+libkcups: Request failed 1282 -1
+libkcups: Create-Printer-Subscriptions last error: 1282 Mau descritor de ficheiro
+libkcups: Request failed 1282 -1
+libkcups: Create-Printer-Subscriptions last error: 1282 Mau descritor de ficheiro
+libkcups: Request failed 1282 -1
+libkcups: Create-Printer-Subscriptions last error: 1282 Mau descritor de ficheiro
+libkcups: Request failed 1282 -1
+file:///usr/share/plasma/plasmoids/org.kde.plasma.devicenotifier/contents/ui/devicenotifier.qml:24: TypeError: Cannot read property 'configuration' of null
+file:///usr/share/plasma/plasmoids/org.kde.plasma.devicenotifier/contents/ui/devicenotifier.qml:235: TypeError: Cannot read property 'configuration' of null
+file:///usr/share/plasma/plasmoids/org.kde.plasma.devicenotifier/contents/ui/devicenotifier.qml:241: TypeError: Cannot read property 'configuration' of null
+file:///usr/share/plasma/plasmoids/org.kde.plasma.devicenotifier/contents/ui/devicenotifier.qml:247: TypeError: Cannot read property 'configuration' of null
+file:///usr/share/plasma/plasmoids/org.kde.plasma.devicenotifier/contents/ui/devicenotifier.qml:255: TypeError: Cannot read property 'configuration' of null
+file:///usr/share/plasma/plasmoids/org.kde.plasma.battery/contents/ui/batterymonitor.qml:164: TypeError: Cannot read property 'configuration' of null
+file:///usr/share/plasma/plasmoids/org.kde.plasma.networkmanagement/contents/ui/main.qml:69: TypeError: Cannot read property 'expanded' of null
+file:///usr/share/plasma/packages/org.kde.desktoptoolbox/contents/ui/ToolBoxButton.qml:209: TypeError: Cannot read property 'globalAction' of null
+file:///usr/share/plasma/packages/org.kde.desktoptoolbox/contents/ui/ToolBoxButton.qml:198: TypeError: Cannot read property 'action' of null
+file:///usr/share/plasma/packages/org.kde.desktoptoolbox/contents/ui/ToolBoxButton.qml:192: TypeError: Cannot read property 'action' of null
+file:///usr/share/plasma/packages/org.kde.desktoptoolbox/contents/ui/ToolBoxButton.qml:20: TypeError: Cannot read property 'editMode' of null
+file:///usr/share/plasma/packages/org.kde.desktoptoolbox/contents/ui/ToolBoxButton.qml:33: TypeError: Cannot read property 'editMode' of null
+file:///usr/share/plasma/packages/org.kde.desktoptoolbox/contents/ui/ToolBoxButton.qml:34: TypeError: Cannot read property 'editMode' of null
+trying to show an empty dialog
+file:///usr/share/plasma/wallpapers/org.kde.image/contents/ui/main.qml:63: TypeError: Cannot read property 'pluginName' of null
+file:///usr/share/plasma/wallpapers/org.kde.image/contents/ui/main.qml:65: TypeError: Cannot read property 'configuration' of null
+file:///usr/share/plasma/wallpapers/org.kde.image/contents/ui/main.qml:66: TypeError: Cannot read property 'configuration' of null
+file:///usr/share/plasma/wallpapers/org.kde.image/contents/ui/main.qml:67: TypeError: Cannot read property 'configuration' of null
+file:///usr/share/plasma/wallpapers/org.kde.image/contents/ui/main.qml:68: TypeError: Cannot read property 'configuration' of null
+file:///usr/share/plasma/wallpapers/org.kde.image/contents/ui/main.qml:69: TypeError: Cannot read property 'configuration' of null
+file:///usr/share/plasma/wallpapers/org.kde.image/contents/ui/main.qml:20: TypeError: Cannot read property 'configuration' of null
+file:///usr/share/plasma/wallpapers/org.kde.image/contents/ui/main.qml:21: TypeError: Cannot read property 'configuration' of null
+file:///usr/share/plasma/wallpapers/org.kde.image/contents/ui/main.qml:22: TypeError: Cannot read property 'configuration' of null
+file:///usr/share/plasma/wallpapers/org.kde.image/contents/ui/main.qml:23: TypeError: Cannot read property 'configuration' of null

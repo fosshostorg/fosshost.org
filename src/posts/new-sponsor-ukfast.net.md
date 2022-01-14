@@ -5,7 +5,7 @@ summary: Say hello to our newest sponsor
 author: bruno
 ---
 
-We have a new sponsor: **UKFast.Net Limited**. The company, founded in 1999 and one of the leading providers in the United Kingdom, is **sponsoring us with the collocation for ten units of our AArch64 hardware**, and IP transit.
+We have a new sponsor: **UKFast.Net Limited**. The company, founded in 1999 and one of the leading providers in the United Kingdom, is **sponsoring us with the colocation for ten units of our AArch64 hardware**, and IP transit.
 
 The hardware will be hosted at MaNOC6, one of the company's data centres in Manchester. You can read about this Tier 3 data centre on [UKFast's website](https://www.ukfast.co.uk/inside-our-data-centres.html).
 
