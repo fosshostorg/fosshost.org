@@ -9,18 +9,18 @@ At Fosshost, we offer several services for the FOSS community. One such service 
 
 Over time, our mirroring service has been steadily increasing in usage, and we have now reached some impressive numbers. Last week, we had 23TB of data transferred, with an average of 1.1 million requests per day, having 69% of the requests already cached on Fastly's network during that period.
 
-![one week transfer total](/article-content/mirror-stats/transfer-total-1w.png)
+<img src="/article-content/mirror-stats/transfer-total-1w.png"></img>
 
-![one week average cache](/article-content/mirror-stats/cache-1w.png)
+<img src="/article-content/mirror-stats/cache-1w.png"></img>
 
 The numbers are even more impressive when we peek at the past month: 116TB of transferred data, with an average of 1.4 million requests per day and a 70% cache rate.
 
-![one month transfer total](/article-content/mirror-stats/transfer-total-1m.png)
+<img src="/article-content/mirror-stats/transfer-total-1m.png"></img>
 
-![one month average cache](/article-content/mirror-stats/cache-1m.png)
+<img src="/article-content/mirror-stats/cache-1m.png"></img>
 
 When looking at how much data we delivered in the last six months, we witness an incredible 622.5TB. That's an average of 103.75TB per month! In that period, our busiest day was the 19th of November, when we pumped a whopping 8.4TB of data in a single day.
 
-![six months transfer total](/article-content/mirror-stats/transfer-tota-6m.png)
+<img src="/article-content/mirror-stats/transfer-tota-6m.png"></img>
 
 These numbers show our mirror service has increased usage by both our tenants and their users. Our team couldn't be happier and prouder!
