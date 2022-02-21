@@ -1,3 +1,7 @@
+<script>
+    export let segment;
+</script>
+
 <main>
     <div class="logo">
         <img src="/img/logo_new.png" alt="Fosshost Logo" />
@@ -9,11 +13,11 @@
 </main>
 
 <span>
-    <a href="/home" class="home">home</a>
-    <a href="/about">about</a>
-    <a href="/news">news</a>
-    <a href="/donate">donate</a>
-    <a href="/apply">apply</a>
+    <a href="/" class="home"    aria-current="{segment === undefined ? 'page' : undefined}">home</a>
+    <a href="/about"            aria-current="{segment === 'about' ? 'page' : undefined}">about</a>
+    <a href="/news"             aria-current="{segment === 'news' ? 'page' : undefined}">news</a>
+    <a href="/donate"           aria-current="{segment === 'donate' ? 'page' : undefined}">donate</a>
+    <a href="/apply"            aria-current="{segment === 'apply' ? 'page' : undefined}">apply</a>
 </span>
 
 
@@ -25,8 +29,7 @@
         color: white;
         display: flex;
         margin: 100px auto 0px;
-        /* max-width: var(--content-max-width); */
-        max-width: 750px;
+        max-width: var(--content-max-width);
     }
 
     div.logo {
@@ -69,8 +72,7 @@
 
     span {
         margin: -2px auto 100px;
-        /* max-width: var(--content-max-width); */
-        max-width: 750px;
+        max-width: var(--content-max-width);
         display: flex;
         border: 1px solid black;
         box-sizing: border-box;
@@ -101,6 +103,11 @@
     a.home {
         width: 195px;
         flex-grow: 0;
+    }
+
+    [aria-current] {
+        color: white;
+        background-color: black;
     }
 
     div :global(.img-wrapper) {

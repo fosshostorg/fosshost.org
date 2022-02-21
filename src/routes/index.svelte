@@ -11,13 +11,12 @@
 
 <script>
 	import Card from "../components/index/Card.svelte";
-import Connector from "../components/index/Connector.svelte";
-	import Hero from "../components/index/Hero.svelte";
+	import Connector from "../components/index/Connector.svelte";
+	import Hero from "../components/Hero.svelte";
 	import Quote from "../components/index/Quote.svelte";
 </script>
 
 <main>
-	<Hero />
 	<div>
 		<Card img="/img/illustration1.png">
 			Fosshost is here to support your open source project with practical, free hosting solutions.  The world runs on open source software, and we provide robust hosting solutions to make sure it stays that way. What's more, we do it all completely free of charge.

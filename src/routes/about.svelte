@@ -1,8 +1,8 @@
 <script>
-	import Header from '../components/about/Header.svelte'
-	import Mission from '../components/about/Mission.svelte';
 	import Section from '../components/about/Section.svelte';
 	import Sponsor from '../components/about/Sponsor.svelte';
+	import Hero from '../components/Hero.svelte';
+	import Card from '../components/about/Card.svelte';
 	import {Sponsors} from '../data/sponsors';
 
 </script>
@@ -12,42 +12,39 @@
 </svelte:head>
 
 <main>
-    <Header />
-	<Mission>
-		<div slot="title">What we do</div>
-		<div>
-			We're on a mission to empower and support every free and open source software project. To go further, together. Our work never stops.
-			<br><br>
-			Fosshost C.I.C. is a non-profit UK-registered Community Interest Company (CIC), Limited by Guarantee, without share capital. Launched in April 2020 by founder and present CEO, Thomas Markey to provide open-source projects and initiatives access to no-cost distributed cloud computing services.
-			<br><br>
-			Today, we help provide world-class hosting services to many open source projects.
-			<br><br>
-			To make this a success, we operate nodes which are either donated by our hosting sponsors or funded through donations.  We have a strong team of Fosshost Volunteers who manage the infrastructure on behalf of the projects we help. Those open source projects eligible for our services, typically apply for a virtual private server (VPS).
-			<br><br>
-		</div>
-	</Mission>
-	<!-- <Section>
-		<div slot="title">Our Network</div>
-		<div slot="description" id="sponsors">The project operates a large and global infrastructure across multiple continents in world-class facilities. Projects can select which region they want their services deploying on during the application process. Below is a current list of the regions we operate from, and the specifications of the virtualisation platforms we run within them. Occasionally, we run multiple nodes from the same facility.</div>
-	</Section> -->
-	<div id="sponsors"></div>
-	<Section>
-		<div slot="title">Sponsors</div>
-		<div slot="description">
-			All of our infrastructure and networking is kindly donated and provided to the project for free. We could simply not operate without these contributions to the project and fosshost.org is extremely grateful for the kind generosity of all our supporters.	
+	<Section title="who we are">
+		<Card>
+			Fosshost C.I.C is a non-profit UK-registered Community Interest Company.  We are also a member of Software in Public Interest, Inc a US 501(c)(3) non-profit organisation.
+		</Card>
+		<Card flipped>
+			Fosshost began as the passion project of CEO Thomas Markey in April of 2020. He saw that lack of accessible, affordable hosting infrastructure was behind the abandonment of so many open source projects. Concerned, he saw no option but to work towards building a no-cost, distributed cloud computing service for open source projects and initiatives. Through hard work, determination and no small amount of good fortune, he was able to build Fosshost into the reliable, free hosting provider it is today.
+		</Card>
+		<Card>
+			Our mission? To keep the open source development scene healthy by providing free hosting services, empowering existing developers and nurturing young development talent.
+		</Card>
+		<Card flipped>
+			Today, our team works on multiple fronts to keep the open source scene strong and vibrant. We work with hosting sponsors and donors to operate hosting nodes all over the world, usually in the form of virtual private servers (VPS). 
 			<br>
-			We believe in providing maximum transparency with our services and we are very proud to list those who have helped Fosshost. In no particular order.
-		</div>
+			<br>
+			We also offer an array of educational opportunities to students and young people. Through this program, we hope to nurture the next generation of software developers, keeping the scene vibrant and ensuring that tomorrow’s software is even better than today’s.
+		</Card>
+	</Section>
+	<Section title="our core sponsors">
 		{#each Sponsors as sponsor}
 			<Sponsor {sponsor} />
 		{/each}
+	</Section>
+	<Section title="">
+		<img width="750px" src="/img/HERO_IMAGE.png" alt="Fosshost Community Illustration" />
 	</Section>
 </main>
 
 
 <style>
     main {
-      width: 100%;
-			margin-bottom: 100px;
-    }
+		width: 100%;
+		height: 100%;
+		font-family: 'Source Sans Pro', sans-serif;
+		background-color: white;
+	}
 </style>

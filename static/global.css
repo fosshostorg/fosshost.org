@@ -9,7 +9,7 @@ body, html {
 	--fosshost-black: #262A36;
 	--fosshost-grey: #72798B;
 	--fosshost-light-grey: #b1b1b1;
-	--content-max-width: 1280px;
+	--content-max-width: 750px;
 }
 
 * {
