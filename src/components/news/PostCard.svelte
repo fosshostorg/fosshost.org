@@ -7,12 +7,12 @@
 
   const dateFormatOptions: Intl.DateTimeFormatOptions = {
     year: "numeric",
-    month: "short",
+    month: "numeric",
     day: "numeric",
   };
   const date = new Date(
     post.details.date.replace(/-/g, "/").replace(/T.+/, "")
-  ).toLocaleDateString("en-US", dateFormatOptions);
+  ).toLocaleDateString("en-US", dateFormatOptions).replace(/\//g, ".");
 </script>
 
 <a
@@ -29,8 +29,8 @@
           ? post.details.summary
           : marked(post.body.split(" ").splice(0, 15).join(" "))}</span
       >
-
-      <span class="date">{date}</span>
+      <div class="dateContainer"><span class="date">{date}</span></div>
+    
     </div>
   </div>
   <span class="right">
@@ -80,6 +80,7 @@
     margin: 1rem 0 1rem 0;
     width: 100%;
     border: 2px solid #000000;
+    transition: 0.25s;
   }
 
   @media (max-width: 1280px) {
@@ -89,6 +90,7 @@
   }
   a.card:hover > .right {
     background: #000000;
+    width: 142px;
   }
   a.card:hover > .right > a {
     color: #fff;
@@ -136,14 +138,17 @@
     line-height: 30px;
     padding-left: 10px;
     border-left: 2px solid #000000;
+    display: flex;
+    align-items: center;
+    height: 100%;
   }
+  
   span.summary {
     font-size: 18px;
     line-height: 23px;
     padding-right: 2px;
     width: 445px;
-    display: flex;
-    align-items: center;
+    
   }
   h2 {
     font-style: normal;
