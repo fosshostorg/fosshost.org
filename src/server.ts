@@ -22,7 +22,6 @@ const app = express()
   .use(helmet({
     contentSecurityPolicy: false,
   }))
-  .use("/api/apply", apiLimiter)
   .use(
     bodyParser.json(),
     compression({ threshold: 0 }),
