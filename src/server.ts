@@ -29,4 +29,5 @@ const app = express()
     sirv("static", { dev }),
     sapper.middleware()
   )
+  .set('trust proxy', 1)
   .listen(PORT);
