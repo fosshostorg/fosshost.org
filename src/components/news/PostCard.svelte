@@ -156,6 +156,7 @@
     font-size: 24px;
     /*line-height: 30px;*/
     margin-block-start: 0;
+    max-width: calc(100% - 20px);
   }
 
   h2:hover {

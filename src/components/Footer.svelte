@@ -1,8 +1,17 @@
 <script>
+    import CTA from "./CTA.svelte";
+
+    export let attachCTA;
 </script>
 
 
+
 <span class="footer">
+    {#if attachCTA}
+    <CTA inverted fontSize="48px" href="/apply">
+        I want to join.
+    </CTA>
+    {/if}
     <ul>
         <li><a href="https://docs.fosshost.org/">Docs</a></li>
         <li><a rel="prefetch" href="/contact">Contact</a></li>
@@ -39,7 +48,7 @@
         margin: 0px;
         font-weight: 500;
         font-size: 14px;
-        margin-top: 40px; 
+        margin-top: 100px; 
     }
 
     ul.copy-info {

@@ -18,4 +18,4 @@
 	<slot></slot>
 </main>
 
-<Footer />
+<Footer attachCTA={segment !== "/apply"} />

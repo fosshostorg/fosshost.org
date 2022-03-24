@@ -18,6 +18,9 @@
   >
     previous
   </button>
+  <span>
+    {page+1} / {totalPages+1}
+  </span>
   <button
     disabled={page === totalPages}
     class:disabled={page === totalPages}
