@@ -162,20 +162,4 @@
   h2:hover {
     border-color: black;
   }
-
-  p {
-    display: inline-block;
-    font-size: 18px;
-    line-height: 24px;
-    color: #787878;
-    margin: 0 0 1.5rem;
-  }
-
-  divider {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 1px;
-    background-color: #e5e5e5;
-  }
 </style>
