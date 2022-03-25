@@ -110,9 +110,6 @@
   });
 </script>
 
-{#if currentPage < components.length - 1}
-  <Stepper bind:current={currentPage} bind:pages />
-{/if}
 <main>
   <svelte:component
     this={components[currentPage]}
@@ -121,21 +118,11 @@
     {pageValidate}
     {validate}
   />
-  {#if currentPage !== 0 && currentPage < components.length - 1}
-    <a
-      class="fosshost-link"
-      href="/"
-      on:click={() => {
-        window.sessionStorage.removeItem("form_data");
-      }}>Cancel my application</a
-    >
-  {/if}
 </main>
 
 <style>
   main {
-    width: calc(100% - 2rem);
-    max-width: 600px;
+    max-width: var(--content-max-width);
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -143,64 +130,58 @@
   }
 
   main :global(h1) {
-    text-align: center;
     margin-top: 2rem;
+    margin-bottom: 0.5rem;
   }
 
   main :global(p) {
-    text-align: center;
-    margin: 0 auto 1rem;
+    margin: 0 0 1rem;
     font-size: 18px;
     line-height: 24px;
-    color: var(--fosshost-grey);
+    color: black;
   }
 
   main :global(div.buttons) {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-end;
   }
 
   main :global(button.submit) {
     display: flex;
     flex-grow: 1;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
     color: white;
     background-color: var(--fosshost-orange);
-    border: 2px solid var(--fosshost-orange);
-    border-radius: 6px;
+    border: 2px solid black;
     font-size: 18px;
     line-height: 27px;
     font-weight: 600;
-    padding: 6px 0;
+    padding: 6px 2rem;
     cursor: pointer;
-    max-width: 28rem;
     margin: 2rem 0 0;
+    transition: ease border-right-width 0.5s;
   }
-  main :global(button.back) {
-    display: flex;
-    flex-grow: 1;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    background-color: var(--fosshost-orange);
-    border: 2px solid var(--fosshost-orange);
-    border-radius: 6px;
-    font-size: 18px;
-    line-height: 27px;
-    font-weight: 600;
-    padding: 6px 0;
-    cursor: pointer;
-    max-width: 28rem;
-    margin: 2rem 0 0;
+
+  main :global(button.submit:hover) {
+    border-right-width: 2rem;
   }
 
   main :global(button.back) {
-    margin-right: 1rem;
-    color: var(--fosshost-orange);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: black;
     background-color: white;
+    border: 2px solid black;
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 600;
+    padding: 6px 2rem;
+    cursor: pointer;
+    margin: 2rem 0 0;
   }
 
   main :global(button.back ~ button) {

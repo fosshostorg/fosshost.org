@@ -5,9 +5,9 @@ body, html {
 	font-size: 14px;
 	background-color: white;
 	color: black;
-	--fosshost-orange: #E16C5C;
+	--fosshost-orange: #f67653;
 	--fosshost-black: #262A36;
-	--fosshost-grey: #72798B;
+	--fosshost-grey: #565b69;
 	--fosshost-light-grey: #b1b1b1;
 	--content-max-width: 750px;
 }

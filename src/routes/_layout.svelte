@@ -17,4 +17,4 @@
 	<slot></slot>
 </main>
 
-<Footer attachCTA={segment !== "/apply"} />
+<Footer attachCTA={segment !== "apply"} />

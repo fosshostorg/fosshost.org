@@ -2,6 +2,7 @@
     import { fade } from 'svelte/transition';
     import Input from './Input.svelte';
     import * as yup from 'yup';
+import Arrow from '../Arrow.svelte';
 
     export let data: FormResponse;
     export let validate: any;
@@ -25,7 +26,10 @@
     <Input on:blur={() => {errors = validate(validator, 'name', data.personal, errors)}} error={errors.name} label="Full name" type="text" placeholder="What's your name" bind:value={data.personal.name} />
     <Input on:blur={() => {errors = validate(validator, 'email', data.personal, errors)}} error={errors.email} label="Email" type="email" placeholder="you@example.com" bind:value={data.personal.email} />
     <div class="buttons">
-        <button class="submit" on:click={() => {errors = pageValidate(validator, data.personal, errors)}}>Next</button>
+        <button class="submit" on:click={() => {errors = pageValidate(validator, data.personal, errors)}}>
+            <span style="margin-right: 1rem;">Next</span>
+            <Arrow width="20px" height="20px" color="white" />
+        </button>
     </div>
 </main>
 
