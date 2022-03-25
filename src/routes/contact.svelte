@@ -16,7 +16,7 @@
 <style>
   main {
     width: auto;
-    max-width: 780px;
+    max-width: var(--content-max-width);
     margin: 3rem auto;
   }
   @media (max-width: 1280px) {

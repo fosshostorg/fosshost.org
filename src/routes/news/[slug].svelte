@@ -49,9 +49,6 @@
         {JSON.stringify(post.details)}
         {/if}
     </article>
-    <div>
-        <!-- TODO: Add the more links area... harder than it looks -->
-    </div>
 </main>
 
 <!-- TODO: stylize code inline/blocks: not sure exactly how this should look. -->
@@ -59,8 +56,11 @@
 <style>
     main {
         width: auto;
-        max-width: 780px;
+        max-width: var(--content-max-width);
         margin: 3rem auto;
+        border-left: 2px solid black;
+        padding: 0rem 1rem 0rem 2rem;
+        box-sizing: border-box;
     }
 
     img {
@@ -88,6 +88,13 @@
         font-size: 14px;
         color: var(--fosshost-light-grey);
         margin: 0;
+    }
+
+    a.back {
+        padding: 0.25rem 0rem;
+        font-size: 16px;
+        text-decoration: none;
+        color: black;
     }
 
 </style>

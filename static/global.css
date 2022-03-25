@@ -6,9 +6,9 @@ body, html {
 	background-color: white;
 	color: black;
 	--fosshost-orange: #f67653;
-	--fosshost-black: #262A36;
+	--fosshost-black: black;
 	--fosshost-grey: #565b69;
-	--fosshost-light-grey: #b1b1b1;
+	--fosshost-light-grey: #727272;
 	--content-max-width: 750px;
 }
 
@@ -54,7 +54,8 @@ body, html {
 }
 
 article {
-	color: #383A45;
+	color: var(--fosshost-grey);
+	padding: 0rem;
 }
 
 article blockquote, article blockquote p {
@@ -89,7 +90,7 @@ article blockquote h1 {
 	font-size: 22px;
 	line-height: inherit;
 	font-weight: 300;
-	color: #A2A9BB;
+	color: var(--fosshost-grey);
 	margin: 0;
 }
 
@@ -111,16 +112,19 @@ article ol, article ul {
 article h1 {
 	font-size: 28px;
 	line-height: 42px;
+	color: black;
 }
 
 article h2 {
 	font-size: 24px;
 	line-height: 42px;
+	color: black;
 }
 
 article h5 {
 	font-size: 16px;
 	line-height: 24px;
+	color: black;
 }
 
 article a {
@@ -156,7 +160,7 @@ article img {
 
 article hr {
 	border: none;
-	border-top: 1px solid #A2A9BB;
+	border-top: 2px solid black;
 }
 
 .youtube-iframe-wrapper {
