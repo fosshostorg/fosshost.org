@@ -29,7 +29,7 @@
 			We also offer an array of educational opportunities to students and young people. Through this program, we hope to nurture the next generation of software developers, keeping the scene vibrant and ensuring that tomorrow’s software is even better than today’s.
 		</Card>
 	</Section>
-	<Section title="our core sponsors">
+	<Section title="our core sponsors" id="sponsors">
 		{#each Sponsors as sponsor}
 			<Sponsor {sponsor} />
 		{/each}
