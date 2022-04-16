@@ -28,8 +28,8 @@ export const Sponsors: Sponsor[] = [
     link: "https://osuosl.org/"
   },
   {
-    name: "Fastly.net",
-    link: "https://fastly.net/"
+    name: "Fastly.com",
+    link: "https://fastly.com/"
   },
   {
     name: "Gitpod",
