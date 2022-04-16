@@ -50,7 +50,7 @@
     }
 
     span.label {
-        color: black;
+        color: var(--fosshost-text-black);
         font-size: 18px;
         line-height: 24px;
     }
@@ -75,7 +75,7 @@
         align-items: center;
         font-size: 18px;
         line-height: 24px;
-        color: black;
+        color: var(--fosshost-text-black);
         margin: 0 1rem 1rem 0;
         cursor: pointer;
         list-style-position: inside;
@@ -90,11 +90,11 @@
         left: 0;
         width: 20px;
         height: 20px;
-        border: 2px solid black;
+        border: 2px solid var(--fosshost-border-black);
     }
 
     label.checked:before {
-        background-color: black;
+        background-color: var(--fosshost-text-black);
     }
 
     label.checked:after {

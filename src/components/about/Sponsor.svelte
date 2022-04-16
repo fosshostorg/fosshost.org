@@ -14,7 +14,7 @@
   a {
     display: flex;
     width: 100%;
-    color: black;
+    color: var(--fosshost-text-black);
     text-decoration: none;
     align-items: center;
     padding-bottom: 14px;
@@ -24,7 +24,7 @@
     display: flex;
     flex-grow: 1;
     height: 2px;
-    background-color: black;
+    background-color: var(--fosshost-text-black);
   }
 
   div.line.grow {
@@ -34,7 +34,7 @@
   }
   span.title {
     font-weight: 700;
-    font-size: 48px;
+    font-size: 44px;
     padding-right: 60px;
     padding-left: 0px;
     transition: ease padding-left 1.2s, ease padding-right 0.9s;

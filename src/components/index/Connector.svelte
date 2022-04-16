@@ -25,19 +25,19 @@
     }
 
     div.left {
-        border-left: 2px dashed black;
+        border-left: 2px dashed var(--fosshost-border-black);
     }
 
     div.right {
-        border-right: 2px dashed black;
+        border-right: 2px dashed var(--fosshost-border-black);
     }
 
     div:last-child {
-        border-top: 2px dashed black;
+        border-top: 2px dashed var(--fosshost-border-black);
     }
 
     main.reverse div:last-child {
         border-top: none;
-        border-bottom: 2px dashed black;
+        border-bottom: 2px dashed var(--fosshost-border-black);
     }
 </style>

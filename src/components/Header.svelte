@@ -21,7 +21,7 @@
         margin: 0 auto;
         padding: 0px 40px;
         background-color: white;
-        color: black;
+        color: var(--fosshost-text-black);
         display: flex;
     }
 

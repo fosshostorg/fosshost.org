@@ -5,7 +5,7 @@
 </script>
 
 
-<a {href} style="--bg:{inverted ? "black" : "white"};--tc:{inverted ? "white" : "black"};--fontSize:{fontSize};">
+<a {href} style="--bg:{inverted ? "var(--fosshost-text-black)" : "white"};--tc:{inverted ? "white" : "var(--fosshost-text-black)"};--fontSize:{fontSize};">
     <h3>
         <slot></slot>
     </h3>   
@@ -45,13 +45,13 @@
         box-sizing: border-box;
         margin: 0 auto;
         background-color: var(--bg);
-        border: 2px solid black;
+        border: 2px solid var(--fosshost-text-black);
         align-items: center;
         padding: 1rem 2rem;
         justify-content: space-between;
         cursor: pointer;
         text-decoration: none;
-        width: 100%;
+        width: 90%;
         transition: ease border-left-width 0.5s;
     }
 

@@ -58,7 +58,7 @@
         width: auto;
         max-width: var(--content-max-width);
         margin: 3rem auto;
-        border-left: 2px solid black;
+        border-left: 2px solid var(--fosshost-border-black);
         padding: 0rem 1rem 0rem 2rem;
         box-sizing: border-box;
     }
@@ -86,7 +86,7 @@
     h4 {
         font-weight: 400;
         font-size: 14px;
-        color: var(--fosshost-light-grey);
+        color: var(--fosshost-text-black);
         margin: 0;
     }
 
@@ -94,7 +94,7 @@
         padding: 0.25rem 0rem;
         font-size: 16px;
         text-decoration: none;
-        color: black;
+        color: var(--fosshost-text-black);
     }
 
 </style>

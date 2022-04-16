@@ -9,7 +9,7 @@
 <span class="footer">
     {#if attachCTA}
     <CTA inverted fontSize="48px" href="/apply">
-        I want to join.
+        Apply now!
     </CTA>
     {/if}
     <ul>
@@ -53,7 +53,7 @@
 
     ul.copy-info {
         font-weight: 300;
-        color: black;
+        color: var(--fosshost-text-black);
         text-align: center;
         padding: 0px;
         width: 500px;
@@ -62,7 +62,7 @@
 
     li {
         padding: 0px 10px;
-        border-right: 1px solid black;
+        border-right: 1px solid var(--fosshost-border-black);
     }
 
     li:last-child {
@@ -70,7 +70,7 @@
     }
 
     li a {
-        color: black;
+        color: var(--fosshost-text-black);
         text-decoration: none;
     }
 </style>

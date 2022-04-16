@@ -43,12 +43,12 @@
     span {
         display: flex;
         height: 40px;
-        border: 1px solid black;
+        border: 1px solid var(--fosshost-border-black);
     }
 
     button {
-        border: 1px solid black;
-        color: black;
+        border: 1px solid var(--fosshost-border-black);
+        color: var(--fosshost-text-black);
         background-color: white;
         font-size: 22px;
         font-weight: 600;
@@ -65,14 +65,14 @@
 
     button.active, button:hover {
         color: white;
-        background-color: black;
+        background-color: var(--fosshost-text-black);
     }
 
     div.currency {
         width: 100%;
         padding: 1rem;
         box-sizing: border-box;
-        border: 2px solid black;
+        border: 2px solid var(--fosshost-border-black);
         background-color: #F1F2F3;
         margin-top: 1rem;
         display: none;

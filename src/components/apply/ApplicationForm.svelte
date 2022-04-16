@@ -138,7 +138,7 @@
     margin: 0 0 1rem;
     font-size: 18px;
     line-height: 24px;
-    color: black;
+    color: var(--fosshost-text-black);
   }
 
   main :global(div.buttons) {
@@ -155,7 +155,7 @@
     justify-content: flex-end;
     color: white;
     background-color: var(--fosshost-orange);
-    border: 2px solid black;
+    border: 2px solid var(--fosshost-border-black);
     font-size: 18px;
     line-height: 27px;
     font-weight: 600;
@@ -173,9 +173,9 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    color: black;
+    color: var(--fosshost-text-black);
     background-color: white;
-    border: 2px solid black;
+    border: 2px solid var(--fosshost-border-black);
     font-size: 18px;
     line-height: 27px;
     font-weight: 600;

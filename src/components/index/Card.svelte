@@ -21,7 +21,7 @@
     }
 
     div {
-        border: 2px solid black;
+        border: 2px solid var(--fosshost-border-black);
         flex-grow: 0;
     }
 
@@ -39,6 +39,6 @@
         font-size: 18px;
         width: 100%;
         padding: 25px;
-        border: 2px solid black;
+        border: 2px solid var(--fosshost-border-black);
     }
 </style>

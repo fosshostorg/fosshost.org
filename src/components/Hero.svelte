@@ -36,7 +36,7 @@
         width: 135px;
         height: 135px;
         padding: 30px;
-        border: 2px solid black;
+        border: 2px solid var(--fosshost-border-black);
     }
 
     div.title {
@@ -44,7 +44,7 @@
         width: 100%;
         padding-left: 25px;
         margin-left: -2px;
-        border: 2px solid black;
+        border: 2px solid var(--fosshost-border-black);
     }
 
     div {
@@ -67,21 +67,21 @@
         line-height: 36px;
         margin: 0px;
         margin-top: -10px;
-        color: black;
+        color: var(--fosshost-text-black);
     }
 
     span {
         margin: -2px auto 100px;
         max-width: var(--content-max-width);
         display: flex;
-        border: 1px solid black;
+        border: 1px solid var(--fosshost-border-black);
         box-sizing: border-box;
         height: 40px;
     }
 
     a {
-        border: 1px solid black;
-        color: black;
+        border: 1px solid var(--fosshost-border-black);
+        color: var(--fosshost-text-black);
         background-color: white;
         font-size: 22px;
         font-weight: 600;
@@ -97,7 +97,7 @@
 
     a:hover {
         color: white;
-        background-color: black;
+        background-color: var(--fosshost-text-black);
     }
 
     a.home {
@@ -107,7 +107,7 @@
 
     [aria-current] {
         color: white;
-        background-color: black;
+        background-color: var(--fosshost-text-black);
     }
 
     div :global(.img-wrapper) {

@@ -26,6 +26,9 @@ import Arrow from '../Arrow.svelte';
         <p>
             Before we proceed with your application, please confirm that you have read and understood the
             <a href="https://docs.fosshost.org/general/application" target="_blank" class="fosshost-link"><b>Eligibility Criteria</b></a>.
+            <br>
+            <br>
+            Questions about applying to Fosshost? Join our discord at <a href="https://discord.gg/foss" target="_blank" class="fosshost-link"><b>discord.gg/foss</b></a>.
         </p>
         <button class="accept" on:click={handleClick}>
             <span style="margin-right: 1rem;">I accept </span>
@@ -49,7 +52,7 @@ import Arrow from '../Arrow.svelte';
     h1 {
         box-sizing: border-box;
         color: white;
-        background-color: black;
+        background-color: var(--fosshost-text-black);
         font-size: 36px;
         line-height: 47px;
         text-align: center;
@@ -60,10 +63,10 @@ import Arrow from '../Arrow.svelte';
     p {
         font-size: 20px !important;
         text-align: center;
-        color: black;
+        color: var(--fosshost-text-black);
         margin: 1rem 0rem;
         width: 100%;
-        border: 2px solid black;
+        border: 2px solid var(--fosshost-border-black);
         padding: 2rem;
         box-sizing: border-box;
     }
@@ -72,7 +75,7 @@ import Arrow from '../Arrow.svelte';
         width: 100%;
         padding: 0.5rem 2rem;
         margin: 0.25rem;
-        border: 2px solid black;
+        border: 2px solid var(--fosshost-border-black);
         font-size: 22px;
         cursor: pointer;
         display: flex;

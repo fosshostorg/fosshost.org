@@ -97,7 +97,7 @@
   }
 
   a.read-more {
-    color: black;
+    color: var(--fosshost-text-black);
     text-decoration: none;
     font-weight: bold;
     text-transform: uppercase;
@@ -132,7 +132,7 @@
   }
   span.date {
     text-transform: uppercase;
-    color: #b1b1b1;
+    color: var(--fosshost-grey);
     letter-spacing: 0.09rem;
     font-size: 24px;
     line-height: 30px;
@@ -160,6 +160,6 @@
   }
 
   h2:hover {
-    border-color: black;
+    border-color: var(--fosshost-text-black);
   }
 </style>

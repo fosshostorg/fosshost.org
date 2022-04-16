@@ -27,7 +27,7 @@
     a {
         margin-right: 0.3rem;
         text-decoration: none;
-        color: black;
+        color: var(--fosshost-text-black);
     }
 
     a:hover {

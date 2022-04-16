@@ -28,7 +28,7 @@
         background-color: #f1f2f3;
         font-size: 18px;
         padding: 20px 25px;
-        border: 2px solid black;
+        border: 2px solid var(--fosshost-border-black);
         max-width: 70%;
         margin: 0px;
     }

@@ -121,7 +121,8 @@
         margin: 2rem 0;
         text-align: center;
         color: white;
-        background-color: black;
+        background-color: var(--fosshost-text-black);
+        opacity: 0.9;
     }
 
     div.small {
