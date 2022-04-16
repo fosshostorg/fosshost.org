@@ -41,4 +41,28 @@
         padding: 25px;
         border: 2px solid var(--fosshost-border-black);
     }
+
+    @media (max-width: 750px) {
+        main {
+            flex-wrap: wrap-reverse;
+            max-width: 90%;
+        }
+
+        p {
+            border-top: none;
+            margin: 0px;
+            padding-top: 0px;
+            box-sizing: border-box;
+        }
+
+        div {
+            border-bottom: none;
+            flex-grow: 1;
+        }
+
+        div.image {
+            display: flex;
+            justify-content: center;
+        }
+    }
 </style>

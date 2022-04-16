@@ -43,7 +43,7 @@
         display: flex;
         max-width: var(--content-max-width);
         box-sizing: border-box;
-        margin: 0 auto;
+        margin: 0px;
         background-color: var(--bg);
         border: 2px solid var(--fosshost-text-black);
         align-items: center;
@@ -51,7 +51,7 @@
         justify-content: space-between;
         cursor: pointer;
         text-decoration: none;
-        width: 90%;
+        width: 100%;
         transition: ease border-left-width 0.5s;
     }
 
@@ -69,5 +69,12 @@
         height: 44px;
         max-height: 100%;
         stroke: var(--tc);
+    }
+
+    @media (max-width: 750px) {
+      a {
+        width: 90%;
+        margin: 0 auto;
+      }
     }
 </style>

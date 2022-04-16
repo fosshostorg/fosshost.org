@@ -66,4 +66,11 @@
     flex-wrap: wrap;
     /* justify-content: center; */
   }
+
+  @media (max-width: 750px) {
+    main {
+      max-width: 90%;
+      margin: 0 auto;
+    }
+  }
 </style>

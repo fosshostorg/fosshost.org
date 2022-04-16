@@ -24,7 +24,7 @@
 <style>
     main {
         width: auto;
-        padding: 0px 40px;
+        /* padding: 0px 40px; */
         background-color: white;
         color: white;
         display: flex;
@@ -113,5 +113,52 @@
     div :global(.img-wrapper) {
         height: 330px;
         width: 580px;
+    }
+
+    @media (max-width: 750px) {
+        main {
+            margin: 1rem auto 0rem;
+            padding: 0rem;
+            max-width: 90%;
+        }
+
+        span {
+            max-width: 90%;
+        }
+    }
+
+    @media (max-width: 700px) {
+        img {
+            width: 80px;
+            margin: 0 auto;
+        }
+
+        div.logo {
+            padding: 1rem;
+        }
+
+        div.title {
+            height: 163px;
+        }
+
+        h1 {
+            font-size: 50px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: normal;
+        }
+
+        a {
+            width: 100%;
+            flex-grow: 1 !important;
+            padding: 0.25rem 0rem;
+        }
+
+        span {
+            flex-wrap: wrap;
+            height: fit-content;
+        }
     }
 </style>

@@ -188,7 +188,9 @@
     margin-left: 1rem;
   }
 
-  a {
-    margin: 1.5rem auto 0;
+  @media (max-width: 750px) {
+    main {
+      max-width: 90%;
+    }
   }
 </style>

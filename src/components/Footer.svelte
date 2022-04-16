@@ -26,7 +26,7 @@
     </ul>
     <span>
         <ul class="copy-info">
-            <li>Fosshost is a non-profit org registered in England and Wales. Our Company Registration Number: 13356530. All rights reserved &copy; 2021</li>
+            <li>Fosshost is a non-profit org registered in England and Wales. Our Company Registration Number: 13356530. <br>All rights reserved &copy; 2021</li>
         </ul>
     </span>
 </span>
@@ -34,7 +34,7 @@
 
 <style>
     span.footer {
-        max-width: 750px;
+        max-width: var(--content-max-width);
         min-height: 140px;
         margin: 160px auto 0px;
         display: flex;
@@ -72,5 +72,22 @@
     li a {
         color: var(--fosshost-text-black);
         text-decoration: none;
+    }
+
+    @media (max-width: 750px) {
+        ul.copy-info {
+            max-width: 90%;
+        }
+
+        ul {
+            max-width: 90%;
+            padding: 0rem;
+            margin: 50px auto 0px;
+            justify-content: center;
+        }
+
+        span.footer {
+            margin-top: 50px;
+        }
     }
 </style>

@@ -21,4 +21,10 @@
         font-weight: 600;
         margin: 16px 0px;
     }
+
+    @media (max-width: 750px) {
+        h2 {
+            font-size: 60px;
+        }
+    }
 </style>

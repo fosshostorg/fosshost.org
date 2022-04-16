@@ -46,5 +46,14 @@
 		height: 100%;
 		font-family: 'Source Sans Pro', sans-serif;
 		background-color: white;
+		max-width: 90%;
+		margin: 0 auto;
+	}
+
+	@media (max-width: 750px) {
+		img {
+			width: 90%;
+			margin: 0 5%;
+		}
 	}
 </style>

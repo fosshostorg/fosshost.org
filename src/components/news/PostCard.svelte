@@ -22,15 +22,13 @@
 >
   <div class="left">
     <h2>{post.details.title}</h2>
-
     <div class="row">
       <span class="summary"
         >{@html post.details.summary
           ? post.details.summary
           : marked(post.body.split(" ").splice(0, 15).join(" "))}</span
       >
-      <div class="dateContainer"><span class="date">{date}</span></div>
-    
+      <div><span class="date">{date}</span></div>
     </div>
   </div>
   <span class="right">
@@ -161,5 +159,28 @@
 
   h2:hover {
     border-color: var(--fosshost-text-black);
+  }
+
+  @media (max-width: 750px) {
+    span.right {
+      display: none;
+    }
+
+    div.row {
+      flex-wrap: wrap;
+      max-width: 100%;
+    }
+
+    div.left {
+      max-width: 100%;
+      box-sizing: border-box;
+    }
+
+    span.date {
+      margin: 1rem 0rem;
+      border-left: none;
+      padding-left: 0rem;
+      
+    }
   }
 </style>

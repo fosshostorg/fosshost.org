@@ -68,10 +68,11 @@
         margin: 2rem 0;
     }
 
-    @media (max-width: 1280px) {
+    @media (max-width: 750px) {
         main {
             margin: .5rem auto 3rem;
-            padding: 0rem 1rem;
+            padding: 0rem 2rem;
+            border-left: none;
         }
     }
 
@@ -89,12 +90,4 @@
         color: var(--fosshost-text-black);
         margin: 0;
     }
-
-    a.back {
-        padding: 0.25rem 0rem;
-        font-size: 16px;
-        text-decoration: none;
-        color: var(--fosshost-text-black);
-    }
-
 </style>

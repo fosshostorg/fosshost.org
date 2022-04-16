@@ -29,22 +29,22 @@
                 <span>
                     <p>This account accepts payments from within the EU and SEPA.</p>
                     <p>Please deposit into the following account:<br /><br /></p>
-                    <p>Account Name: Fosshost C.I.C</p>
-                    <p>SWIFT/BIC: TRWIBEB1XXX</p>
-                    <p>IBAN: BE54 9672 0293 7197</p>
-                    <p>Address: Avenue Louise 54, Room S52, Brussels, 1050, Belgium</p>
+                    <p><b>Account Name:</b> Fosshost C.I.C</p>
+                    <p><b>SWIFT/BIC:</b> TRWIBEB1XXX</p>
+                    <p><b>IBAN:</b> BE54 9672 0293 7197</p>
+                    <p><b>Address:</b> Avenue Louise 54, Room S52, Brussels, 1050, Belgium</p>
                 </span>
             </div>
             <div slot="gbp">
                 <p>Want to make a donation in GBP?</p>
                 <span>
                     <p>Please deposit into the following account:<br /><br /></p>
-                    <p>Account Name: Fosshost C.I.C</p>
-                    <p>Sortcode: 23-14-70</p>
-                    <p>Account Number: 37343617</p>
-                    <p>SWIFT/BIC: TRWIGB2L</p>
-                    <p>IBAN: GB88 TRWI 2314 7037 3436 17</p>
-                    <p>Address: TransferWise, 56 Shoreditch High Street, London, E1 6JJ, United Kingdom</p>
+                    <p><b>Account Name:</b> Fosshost C.I.C</p>
+                    <p><b>Sortcode:</b> 23-14-70</p>
+                    <p><b>Account Number:</b> 37343617</p>
+                    <p><b>SWIFT/BIC:</b> TRWIGB2L</p>
+                    <p><b>IBAN:</b> GB88 TRWI 2314 7037 3436 17</p>
+                    <p><b>Address:</b> TransferWise, 56 Shoreditch High Street, London, E1 6JJ, United Kingdom</p>
                 </span>
             </div>
             <div slot="usd">
@@ -53,22 +53,22 @@
                     <p>
                         If you are making a donation in USD from <em>within</em> the USA please deposit into the following account:<br /><br />
                     </p>
-                    <p>Account Name: Fosshost C.I.C</p>
-                    <p>Routing Number: 084009519</p>
-                    <p>Account Number: 9600 0001 9973 3949</p>
-                    <p>Account Type: Checking</p>
+                    <p><b>Account Name:</b> Fosshost C.I.C</p>
+                    <p><b>Routing Number:</b> 084009519</p>
+                    <p><b>Account Number:</b> 9600 0001 9973 3949</p>
+                    <p><b>Account Type:</b> Checking</p>
                     <p>
-                        Address: TransferWise, 19 W 24th Street, New York NY 10010, United States<br /><br />
+                        <b>Address:</b> TransferWise, 19 W 24th Street, New York NY 10010, United States<br /><br />
                     </p>
     
                     <p>
                         If you are making a donation in USD from <em>outside</em> the USA please deposit into the following account:<br /><br />
                     </p>
-                    <p>Account Name: Fosshost C.I.C</p>
-                    <p>SWIFT/BIC: CMFGUS33</p>
-                    <p>Account Number: 8311067189</p>
+                    <p><b>Account Name:</b> Fosshost C.I.C</p>
+                    <p><b>SWIFT/BIC:</b> CMFGUS33</p>
+                    <p><b>Account Number:</b> 8311067189</p>
                     <p>
-                        Address: TransferWise, 19 W 24th Street, New York NY 10010, United States<br /><br />
+                        <b>Address:</b> TransferWise, 19 W 24th Street, New York NY 10010, United States<br /><br />
                     </p>
     
                     <p>When you make a transfer to the above account(s), you may see Community Federal Savings Bank (CFSB), Evolve Bank and Trust (EVOLVE). This is because our USD accounts are with both CFSB and EVOLVE.</p>
@@ -106,6 +106,11 @@
 </main>
 
 <style>
+    main {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+    
     p {
         font-size: 20px;
         font-weight: 600;

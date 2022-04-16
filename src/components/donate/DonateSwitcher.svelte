@@ -69,7 +69,7 @@
     }
 
     div.currency {
-        width: 100%;
+        max-width: 100%;
         padding: 1rem;
         box-sizing: border-box;
         border: 2px solid var(--fosshost-border-black);
@@ -86,5 +86,24 @@
         font-size: 24px;
         margin: 0px;
         margin-bottom: 1rem;
+    }
+
+    @media (max-width: 750px) {
+        span {
+            max-width: 100%;
+            flex-wrap: wrap;
+            height: fit-content;
+        }
+
+        button {
+            width: 100%;
+            padding: 0.15rem 0rem;
+        }
+
+        .currency :global(div), .currency :global(p) {
+            max-width: 100%;
+            font-size: 16px;
+            word-wrap: break-word;
+        }
     }
 </style>

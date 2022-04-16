@@ -107,4 +107,9 @@
         background-color: white;
     }
 
+    @media (max-width: 750px) {
+        div {
+            columns: 1;
+        }
+    }
 </style>

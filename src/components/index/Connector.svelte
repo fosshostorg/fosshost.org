@@ -40,4 +40,10 @@
         border-top: none;
         border-bottom: 2px dashed var(--fosshost-border-black);
     }
+
+    @media (max-width: 750px) {
+        main {
+            max-width: 60%;
+        }
+    }
 </style>

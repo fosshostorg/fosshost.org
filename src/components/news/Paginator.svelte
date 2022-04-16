@@ -16,7 +16,7 @@
       if (page > 0) page--;
     }}
   >
-    previous
+    back
   </button>
   <span>
     {page+1} / {totalPages+1}
@@ -44,7 +44,7 @@
   }
 
   span {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     padding: 0rem 2rem;
   }
 
@@ -67,5 +67,11 @@
     color: #aaaaaa;
     border: 2px solid #aaa;
     cursor: default;
+  }
+
+  @media (max-width: 750px) {
+    span {
+      font-size: 1.25rem;
+    }
   }
 </style>
