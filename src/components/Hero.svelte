@@ -1,5 +1,6 @@
 <script>
     export let segment;
+    let open = false;
 </script>
 
 <main>
@@ -12,13 +13,23 @@
     </div>
 </main>
 
-<span>
-    <a href="/" class="home"    aria-current="{segment === undefined ? 'page' : undefined}">home</a>
-    <a href="/about"            aria-current="{segment === 'about' ? 'page' : undefined}">about</a>
-    <a href="/news"             aria-current="{segment === 'news' ? 'page' : undefined}">news</a>
-    <a href="/donate"           aria-current="{segment === 'donate' ? 'page' : undefined}">donate</a>
-    <a href="/apply"            aria-current="{segment === 'apply' ? 'page' : undefined}">apply</a>
-</span>
+<div style="width: 100%; display: flex; flex-direction: row; margin-bottom: 100px;">
+    <span class="wrapper" on:click={() => {open = false}}>
+        <a href="/" class="home" class:open   aria-current="{segment === undefined ? 'page' : undefined}">home</a>
+        <a href="/about" class:open           aria-current="{segment === 'about' ? 'page' : undefined}">about</a>
+        <a href="/news" class:open            aria-current="{segment === 'news' ? 'page' : undefined}">news</a>
+        <a href="/donate" class:open          aria-current="{segment === 'donate' ? 'page' : undefined}">donate</a>
+        <a href="/apply" class:open           aria-current="{segment === 'apply' ? 'page' : undefined}">apply</a>
+    </span>
+    
+    <div class="material-icons" on:click={() => {open = !open}}>
+        <span class="material-icons" style="display: flex; justify-content: center;">
+            menu
+        </span> 
+    </div>
+</div>
+
+
 
 
 <style>
@@ -70,13 +81,14 @@
         color: var(--fosshost-text-black);
     }
 
-    span {
-        margin: -2px auto 100px;
+    span.wrapper {
+        margin: -2px 0px;
         max-width: var(--content-max-width);
         display: flex;
         border: 1px solid var(--fosshost-border-black);
         box-sizing: border-box;
         height: 40px;
+        flex-grow: 1;
     }
 
     a {
@@ -115,6 +127,19 @@
         width: 580px;
     }
 
+    div.material-icons {
+        display: none;
+        color: var(--fosshost-text-black);
+        width: 40px;
+        border: 2px solid black;
+        border-left: none;
+        border-top: none;
+        justify-content: center;
+        height: 36px;
+        box-sizing: border-box;
+        cursor: pointer;
+    }
+
     @media (max-width: 750px) {
         main {
             margin: 1rem auto 0rem;
@@ -122,7 +147,7 @@
             max-width: 90%;
         }
 
-        span {
+        span.wrapper {
             max-width: 90%;
         }
     }
@@ -154,11 +179,22 @@
             width: 100%;
             flex-grow: 1 !important;
             padding: 0.25rem 0rem;
+            display: none;
         }
 
-        span {
+        span.wrapper {
             flex-wrap: wrap;
             height: fit-content;
+            max-width: calc(90% - 40px);
+            /* margin-left: 5%; */
+        }
+
+        .open, [aria-current] {
+            display: flex;
+        }
+
+        div.material-icons {
+            display: flex;
         }
     }
 </style>
