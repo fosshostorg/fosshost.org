@@ -150,6 +150,10 @@
         span.wrapper {
             max-width: 90%;
         }
+
+        p {
+            font-weight: 500;
+        }
     }
 
     @media (max-width: 700px) {
@@ -164,6 +168,7 @@
 
         div.title {
             height: 163px;
+            padding-left: 15px;
         }
 
         h1 {
