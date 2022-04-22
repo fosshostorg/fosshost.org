@@ -26,7 +26,7 @@
     </ul>
     <span>
         <ul class="copy-info">
-            <li>Fosshost is a non-profit org registered in England and Wales. Our Company Registration Number: 13356530. <br>All rights reserved &copy; 2021</li>
+            <li>Fosshost is a C.I.C. LGB registered in England and Wales. Our C.I.C registration number is 13356530.<br>All rights reserved &copy; 2022</li>
         </ul>
     </span>
 </span>
@@ -56,8 +56,12 @@
         color: var(--fosshost-text-black);
         text-align: center;
         padding: 0px;
-        width: 500px;
+        max-width: var(--content-max-width);
         margin: 20px auto;
+    }
+
+    ul.copy-info li {
+        margin: 0 auto;
     }
 
     li {
