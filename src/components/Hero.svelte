@@ -5,7 +5,7 @@
 
 <main>
     <div class="logo">
-        <img src="/img/logo_new.png" alt="Fosshost Logo" />
+        <img src="/img/logo-new.png" alt="Fosshost Logo" />
     </div>
     <div class="title">
         <h1>fosshost</h1>
