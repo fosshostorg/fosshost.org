@@ -10,7 +10,7 @@
     month: "numeric",
     day: "numeric",
   };
-  const date = new Date(
+  $: date = new Date(
     post.details.date.replace(/-/g, "/").replace(/T.+/, "")
   ).toLocaleDateString("en-US", dateFormatOptions).replace(/\//g, ".");
 </script>
@@ -139,6 +139,7 @@
     display: flex;
     align-items: center;
     height: 100%;
+    width: 144px;
   }
   
   span.summary {
