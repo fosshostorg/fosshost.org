@@ -5,7 +5,7 @@
 	<meta property="og:description" content="At Fosshost we provide free hosting and related services to hundreds of open source projects. Apply today!" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="https://fosshost.org" />
-	<meta property="og:image" content="https://fosshost.org/img/HERO_IMAGE.png" />
+	<meta property="og:image" content="https://fosshost.org/img/fosshost-card.png" />
 	<meta name="twitter:card" content="summary_large_image">
 </svelte:head>
 

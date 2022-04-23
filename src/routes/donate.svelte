@@ -15,7 +15,7 @@
 	<meta property="og:description" content="Donate to Fosshost! Help us keep the lights on by providing a donation today." />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="https://fosshost.org/donate" />
-	<meta property="og:image" content="https://fosshost.org/img/HERO_IMAGE.png" />
+	<meta property="og:image" content="https://fosshost.org/img/fosshost-card.png" />
 </svelte:head>
 
 <main>
