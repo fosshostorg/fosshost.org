@@ -26,7 +26,7 @@
     </ul>
     <span>
         <ul class="copy-info">
-            <li>Fosshost is a C.I.C. LGB registered in England and Wales. Our C.I.C registration number is 13356530.<br>All rights reserved &copy; 2022</li>
+            <li>Fosshost is a C.I.C. LBG registered in England and Wales. Our C.I.C registration number is 13356530.<br>All rights reserved &copy; 2022</li>
         </ul>
     </span>
 </span>
