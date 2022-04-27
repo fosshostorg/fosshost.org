@@ -12,8 +12,6 @@
 <script>
 	import Card from "../components/index/Card.svelte";
 	import Connector from "../components/index/Connector.svelte";
-	import Hero from "../components/Hero.svelte";
-	import Quote from "../components/index/Quote.svelte";
 </script>
 
 <main>
