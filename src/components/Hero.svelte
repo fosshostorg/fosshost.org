@@ -50,6 +50,11 @@
         border: 2px solid var(--fosshost-border-black);
     }
 
+    img:hover {
+        filter: grayscale();
+        transition: ease filter 0.5s;
+    }
+
     div.title {
         height: 195px;
         width: 100%;
