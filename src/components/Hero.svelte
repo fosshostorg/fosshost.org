@@ -7,7 +7,7 @@
     <div class="logo">
         <img src="/img/logo-new.png" alt="Fosshost Logo" />
     </div>
-    <div class="title">
+    <div class="title" on:click={() => {window.location.href = "/"}} style="cursor: pointer;">
         <h1>fosshost</h1>
         <p>Helping open source prosper, one project at a time.</p>
     </div>
