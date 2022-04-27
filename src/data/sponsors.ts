@@ -4,39 +4,39 @@ export const Sponsors: Sponsor[] = [
     link: "https://www.iomart.com/"
   },
   {
-    name: "Jolt.co.uk",
-    link: "https://jolt.co.uk/"
+    name: "ukfast.co.uk",
+    link: "https://www.ukfast.co.uk/"
   },
   {
-    name: "FDCservers.net",
-    link: "https://fdcservers.net/"
+	  name: "fasthosts.co.uk",
+	  link: "https://www.fasthosts.co.uk/"
   },
   {
-    name: "HostKey.com",
-    link: "https://hostkey.com/"
-  },
-  {
-    name: "Serverius.net",
-    link: "http://serverius.net/"
-  },
-  {
-    name: "WebNX.com",
+    name: "webnx.com",
     link: "https://webnx.com/"
   },
   {
-    name: "OSUOSL.org",
-    link: "https://osuosl.org/"
+    name: "fdcservers.net",
+    link: "https://fdcservers.net/"
   },
   {
-    name: "Fastly.com",
+    name: "serverius.net",
+    link: "https://serverius.net/"
+  },
+  {
+    name: "jolt.co.uk",
+    link: "https://jolt.co.uk/"
+  },
+  {
+    name: "hostkey.com",
+    link: "https://hostkey.com/"
+  },
+  {
+    name: "fastly.com",
     link: "https://fastly.com/"
   },
   {
-    name: "Gitpod",
-    link: "https://www.gitpod.io/"
-  },
-  {
-	  name: "Fasthosts",
-	  link: "https://www.fasthosts.co.uk/"
+    name: "osuosl.org",
+    link: "https://osuosl.org/"
   },
 ]
