@@ -20,7 +20,7 @@
         <li><a rel="prefetch" href="/about#sponsors">Sponsors</a></li>
         <li><a rel="prefetch" href="/media">Media Assets</a></li>
         <li><a rel="prefetch" href="/status">Network Status</a></li>
-        <li><a rel="prefetch" href="/web-stats">Web Stats</a></li>
+        <!-- <li><a rel="prefetch" href="/web-stats">Web Stats</a></li> -->
         <li><a rel="prefetch" href="/legal">Legal</a></li>
         <li><a rel="prefetch" href="/news/feed.xml">RSS</a></li>
     </ul>
@@ -44,11 +44,13 @@
     ul {
         list-style: none;
         display: flex;
+        justify-content: center;
         flex-wrap: wrap;
         margin: 0px;
         font-weight: 500;
         font-size: 14px;
-        margin-top: 100px; 
+        margin-top: 100px;
+        padding-left: 0px;
     }
 
     ul.copy-info {
