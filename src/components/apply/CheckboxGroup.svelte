@@ -50,7 +50,7 @@
     }
 
     span.label {
-        color: var(--fosshost-black);
+        color: var(--fosshost-text-black);
         font-size: 18px;
         line-height: 24px;
     }
@@ -75,7 +75,7 @@
         align-items: center;
         font-size: 18px;
         line-height: 24px;
-        color: var(--fosshost-grey);
+        color: var(--fosshost-text-black);
         margin: 0 1rem 1rem 0;
         cursor: pointer;
         list-style-position: inside;
@@ -90,12 +90,11 @@
         left: 0;
         width: 20px;
         height: 20px;
-        border: 2px solid var(--fosshost-light-grey);
-        border-radius: 2px;
+        border: 2px solid var(--fosshost-border-black);
     }
 
     label.checked:before {
-        background-color: var(--fosshost-light-grey);
+        background-color: var(--fosshost-text-black);
     }
 
     label.checked:after {
@@ -108,4 +107,9 @@
         background-color: white;
     }
 
+    @media (max-width: 750px) {
+        div {
+            columns: 1;
+        }
+    }
 </style>

@@ -71,7 +71,7 @@
 
 <style>
   .status {
-    max-width: 800px;
+    max-width: var(--content-max-width);
     margin: 0rem auto 5rem;
     color: var(--fosshost-black);
   }

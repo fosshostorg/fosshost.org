@@ -42,8 +42,7 @@
         font-size: 18px;
         line-height: 24px;
         padding: 0.5rem;
-        border: 2px solid var(--fosshost-light-grey);
-        border-radius: 4px;
+        border: 2px solid var(--fosshost-border-black);
         margin-top: 0.25rem;
     }
 

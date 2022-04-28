@@ -33,7 +33,7 @@
     <meta property="og:article:published_time" content={post.details.date} />
     <meta property="og:article:author" content={post.details.author} />
     <meta property="og:url" content="https://fosshost.org/news/{slug}" />
-    <meta property="og:image" content={post.details.thumbnail ? "https://fosshost.org/thumbnails/" + post.details.thumbnail : "https://fosshost.org/img/HERO_IMAGE.png"} />
+    <meta property="og:image" content={post.details.thumbnail ? "https://fosshost.org/thumbnails/" + post.details.thumbnail : "https://fosshost.org/img/fosshost-card.png"} />
 </svelte:head>
 
 <main>
@@ -49,9 +49,6 @@
         {JSON.stringify(post.details)}
         {/if}
     </article>
-    <div>
-        <!-- TODO: Add the more links area... harder than it looks -->
-    </div>
 </main>
 
 <!-- TODO: stylize code inline/blocks: not sure exactly how this should look. -->
@@ -59,8 +56,11 @@
 <style>
     main {
         width: auto;
-        max-width: 780px;
+        max-width: var(--content-max-width);
         margin: 3rem auto;
+        border-left: 2px solid var(--fosshost-border-black);
+        padding: 0rem 1rem 0rem 2rem;
+        box-sizing: border-box;
     }
 
     img {
@@ -68,10 +68,11 @@
         margin: 2rem 0;
     }
 
-    @media (max-width: 1280px) {
+    @media (max-width: 750px) {
         main {
             margin: .5rem auto 3rem;
-            padding: 0rem 1rem;
+            padding: 0rem 2rem;
+            border-left: none;
         }
     }
 
@@ -86,8 +87,7 @@
     h4 {
         font-weight: 400;
         font-size: 14px;
-        color: var(--fosshost-light-grey);
+        color: var(--fosshost-text-black);
         margin: 0;
     }
-
 </style>

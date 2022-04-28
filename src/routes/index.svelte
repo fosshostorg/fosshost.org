@@ -5,47 +5,29 @@
 	<meta property="og:description" content="At Fosshost we provide free hosting and related services to hundreds of open source projects. Apply today!" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="https://fosshost.org" />
-	<meta property="og:image" content="https://fosshost.org/img/HERO_IMAGE.png" />
+	<meta property="og:image" content="https://fosshost.org/img/fosshost-card.png" />
 	<meta name="twitter:card" content="summary_large_image">
 </svelte:head>
 
 <script>
 	import Card from "../components/index/Card.svelte";
-	import Hero from "../components/index/Hero.svelte";
-	import Projects from "../components/index/Projects.svelte";
-	import Quote from "../components/index/Quote.svelte";
+	import Connector from "../components/index/Connector.svelte";
 </script>
 
 <main>
-	<Hero />
-	<Projects />
 	<div>
 		<Card img="/img/illustration1.png">
-			The project operates free hosting services 
-			for the open source community. The infrastructure 
-			is donated by our hosting sponsors and is managed 
-			by a group of highly talented volunteers.
+			Fosshost is here to support your open source project with practical, free hosting solutions.  The world runs on open source software, and we provide robust hosting solutions to make sure it stays that way. What's more, we do it all completely free of charge.
 		</Card>
+		<Connector />
 		<Card reverse img="/img/illustration2.png">
-			Many open source projects benefit from our 
-			hosting services which help to support, promote, 
-			and advance the development and movement of free software.
+			Our reliable, global hosting infrastructure is scalable to your needs, spanning multiple regions for unbeatable support in hosting, promoting and developing your project.
 		</Card>
+		<Connector reverse />
 		<Card img="/img/illustration3.png">
-			We operate a large and global infrastructure in 
-			multiple regions which delivers a resilient, scalable, 
-			and world-class hosting experience.
-			<br>
-			<br> 
-			You can read more about our work <a class="fosshost-link" href="/about">here</a>.
+			<b>How?</b> It’s all thanks to our hosting sponsors and dedicated volunteers, without whom none of this would be possible.  Read more about our work, including our educational projects, here.
 		</Card>
 	</div>
-	<Quote author="Morgan Lemmer-Webber" authorDetails="Founder, ActivityPub Conference">
-		Fosshost provided us with a dedicated Big Blue Button server 
-		for ActivityPub Conference 2020. Thanks to their support we 
-		were able to host a zero-budget international free software 
-		conference with reliable video conferencing.
-	</Quote>
 </main>
 
 

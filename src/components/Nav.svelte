@@ -164,7 +164,7 @@
 
 	a {
 		text-decoration: none;
-		color: black;
+		color: var(--fosshost-text-black);
 		height: 100%;
 		display: flex;
 		align-items: center;

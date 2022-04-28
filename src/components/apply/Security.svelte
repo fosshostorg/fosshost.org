@@ -40,7 +40,7 @@
           console.log(err);
         });
     } catch (err) {
-      console.log(err);
+      // console.log(err);
       error = err.message;
     }
   };
