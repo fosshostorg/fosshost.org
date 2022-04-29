@@ -8,7 +8,7 @@ All support is provided by our volunteers and fellow users within our online com
 [IRC](https://web.libera.chat/#fosshost)     
 
 UK Emergency Telephone Support: +44 (0) 208 154 4278   
-US Emergency Telephone Support: +001 (415) 610 7165
+US Emergency Telephone Support: +1 415 610 7165
 
 ## Organisation Information
 
