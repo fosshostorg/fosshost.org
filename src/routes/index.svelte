@@ -25,7 +25,7 @@
 		</Card>
 		<Connector reverse />
 		<Card img="/img/illustration3.png">
-			<b>How?</b> It’s all thanks to our hosting sponsors and dedicated volunteers, without whom none of this would be possible.  Read more about our work, including our educational projects, here.
+			<b>How?</b> It’s all thanks to our hosting sponsors and dedicated volunteers, without whom none of this would be possible.  Read more about our work, including our educational projects, <a href="/about">here</a>.
 		</Card>
 	</div>
 </main>
