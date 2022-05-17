@@ -4,10 +4,6 @@ export const Sponsors: Sponsor[] = [
     link: "https://www.iomart.com/"
   },
   {
-    name: "ukfast.co.uk",
-    link: "https://www.ukfast.co.uk/"
-  },
-  {
 	  name: "fasthosts.co.uk",
 	  link: "https://www.fasthosts.co.uk/"
   },
