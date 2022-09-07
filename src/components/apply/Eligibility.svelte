@@ -18,7 +18,7 @@ import Arrow from '../Arrow.svelte';
         <h1>Thank you for your interest in Fosshost!</h1>
         <p>
             Unfortunately, applications for our services are temporarily suspended. To read more about the situation, click
-            <a href="/news/applications-temporarily-suspended" class="fosshost-link"><b>here</b></a>.
+            <a href="/news/suspended-applications" class="fosshost-link"><b>here</b></a>.
         </p>
         <button class="accept" on:click={() => {window.location.href = "/"}}>Back to home</button>
     {:else}
