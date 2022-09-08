@@ -7,11 +7,11 @@
 
 
 <span class="footer">
-    {#if attachCTA}
+    <!-- {#if attachCTA}
     <CTA inverted fontSize="48px" href="/apply">
         Apply now!
     </CTA>
-    {/if}
+    {/if} -->
     <ul>
         <li><a href="https://docs.fosshost.org/">Docs</a></li>
         <li><a rel="prefetch" href="/contact">Contact</a></li>
