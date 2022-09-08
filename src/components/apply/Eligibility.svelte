@@ -1,6 +1,7 @@
 <script lang="ts">
     import { createEventDispatcher } from 'svelte';
     import { fade } from 'svelte/transition';
+    import {applicationsEnabled} from '../../data/applications'
 import Arrow from '../Arrow.svelte';
     export let data: FormResponse;
     export let currentPage: number;
@@ -10,7 +11,7 @@ import Arrow from '../Arrow.svelte';
         currentPage += 1;
     }
 
-    const formDisabled: boolean = true;
+    const formDisabled: boolean = !applicationsEnabled;
 </script>
 
 <main in:fade={{delay: 0, duration: 400}}>
@@ -28,7 +29,7 @@ import Arrow from '../Arrow.svelte';
             <a href="https://docs.fosshost.org/general/application" target="_blank" class="fosshost-link"><b>Eligibility Criteria</b></a>.
             <br>
             <br>
-            Questions about applying to Fosshost? Join our discord at <a href="https://discord.gg/foss" target="_blank" class="fosshost-link"><b>discord.gg/foss</b></a>.
+            Questions about applying to Fosshost? Join our discord at <a href="https://discord.gg/jgMtHTF6Kw" target="_blank" class="fosshost-link"><b>discord.gg/jgMtHTF6Kw</b></a>.
         </p>
         <button class="accept" on:click={handleClick}>
             <span style="margin-right: 1rem;">I accept </span>
