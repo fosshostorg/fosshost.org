@@ -1,0 +1,1 @@
+export const applicationsEnabled = false;

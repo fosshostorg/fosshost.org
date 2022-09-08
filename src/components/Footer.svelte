@@ -1,13 +1,14 @@
 <script>
     import CTA from "./CTA.svelte";
-
+    import {applicationsEnabled} from '../data/applications'
     export let attachCTA;
+
 </script>
 
 
 
 <span class="footer">
-    {#if attachCTA}
+    {#if attachCTA && applicationsEnabled}
     <CTA inverted fontSize="48px" href="/apply">
         Apply now!
     </CTA>
