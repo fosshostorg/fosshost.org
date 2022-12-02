@@ -1,8 +1,0 @@
-tasks:
-  - init: yarn && yarn build
-    command: yarn dev
-vscode:
-  extensions:
-    - dbaeumer.vscode-eslint
-    - svelte.svelte-vscode
-
